@@ -8,6 +8,7 @@ EPA released its 2016 annual air trends report in the form of an interactive web
   *	Take a closer look at how the number of days with unhealthy air has dropped since 2000 in 35 major US cities.
   *	Explore how air quality and emissions have changed through time and space for each of the common air pollutants. 
   *	Check out air trends where you live.
+  
 Users will also be able to share this content across social media, with one-click access to Facebook, Twitter, Pinterest, and other major social media sites.
 
 This repository contains the D3 code used in the Criteria Pollutant Trends section: https://gispub.epa.gov/air/trendsreport/2016/#naaqs_trends_
