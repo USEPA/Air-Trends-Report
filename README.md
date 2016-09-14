@@ -13,4 +13,6 @@ Users will also be able to share this content across social media, with one-clic
 
 This repository contains the D3 code used in the Criteria Pollutant Trends section: https://gispub.epa.gov/air/trendsreport/2016/#naaqs_trends_
 
+This repo has been entered into the EPA's Reusable Component Services (RCS) system at:
+https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
 
