@@ -1,0 +1,229 @@
+.naaqs-chart-svg {
+  font: 14px;
+  font-family: "Varela Round",Montserrat,"Open Sans",sans-serif;  
+}
+
+#naaqs-concentrationGraph-container {
+  padding:.5em;
+  background-color: #2a2a2b;
+  margin-bottom:1em;
+  border:solid 1px #707073;
+  border-radius: 4px;
+}
+
+#naaqs-concentrationGraph {
+	background-color: #2a2a2b;
+	fill:#E0E0E3;
+	position:relative;
+}
+
+#naaqs-emissionGraph-container {
+  padding:.5em;
+  background-color: #2a2a2b;
+  margin-bottom:1em;
+  border:solid 1px #707073;
+  border-radius: 4px;
+}
+#naaqs-emissionGraph {
+	background-color: #2a2a2b;
+	fill:#E0E0E3;
+	position:relative;
+}
+
+.naaqs-chart-axis path,
+.naaqs-chart-axis line {
+  fill: none;
+  stroke: rgba(112, 112, 115, 0.3);
+  shape-rendering: crispEdges;
+}
+
+.naaqs-chart-axis text {
+  fill: #E0E0E3;
+  font-weight:normal;
+  font-size:.786em;
+}
+
+.naaqs-chart-axis .tick line {
+  stroke: rgba(112, 112, 115, 0.3);
+}
+
+.naaqs-chart-area {
+  stroke-width: 1;
+}
+
+.naaqs-chart-percentile,
+.naaqs-chart-legend .naaqs-chart-percentile {
+  fill: rgba(51, 173, 255, 0.8);
+  stroke: rgba(0, 91, 153, 0.8);
+}
+
+.naaqs-chart-stationary,
+.naaqs-chart-legend .naaqs-chart-stationary {
+  fill: rgba(144, 238, 126, 0.8);
+}
+
+.naaqs-chart-industrial,
+.naaqs-chart-legend .naaqs-chart-industrial {
+  fill: rgba(255, 255, 0, 0.8);
+}
+
+.naaqs-chart-highway,
+.naaqs-chart-legend .naaqs-chart-highway {
+  fill: rgba(119, 152, 191, 0.8);
+}
+
+.naaqs-chart-nonroad,
+.naaqs-chart-legend .naaqs-chart-nonroad {
+  fill: rgba(255, 0, 102, 0.8);
+}
+
+.naaqs-chart-line-average,
+.naaqs-chart-legend .naaqs-chart-line-average {
+  fill: none;
+  stroke: #9900ff;
+  stroke-width: 3;
+}
+
+.naaqs-chart-line-standard,
+.naaqs-chart-legend .naaqs-chart-line-standard {
+  fill: none;
+  stroke: #E0E0E3;
+  stroke-width: 2;
+  stroke-dasharray:15,5;
+}
+
+.naaqs-chart-line-location,
+.naaqs-chart-legend .naaqs-chart-line-location {
+  fill: none;
+  stroke: #ff9900;
+  stroke-width: 3;
+}
+
+.naaqs-chart-point-location .dot {
+  r:6px;
+  fill:#ff9900;  
+}
+
+.naaqs-chart-line-total {
+  fill: none;
+  stroke: #E0E0E3;
+  stroke-width: 2;
+}
+
+.naaqs-chart-legend text {
+  fill: #E0E0E3;
+  font-size: .786em;  
+}
+
+.naaqs-chart-movingPoint {
+  r: 6px;
+	fill: #00e600;
+	stroke:#E0E0E3;
+	stroke-width:2.5;
+}
+.naaqs-chart-crosshair-vertical {
+	stroke: rgba(224,224,227,.2);
+	stroke-width: 30;
+  z-index:10;
+}
+.naaqs-chart-crosshair-horizontal {
+  display:none;
+}
+
+div.naaqs-tooltip {	
+    position: absolute;			
+    text-align: left;			
+    z-index:3;
+    padding: 5px;				
+    font-size: .857em;		
+    background: rgba(62,62,64,1);
+  	color: #E0E0E3;
+    border: solid 1px #ff0066;		
+    border-radius: 2px;			
+    opacity: 1;	
+/*Note if you want a tooltip to wrap such as legend percentile tooltip then set it individually to wrap */
+	/*white-space:nowrap;*/
+}
+
+.naaqs-tooltip td.naaqs-tooltip-label {
+  text-align: right;
+  padding-right:.5em;
+  white-space:nowrap;
+}
+.naaqs-tooltip .selected-site {
+  color:#ff9900;
+}
+#naaqs-emissionMenu {
+    /*border-bottom2: solid 2px #444;*/
+    margin-top:0em;
+}
+
+#naaqs-emissionMenu ul {
+    padding: 0;
+    text-align:center;
+    margin-bottom:-1px; /*this allows the ul tab to flow into/overlap the chart border so it appears to have no bottom border*/
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+   #naaqs-emissionMenu ul {
+    padding: 0;
+    text-align:center;
+    margin-bottom:-1.12px; /*added because safari/chrome behaves differently was -1.185*/
+	}
+}
+#naaqs-emissionMenu li.active {
+    background-color: #2a2a2b;
+    color: #7ee7c0;
+	border:solid 1px #707073;
+	border-bottom-color: #2a2a2b;
+}
+#naaqs-emissionMenu li:hover {
+    background-color: #337ab7;
+}
+
+#naaqs-emissionMenu li {
+    display: block;
+    border:solid 1px #707073;
+    border-bottom:0;
+	border-radius: 4px 4px 0 0;
+	font-size:1em;
+}
+@media(min-width:610px) {
+	#naaqs-emissionMenu li {
+	display: inline-block;
+    border:solid 1px #707073;
+    border-bottom:0;
+	border-radius: 4px 4px 0 0;
+	font-size:.87em;
+	}
+}
+
+#naaqs-emissionMenu li {
+    color: #7ee7c0;
+    background-color: transparent;
+    padding: 0em 0em;
+    margin: 0 0em;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media(min-width:610px) {
+	#naaqs-emissionMenu li {
+    color: #7ee7c0;
+    background-color: transparent;
+    padding: .25em .5em;
+    margin: 0 .25em;
+    text-decoration: none;
+    cursor: pointer;
+	}
+}
+
+.naaqs-chart-title {
+  font-size:1.5em;
+  text-align:center;
+  font-weight:normal;
+  white-space:nowrap;
+  color:#E0E0E3;
+}
+	
+.naaqsform-group {
+ margin-bottom:2.1em; 
+} 
