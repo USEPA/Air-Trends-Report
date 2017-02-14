@@ -4,7 +4,32 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-
+@font-face {
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.eot');
+  src: url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Josefin Sans'),
+       local('Josefin-Sans-regular'),
+       url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.woff2') format('woff2'),
+       url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.woff') format('woff'),
+       url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.ttf') format('truetype'),
+       url('../../fonts/Josefin-Sans-regular/Josefin-Sans-regular.svg#JosefinSans') format('svg');
+}
+@font-face {
+  font-family: 'Varela Round';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../../fonts/Varela-Round-regular/Varela-Round-regular.eot');
+  src: url('../../fonts/Varela-Round-regular/Varela-Round-regular.eot?#iefix') format('embedded-opentype'),
+       local('Varela Round'),
+       local('Varela-Round-regular'),
+       url('../../fonts/Varela-Round-regular/Varela-Round-regular.woff2') format('woff2'),
+       url('../../fonts/Varela-Round-regular/Varela-Round-regular.woff') format('woff'),
+       url('../../fonts/Varela-Round-regular/Varela-Round-regular.ttf') format('truetype'),
+       url('../../fonts/Varela-Round-regular/Varela-Round-regular.svg#VarelaRound') format('svg');
+}
 @font-face {
   font-family: 'Open Sans';
   font-weight: 400;
@@ -35,7 +60,7 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Varela Round","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
     color: #fff;
     background-color: #000;
 }
@@ -52,7 +77,7 @@ h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
-    font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -70,7 +95,6 @@ p {
         line-height: 1.6;
     }
 }
-
 a, a:focus {
     text-decoration: none;
 	color: #42dca3;
@@ -93,7 +117,7 @@ a:hover {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
 	font-weight: 500;
     background-color: #000;
 }
@@ -101,13 +125,18 @@ a:hover {
 .navbar-custom .navbar-brand {
     font-weight: 700;
 }
-
+/*
 .navbar-custom .navbar-brand:focus {
     outline: 0;
+}*/
+.navbar-custom  .navbar-brand a:hover{
+	outline: 0;
+    color: rgba(66,220,163,.9);
+    background-color: transparent;
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
-    padding: 4px 6px;
+	padding: 4px 6px 4px 0px;
     font-size: 1.143em;
     color: #fff;
 }
@@ -135,7 +164,7 @@ a:hover {
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
-    outline: 0;
+    /*outline: 0;*/
     background-color: transparent;
 }
 
@@ -157,6 +186,7 @@ a:hover {
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
+		z-index: 6;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -331,7 +361,7 @@ a:hover {
 
 .btn {
 	font-size:1em;
-	border-radius: 0;
+	/*border-radius: 0;*/
     text-transform: uppercase;
     font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
     font-weight: 400;
@@ -339,7 +369,7 @@ a:hover {
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-
+/*
 .btn-default, .btn-default:focus {
     border: 1px solid #42dca3;
 	border-radius: 4px;
@@ -354,7 +384,8 @@ a:hover {
     outline: 0;
     color: #000;
     background-color: #42dca3;
-}
+}*/
+
 
 .btn:focus,.btn:active {
    outline: none !important;
@@ -563,6 +594,8 @@ html.fp-enabled,
     height: 100%;
     cursor: pointer;
     text-decoration: none;
+	outline: none !important; /*added to removed forced outline when tabbing */
+	
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
@@ -601,7 +634,7 @@ html.fp-enabled,
     top: -2px;
     color: #fff;
     font-size: 12px;
-    font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
     white-space: nowrap;
     max-width: 220px;
     overflow: hidden;
@@ -627,7 +660,6 @@ html.fp-enabled,
 .fp-auto-height .fp-tableCell{
     height: auto !important;
 }
-
 
 
 .animated {
@@ -889,6 +921,11 @@ body {
     font-size: 15px;
   }
 }
+@media(min-width:2200px) {
+  body {
+    font-size: 17px;
+  }
+}
 h1,
 .h1 {
   font-size: 2.571em;
@@ -921,7 +958,7 @@ h5,
 h6 {
     margin: 0 0 15px;
     text-transform: uppercase;
-    font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -934,7 +971,43 @@ h6 {
   h6 {
       margin: 0 0 35px;
       text-transform: uppercase;
-      font-family: "Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+      font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
+  }
+}
+.p1 {
+  font-size: 2.571em;
+}
+.p2 {
+  font-size: 2.143em;
+}
+.p3 {
+  font-size: 1.714em;
+}
+.p4 {
+  font-size: 1.286em;
+}
+.p5 {
+  font-size: 1em;
+}
+.p6 {
+  font-size: .857em;
+}
+.subtext {
+    line-height: 1.1;
+	margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+@media(min-width:1367px) {
+	.subtext {
+	  line-height: 1.1;
+	  margin: 0 0 35px;
+      text-transform: uppercase;
+      font-family: "Josefin Sans","Montserrat","Open Sans",Helvetica,Arial,sans-serif;
       font-weight: 700;
       letter-spacing: 1px;
   }
@@ -970,6 +1043,7 @@ h6 {
     font-size: 1.2em;
     line-height: 1.4;
 }
+
 .em2 {
     margin: -15px 0 5px;
     font-size: 2em;
@@ -1008,21 +1082,21 @@ h6 {
     -o-background-size: cover;
 }
 #weather{
-	background: #000 url(../../img/Galveston.jpg) no-repeat center center scroll;
+	background: #000 url(../../img/SeattleWa_006.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 #haze{
-	background: #000 url(../../img/yosemite.jpg) no-repeat center center scroll;
+	background: #000 url(../../img/yosemite_.jpg) no-repeat center center scroll;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 }
 #toxics{
-	background: #000 url(../../img/NYdocumerica.jpg) no-repeat bottom center scroll; 
+	background: #000 url(../../img/Energy_076.jpg) no-repeat bottom center scroll; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1051,6 +1125,16 @@ h6 {
 	font-size: 1.857em;
 	}
 }
+.navbar-header {
+	white-space:nowrap;
+    margin-left: -25px;
+}
+@media (min-width: 768px) {
+	.navbar-header {
+		white-space:nowrap;
+		margin-left: -10px;
+	}
+}
 
 /* Collapse navbar at a smaller screen size http://stackoverflow.com/questions/19827605/change-bootstrap-navbar-collapse-breakpoint-without-using-less */
 @media (max-width: 1000px) {
@@ -1062,7 +1146,8 @@ h6 {
 	}
     .navbar-toggle {
         display: block;
-		margin: 7px 4px 5px; /*added*/
+		margin: 7px 0px 5px 4px; /*added*/
+		padding-right: 0px; /*moves bars to the right*/
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
@@ -1123,7 +1208,11 @@ h6 {
     width: 60px;
     color:#FFFFFF!important;
 }
-
+.btn-reddit{
+	background-color: #a6ccf2 !important;
+    width: 60px;
+    color:#FFFFFF!important;
+}
 .btn-linkedin {
     background-color: #1884BB !important;
     width: 60px;
@@ -1180,7 +1269,7 @@ h6 {
 		background-color: transparent;
 		
 		margin: 8px 4px 5px; /*added*/
-		font-size:1em;
+		font-size:1.1em;
 		padding: 5px 10px;
 	}
 	.btn-mobile-share:hover,
@@ -1191,7 +1280,7 @@ h6 {
 		background-color: #42dca3;
 		
 		margin: 8px 4px 5px; /*added*/
-		font-size:1em;
+		font-size:1.1em;
 		padding: 5px 10px;
 	}
 }
@@ -1258,7 +1347,7 @@ h6 {
 }
 .modal-content {
   position: relative;
-  background-color: #262626;
+  background-color: #1a1a1a;
   color: #e6e6e6; /* added */
   -webkit-background-clip: padding-box;
 		  background-clip: padding-box;
@@ -1285,17 +1374,29 @@ h6 {
   font-weight: bold;
   line-height: 1;
   color: #42dca3;
-  text-shadow: 0 1px 0 #fff;
-  filter: alpha(opacity=20);
-  opacity: .6;
+  /*text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);*/
+  opacity: .8;
+  outline: none;
 }
+.close:hover, .close:active{
+	color:#1d9b6c;
+}
+
 select::-ms-expand {	
 	display: none; /*Removes default style and caret IE*/
 }
-select {
-     -webkit-appearance: none;  /*Removes default chrome and safari style*/
-     -moz-appearance: none;  /*Removes default style Firefox*/
+select::-ms-value {
+	background: none; /* Removes default blue background on selections in IE http://stackoverflow.com/questions/13170137/how-to-modify-select-tags-default-highlight-behaviour-in-ie-and-opera*/
+	color: #42dca3; /* but IE default text is white so this is needed */
 }
+select {
+    border: 2px solid #42dca3;
+	border-radius: 4px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+}
+
 .form-control {
   display: block;
   width: 100%;
@@ -1313,6 +1414,12 @@ select {
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	 transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; 
+}
+.form-control:focus {
+  border-color: #42dca3; /* needed to remove default bootstrap blue border when selected */
+  outline: 0 !important; 
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 .form-control-caret {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxNiIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDE2IDI4Ij4KPHBhdGggZmlsbD0iIzQyZGNhMyIgZD0iTTE2IDExcTAgMC40MDYtMC4yOTcgMC43MDNsLTcgN3EtMC4yOTcgMC4yOTctMC43MDMgMC4yOTd0LTAuNzAzLTAuMjk3bC03LTdxLTAuMjk3LTAuMjk3LTAuMjk3LTAuNzAzdDAuMjk3LTAuNzAzIDAuNzAzLTAuMjk3aDE0cTAuNDA2IDAgMC43MDMgMC4yOTd0MC4yOTcgMC43MDN6Ij48L3BhdGg+Cjwvc3ZnPgo=');
@@ -1340,8 +1447,11 @@ select {
 	position: absolute;
 	bottom: 0;
 	overflow: hidden;
-	z-index: -1; /* for accessing the video by click */ 
+	z-index: 5; /* for accessing the video by click */ 
 } 
+#nasa-text{
+	z-index: 5;
+}
 #debug {
 	position: absolute;
 	top: 0;
@@ -1349,6 +1459,88 @@ select {
 	color: #fff;
 	font-size: 12pt;
 } 
+/*** VIDEO CONTROLS CSS from http://codepen.io/frytyler/pen/juGfk ***/
+/* control holder */
+.vid-control{
+	color:#ccc;
+	position:absolute;
+	bottom:20px;
+	left:20px;
+	width:220px;
+	z-index:5;
+	display:none;
+}
+/* control bottom part */
+.btmControl{
+	clear:both;
+}
+.vid-control .btnPly {
+	float:left;
+	width:34px;
+	height:30px;
+	padding:5px;
+	background: rgba(0,0,0,0.5);
+	cursor:pointer;
+	border-radius: 6px 0 0 6px;
+	border: 1px solid rgba(0,0,0,0.7);
+	box-shadow: inset 0 0 1px rgba(255,255,255,0.5);
+}
+/* .icon-play changes from http://wpsites.net/web-design/add-icons-to-buttons-in-wordpress-themes/ */
+.vid-control .icon-play{
+	background:url(../../img/play_pause.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+	content: "";
+    display: inline-block;
+    color: #fff;
+    height: 20px;
+    margin-right: 13px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    width: 20px;
+}
+.vid-control .icon-pause{
+background:url(../../img/play_pause.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+	content: "";
+    display: inline-block;
+    color: #fff;
+    height: 20px;
+    margin-right: 13px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    width: 20px;
+}
+.vid-control .selected{
+	font-size:15px;
+	color:#ccc;
+}
+.vid-control .btnFS{
+	width: 34px;
+	height: 30px;
+	border-radius: 0 6px 6px 0;
+	padding:5px;
+	float:left;
+	background: rgba(0,0,0,0.5);
+	border: 1px solid rgba(0,0,0,0.7);
+	/*border-left: none;*/
+	box-shadow: inset 0 0 1px rgba(255,255,255,0.5);
+
+}
+.vid-control .icon-fullscreen {  
+	background:url(../../img/fullscreen.svg) no-repeat scroll center center / 100% auto rgba(0, 0, 0, 0);
+	content: "";
+    display: inline-block;
+    color: #fff;
+    height: 20px;
+    margin-right: 0px;
+    position: relative;
+    top: -2px;
+    vertical-align: middle;
+    width: 20px;
+	
+}
+
+
 /*#naaqsSlider{
   padding:.858em 0em;
   text-align:center;
@@ -1394,6 +1586,16 @@ select {
     font-size: 13px;
   }
 }
+@media(min-width:2200px){
+  #concentrationChartHS,
+  #emissionTrends,
+  #emissionsources,
+  #growthChart,
+  #weatherChart1,
+  #weatherChart2 {
+    font-size: 15px;
+  }
+}
 
 #concentrationChartHS,
 #emissionsources,
@@ -1418,6 +1620,14 @@ select {
 		margin: 0 auto;
   }
 }
+@media(min-device-height:1440px) {
+	#concentrationChartHS,
+	#emissionsources,
+	#growthChart {
+		height: 900px;
+		margin: 0 auto;
+  }
+}
 #emissionTrends{
 	height: auto; 
 	margin: 0 auto;
@@ -1431,6 +1641,12 @@ select {
 @media(min-device-height:769px) {
 	#emissionTrends {
 		height: 400px;
+		margin: 0 auto;
+	}
+}
+@media(min-device-height:1440px) {
+	#emissionTrends {
+		height: 550px;
 		margin: 0 auto;
 	}
 }
@@ -1454,10 +1670,17 @@ select {
 		margin: 0 auto;
 	}
 }
+@media(min-device-height:1440px) {
+	#weatherChart1,
+	#weatherChart2 {
+		height: 450px;
+		margin: 0 auto;
+	}
+}
 /* IMAGE CHANGES */
 #svgSeasonalPm25map{
 	background-color: #2a2a2b;
-	border:solid .077em #707073;
+	border:solid 1px #707073;
 	border-radius: 4px;
 }
 #hazeCleanest{
@@ -1467,22 +1690,22 @@ select {
 .fa-arrow-down {
 	color: #00e600;
 }*/
-mark_blue{
+.mark_blue{
 	background-color: rgb(0,0,255);
     color: #fff;
 }
-mark_pink{
+.mark_pink{
 	background-color: rgb(255,0,255);
     color: #fff;
 }
-mark_green{
+.mark_green{
 	background-color: rgb(57,147,126);
     color: #fff;
 }
 
 
 #toxics-map-container {
-	border:solid .077em #707073;
+	border:solid 1px #707073;
 	border-radius: 4px;
 }
 
@@ -1516,7 +1739,7 @@ mark_green{
 	transition:all .4s linear;
 }
 
-.hovereffect h2 {
+.hovereffect p {
 	text-transform:uppercase;
 	color:#fff;
 	text-align:center;
@@ -1581,7 +1804,7 @@ mark_green{
 	filter:alpha(opacity=100);
 }
 
-.hovereffect:hover h2,.hovereffect:hover a.info {
+.hovereffect:hover p,.hovereffect:hover a.info {
 	opacity:1;
 	filter:alpha(opacity=100);
 	-ms-transform:translatey(0);
@@ -1599,7 +1822,7 @@ mark_green{
   margin-bottom: 20px;
   line-height: 1.42857143;
   background-color: #2a2a2b;
-  border: solid .077em #707073;
+  border: solid 1px #707073;
   border-radius: 4px;
   -webkit-transition: border .2s ease-in-out;
        -o-transition: border .2s ease-in-out;
@@ -1623,7 +1846,7 @@ mark_green{
 
 .nav-tabs > li > a {
   line-height: 1.42857143;
-  border: solid .077em #707073;
+  border: solid 1px #707073;
   border-bottom: 0;
   border-radius: 4px 4px 0 0;
   font-size:1.2em;
@@ -1635,9 +1858,9 @@ mark_green{
   cursor: pointer;
 }
 
-.nav-tabs > li > a:hover {
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
   border-color:#707073;
-  background-color: #337ab7;
+  background-color: #07261a;
 }
 
 .nav-tabs > li.active > a,
@@ -1646,7 +1869,10 @@ mark_green{
   color: #7ee7c0;
   cursor: pointer;
   background-color: #2a2a2b;
-  border:solid .077em #707073;
+  border:solid 1px #707073;
+  border-radius: 4px 4px 0 0;
+  padding: .25em .75em;
+  margin: 0 .25em;
   border-bottom-color: #2a2a2b;
   outline:0;
   z-index:1;
@@ -1731,7 +1957,7 @@ mark_green{
 }*/
 
 /* Sweep To Right */
-.hvr-sweep-to-right, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+.hvr-sweep-to-right, .hvr-sweep-to-right:active, .hvr-sweep-to-right:focus {
   /*display: block;*/
   vertical-align: middle;
   -webkit-transform: translateZ(0);
@@ -1745,7 +1971,6 @@ mark_green{
   transition-property: color;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-  
   border: 1px solid #42dca3;
   border-radius: 4px;
   color: #42dca3;
@@ -1771,7 +1996,7 @@ mark_green{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-sweep-to-right:hover {
+.hvr-sweep-to-right:hover{
   color: black;
   background: transparent;
   border-color: none;
@@ -1889,11 +2114,9 @@ label input[type="radio"]:checked ~ i.icon.icon-check-square-o{
 label:hover input[type="radio"] ~ i.icon {
 	color: #42dca3;
 }
-
 div[data-toggle="buttons"] label.active{
     color: #42dca3;
 }
-
 div[data-toggle="buttons"] label {
 	display: inline-block;
 	/*position:relative;*/
@@ -1920,7 +2143,6 @@ div[data-toggle="buttons"] label {
 div[data-toggle="buttons"] label:hover {
 	color: #42dca3;
 }
-
 div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
 	-webkit-box-shadow: none;
 	box-shadow: none;
@@ -1928,7 +2150,7 @@ div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
 #speciation-radio{
   float: left;
 }
-@media(min-width:445px) {
+@media(min-width:426px) {
 	#speciation-radio{
 	  float: right !important;
 	}
@@ -1936,4 +2158,126 @@ div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active
 #speciation-label{
 	height: 2.1em;
 	line-height:2.1em;
+}
+.btn-wrap{
+	text-align: center;
+}
+.center-block-new {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*Accessibility changes*/
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+a.skip:active, 
+a.skip:focus, 
+a.skip:hover {
+	left: 0; 
+	top: 0;
+	width: auto; 
+	height: auto; 
+	overflow: visible; 
+}
+.label-custom2 {
+	background-color: rgba(42,42,43,0.25);
+	padding: 4px 4px 4px;
+	border-radius: 4px;
+	color:#68e3b6;
+}
+
+/*tab focus outlines on links */
+a {
+	padding: 1 px;
+}
+a:focus{ 
+	outline: 2px #ff00ff solid; 
+}
+.hvr-sweep-to-right:focus, .btnPly:focus, .btnFS:focus {
+	border-color:#ff00ff;
+	border-width:2px;
+}
+.hvr-sweep-to-right:active{
+	border-color:#42dca3;
+}
+/* Page Loader 
+This only works with JavaScript, 
+if it's not present, don't show loader http://smallenvelop.com/display-loading-icon-page-loads-completely/ */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: #000;
+	/*background-size: 25%;*/
+}/*
+.report-loading-img{
+	position: absolute;
+	background: url(../../img/epa_seal_trim_300.svg) center no-repeat;
+	z-index:5000;
+	width:100%;
+	height:100%;
+}
+.report-loading-text{
+	position: absolute;
+	bottom: 20%;
+    left: 0;
+    right: 0;
+    margin-top: -.85em;
+	font-size:1.7em;
+	z-index: 5000;
+	color:#42dca3;
+	text-align:center;
+}
+.report-loading-spinner{
+	position: absolute;
+    bottom: 15%;
+	left: 0;
+    right: 0;
+    margin-top: -.85em;
+	font-size:1.7em;
+	z-index: 5000;
+	text-align:center;
+} changed based on http://stackoverflow.com/questions/10008670/vertical-align-image-in-div and here http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/*/
+.report-loading-container{
+	position:relative;
+	/*background: url(../../img/epa_seal_trim_300.svg) center no-repeat;*/
+	z-index:5000;
+	width:100%;
+	height:100%;
+	/*font-size:1.7em;*/
+	z-index: 5000;
+	color:#42dca3;
+	text-align:center;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+.report-loading-position{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.report-loading-text{
+	font-size:1.7em;
+	padding-top:.25em;
+}
+img.epa_seal{
+	height:75%;
+	width:75%;
 }

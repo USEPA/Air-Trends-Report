@@ -1,0 +1,45 @@
+@media print{
+	body {
+		  color: #000;
+		  background: #fff;
+	}	
+	   
+	nav, aside {
+      display: none;
+	}
+	
+	body, article {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+
+   @page {
+      margin: 2cm;
+   }
+   
+	h2, h3 {
+		page-break-after: avoid;
+	}
+	
+	img {
+		max-width: 100% !important;
+	}
+	article {
+		page-break-before: always;
+	}
+	
+	ul, img {
+	page-break-inside: avoid;
+	}
+	
+	 article a {
+      font-weight: bolder;
+      text-decoration: none;
+   }
+
+   article a[href^=http]:after {
+      content:" <" attr(href) "> ";
+   }
+   
+}

@@ -70,7 +70,7 @@
   pollutantData.so2.breaks = [35,75,185];  
   pollutantData.so2.emissions = [{file:"so2.csv",title:"SO<sub>2</sub> Emissions"}];
 
-  var naaqsMap = new ClassifiedPointsMap("naaqsMap");
+  var naaqsMap = new ClassifiedPointsMap("naaqs-map");
   naaqsMap.topojson = topojson;
 //This variation is needed if map div is relative so that tooltip calculation will use relative calculations
   naaqsMap.useRelativeTooltip=true;

@@ -3,6 +3,7 @@ var ClassifiedPointsMap = function ClassifiedPointsMap(domID,percentSize) {
 
 //the container size to use for responsiveness
   this.containerID=domID + "-container";
+  //This is hacky. Not sure why I changed container to the map div.
   this.containerID=domID;
 
 //set this to make tooltip relative to a div not absolute to page
@@ -101,6 +102,9 @@ ClassifiedPointsMap.prototype.init = function () {
   this.tooltip.offset = {x:this.pointSize,y:this.pointSize};
       
   this.pointSymbology = function (d) {  
+    //If there is just one class then just return color
+    if (self.symbology.breaks.length==0) return self.symbologyScale(0);
+    
     var value = parseFloat(d[self.activeAttribute]);
 //if value is exactly equal to break point then make it the preceeding class
 //because d3 threshold scale uses break 1 <= value < break 2 but we want break 1 < value <= break 2 
@@ -340,8 +344,12 @@ ClassifiedPointsMap.prototype.plotPoints = function (pointData,symbology) {
 //These functions just make working with tooltip easier now that different things happen for click vs hover
  ClassifiedPointsMap.prototype.showToolTip = function (d,element) {
   var self = this;
-  self.tooltip.showToolTip(d,element);
-  if (self.externalMouseOver) self.externalMouseOver(d);
+
+  if (self.externalMouseOver) {
+  //Putting the mouseover thing into custom Render event which happens before copying to ghost div
+    self.tooltip.customRender = function () {return self.externalMouseOver(d);};
+  }    
+  self.tooltip.showToolTip(d,element);  
  };
 
  ClassifiedPointsMap.prototype.hideToolTip = function () {
@@ -396,6 +404,9 @@ ClassifiedPointsMap.prototype.setSymbology = function (symbology) {
  };
  
 ClassifiedPointsMap.prototype.drawLegend = function (width) {
+  //Don't draw legend if there is only one class
+  if (this.symbology.breaks.length==0) return;
+
   if (! width) width = this.width;
   var shapeWidth= Math.min(100,.9*width/this.symbology.colors.length);
      
@@ -405,10 +416,13 @@ ClassifiedPointsMap.prototype.drawLegend = function (width) {
     .orient('horizontal')
     .scale(this.symbologyScale)
     .labels(this.rangeLabels);
-    
-  d3.select("#naaqs-map-mapLegend").selectAll("*").remove();
 
-  this.legendElement = d3.select("#naaqs-map-mapLegend").append("svg")
+    //VERY hacky. need to figure out why i made the containerID the map DOM and not the container
+    //Must have been for resonsiveness
+  var legendSelect = d3.select("." + this.containerID + "-container .naaqs-map-mapLegend");    
+  legendSelect.selectAll("*").remove();
+
+  this.legendElement = legendSelect.append("svg")
       .attr("class","naaqs-map-legendLinear")
     .call(this.legendLinear);
       

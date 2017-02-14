@@ -32,6 +32,8 @@ var MapChartTooltip = function (host,tooltipClass) {
   this.showing=false;  
 //This to know that mouse is currently hovering so that click doesn't have to repeat hover stuff
   this.hovering=false;  
+  //this is custom function to render after normal render 
+  this.customRender = null;
 }
 
 
@@ -101,7 +103,8 @@ MapChartTooltip.prototype.renderToolTip = function (d) {
   },this);  
   
   this.content.html(html);
-  this.ghostDiv.html(html);
+  if (this.customRender) this.customRender();
+  this.ghostDiv.html(this.content.html());
 };
 
 //Note this function only rounds off decimals it does not round say 956 to 960
@@ -201,7 +204,7 @@ MapChartTooltip.prototype.moveToolTip = function(pointElement,useTransition) {
   
 //if tooltip is wider than window than resize to window width
   if (tooltipWidth > windowWidth) {
-    tooltip.outerWidth(windowWidth-20);
+    tooltip.outerWidth(windowWidth-200);
     tooltipHeight = tooltip.outerHeight(); //recalculate the height since changing width could change it  
   }else {
 //Now set the width of the tooltip in css so it doesn't wrap later

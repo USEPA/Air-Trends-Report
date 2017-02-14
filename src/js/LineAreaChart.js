@@ -1,6 +1,8 @@
 var LineAreaChart = function LineAreaChart(domID,minimumHeight,heightOverwidth,percentSize,toolTipClass) {
   var self = this;
   this.domID=domID;
+  //Can set this to get the container to use for auto sizing
+  this.containerID = null;
 //this is array of objects
   this.data=null;
   this.standard=null;
@@ -86,10 +88,14 @@ LineAreaChart.prototype.getChartHeight = function (height) {
 };
 
 LineAreaChart.prototype.getAutoSize = function () {
-//If no percent size then calculate from outer container 
-  if (this.autoSize===true)  this.percentSize = parseInt(d3.select("#" + this.domID).style('width'))/this.defaultWidth;    
-  
-  this.width= this.defaultWidth * this.percentSize;
+//If no percent size then calculate from outer container
+  var containerID = this.containerID || this.domID; 
+  var selectDomID = d3.select("#" + containerID);
+  if (! selectDomID.node()) return;
+  if (this.autoSize===true)  {
+    this.percentSize = parseInt(selectDomID.style('width'))/this.defaultWidth;      
+    this.width= this.defaultWidth * this.percentSize;
+  }
 //Don't let height go under minimum height. Ok to change aspect ratio on a chart  
 //note this.minimumHeight is min chart height
   var scaledChartHeight = Math.max(this.minimumHeight,this.getChartWidth(this.width) * this.heightOverwidth);
@@ -190,7 +196,7 @@ LineAreaChart.prototype.makeChart = function () {
   
   this.addTitle();
   this.addAxes();
-  this.addLegend();
+  if (this.addLegend) this.addLegend();
   this.drawPaths();
   this.addVerticalLine();
 
