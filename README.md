@@ -11,7 +11,7 @@ EPA released its 2016 annual air trends report in the form of an interactive web
   
 Users will also be able to share this content across social media, with one-click access to Facebook, Twitter, Pinterest, and other major social media sites.
 
-This repository contains the D3 code used in the Criteria Pollutant Trends section: https://gispub.epa.gov/air/trendsreport/2016/#naaqs_trends_
+This repository contains the code used throughout the 2016 trends report.
 
 This repo has been entered into the EPA's Reusable Component Services (RCS) system at:
 https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
