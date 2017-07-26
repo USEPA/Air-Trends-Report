@@ -1,0 +1,85 @@
+/* Print style */
+@media print{
+	@page{
+		size: letter portrait;
+		margin: .5in .5in .5in .5in;
+	}
+	body {
+		background:white;
+		font-size:10pt;
+		margin:0;
+	}
+	.fadein-trigger {
+		visibility: visible !important;
+		opacity: 1 !important;
+		/*display: block !important;
+		transition: none !important;
+		-moz-transition: none !important;
+		-webkit-transition: none !important;*/
+	}
+	data-src{
+		visibility: visible !important;
+	}
+	#fp-nav, .btn-dbl-border, .hi-icon-wrap, #vid-bkgrnd, #nasa-video, .vid-control, .bv-video, .bv-video-2, .tips, .etrends-chart-menu,
+	#naaqs-emissionMenu, .slider, .btnPlay, .btnStop, .etrends-map-home, .naaqsform-group, #weather-tabs, #visibility-tabs, .form-group,
+	.etrends-chart-menu-tooltip, .modal-footer, .close {
+		display: none !important;
+	}
+	section {
+		page-break-before: always;
+	}
+	.collapse  {
+		display: block !important;
+		height: auto !important;
+	}
+	.modal {
+		display: block !important;
+	}
+	.modal {
+		position: relative;
+	}
+	.modal-header, .modal-content {
+		border: none;
+	}
+	#modal-1, #modal-4 {
+		page-break-before: always;
+	}
+	.panel-info, #naaqs-container{
+		page-break-inside:avoid;
+	}
+	#naaqs-concentrations-chart-container {
+		margin-top:20px;
+	}
+	.link--yaku, #air-pollution-video, #naaqs-concentrations-averages-chart-container, #naaqs-map-container, #aqi-bar-chart, #visibility-map-container, #toxics-map-container {
+		margin-top: -40px;
+	}
+	#naaqs-concentrations-averages-chart-container, #naaqs-emissions-totals-chart-container, #naaqs-emissions-categories-chart-container, #growth-chart-container, #speciation-map-container, #weather-chart-container, #visibility-map-container,
+	 #toxics-map-container  {
+		margin-left: .625in;
+		margin-right: .625in;
+	}	
+	#naaqs-concentrations-chart-container, #naaqs-emissions-chart-container, #naaqs-map-container  {
+		margin-left: 1.5in;
+		margin-right: 1.5in;
+	}
+	#naaqs-emissions-totals-chart-modal {
+		margin-left: 1.2in;
+		margin-right: 1.2in;
+	}
+	a[href^="http://"]:after, a[href^="https://"]:after {
+		content: " (" attr(href) ")";
+		font-size: 80%;
+	}
+	a[href^="#"]:after {
+		display: none;
+	}
+	a {
+		word-wrap: break-word;
+		color: #000;
+		border:none;
+	}
+	.btn{
+		border: none;
+	}
+
+}

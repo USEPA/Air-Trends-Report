@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Annual Air Trends Report">
+    <meta name="author" content="U.S. EPA">
+	<meta name="keywords" content="environment,air,trends,naaqs,health,air quality,concentrations,emissions,air pollution,pollutants,EPA">
+    <title>Our Nation's Air 2017</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/css/etrends.css" /> 
+	<link rel="shortcut icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+  </head>
+ <body id="page-top" >
+
+	 <div id="fullpage">	
+		<section class="secFP">	
+			<div class="container-fluid">
+			   	<div class="row paddingfromtop">
+					<div class="col-md-8 col-lg-6" >
+						<div id="growth-chart-container" class="etrends-chart-container">
+							<div id="growth-chart-header" style="position:relative;">												
+								<div style="" id="growth-chart-title" class="etrends-chart-title"><span></span></div>
+								<div class='etrends-chart-menu'></div>
+								<div id="growth-chart-menu-tooltip" class="etrends-tooltip etrends-chart-menu-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>												
+								</div>
+							</div>
+							<div id="growth-chart" class="etrends-chart" style="position:relative">
+								<div id="growth-chart-tooltip" class="etrends-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>
+									<textarea style="display:none" class="template">
+										<table>
+											<tr><td class="etrends-tooltip-label">Year:</td><td><<d.Year:0>></td></tr>
+												<<loop:series>>
+											<tr style="vertical-align:bottom;display:<<f.seriesDisplayHideMissing:<<l.name>>>>">
+												<td class="etrends-tooltip-label etrends-chart-line-<<l.class>>"><<f.customSymbol:<<l.name>>>> <<l.name>>:</td><td><<d.<<l.name>>:digits>><<units>></td>
+											</tr>
+												<</loop>>
+										</table>           
+									</textarea>
+								</div>
+								<div class="etrends-chart-svg"></div>
+							</div>
+							<div id="growth-chart-legend" class="etrends-chart-legend" style=""></div>
+							<div class="attribution"><a href="https://www.epa.gov/aqs" target="_blank" title="Visit EPA Air Quality System website">Source: U.S. EPA Air Quality System</a></div>
+						</div>
+					</div>
+				</div>
+			</div>								
+		</section>
+	</div>
+	<!-- Export and Print Menu -->
+	<textarea style="display:none" class="etrends-chart-menu-tooltip-template-standard">
+		<ul class="export-list-style">
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.print('<<fileName>>',1500)"><i class="icon icon-print" aria-hidden="true"></i> Print</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportCSV('<<fileName>>.csv')"><i class="icon icon-export" aria-hidden="true"></i> Export Data</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportPNG('<<fileName>>.png',1500)"><i class="icon icon-export" aria-hidden="true"></i> Export PNG</a></li>
+		</ul>
+		<span style="display:<<convertYdomainToPercentDisplay>>" class="checkbox">
+			<label style="line-height:20px;padding-left:5px;">
+				<<convertYdomainToPercentLabel>>
+				<input class="etrends-tooltip-showPercent" type="checkbox" <<convertYdomainToPercentChecked>> onclick="<<dd.self.host.namespace>>.toggleYdomainToPercent(<<dd.self.host.namespace>>.export.revertConvertYdomainToPercent ? !this.checked : this.checked);" />
+			</label>
+		</span>
+	</textarea>
+	<!-- Growth chart svgs-->
+	<svg id="etrends-customSymbols-growth-GDP" style="display:none;">
+		<g transform="translate(0,0)">
+			<circle fill="rgba(242, 242, 242, 0.98)" cx="11" cy="11" r="11"/>
+			<path fill="#144a1a" d="M12,0C5.373,0,0,5.373,0,12s5.373,12,12,12s12-5.373,12-12S18.627,0,12,0z M13,16.947V18h-1v-0.998 c-1.035-0.018-2.106-0.266-3-0.727l0.455-1.645c0.956,0.371,2.229,0.766,3.225,0.54c1.149-0.26,1.385-1.442,0.114-2.011 c-0.931-0.434-3.778-0.805-3.778-3.243c0-1.363,1.039-2.583,2.984-2.85V6h1v1.018c0.725,0.019,1.536,0.145,2.441,0.42L15.08,9.085 c-0.768-0.27-1.617-0.515-2.443-0.465c-1.489,0.087-1.62,1.376-0.581,1.916C13.768,11.341,16,11.938,16,14.083 C16.002,15.801,14.657,16.715,13,16.947z"></path>
+		</g>
+	</svg>
+	<svg id="etrends-customSymbols-growth-VehicleMilesTraveled" style="display:none;">
+		<g transform="translate(0,0)">
+			<path fill="#fafafa" d="M23.352,1.622H0.648v22.703h22.703V1.622z"></path>
+			<path fill="#128a00" d="M5.56,14.225c0-0.51-0.182-0.946-0.544-1.31c-0.363-0.362-0.799-0.544-1.309-0.544s-0.946,0.182-1.309,0.544 c-0.363,0.363-0.544,0.8-0.544,1.31s0.182,0.945,0.544,1.309s0.799,0.545,1.309,0.545s0.946-0.182,1.309-0.545 S5.56,14.734,5.56,14.225z M5.977,10.517h11.769l-1.03-4.135c-0.016-0.062-0.07-0.129-0.162-0.203 c-0.094-0.074-0.174-0.11-0.244-0.11H7.414c-0.07,0-0.151,0.037-0.244,0.11C7.078,6.252,7.023,6.32,7.008,6.382L5.977,10.517z M21.869,14.225c0-0.51-0.182-0.946-0.545-1.31c-0.363-0.362-0.799-0.544-1.309-0.544s-0.946,0.182-1.309,0.544 c-0.363,0.363-0.545,0.8-0.545,1.31s0.182,0.945,0.545,1.309c0.362,0.363,0.799,0.545,1.309,0.545s0.945-0.182,1.309-0.545 S21.869,14.734,21.869,14.225z M23.722,13.111v4.448c0,0.108-0.034,0.197-0.104,0.267c-0.069,0.07-0.158,0.104-0.267,0.104h-1.112 v1.483c0,0.617-0.216,1.143-0.648,1.575c-0.432,0.433-0.957,0.648-1.575,0.648s-1.144-0.216-1.575-0.648 c-0.433-0.433-0.648-0.958-0.648-1.575v-1.483H5.929v1.483c0,0.617-0.216,1.143-0.648,1.575c-0.433,0.433-0.958,0.648-1.576,0.648 s-1.143-0.216-1.576-0.648c-0.432-0.433-0.648-0.958-0.648-1.575v-1.483H0.369c-0.108,0-0.197-0.034-0.267-0.104 c-0.07-0.07-0.104-0.158-0.104-0.267v-4.448c0-0.718,0.253-1.33,0.759-1.835c0.506-0.506,1.118-0.759,1.836-0.759h0.324l1.216-4.853 C4.311,4.938,4.712,4.33,5.338,3.839c0.625-0.49,1.316-0.735,2.073-0.735h8.896c0.756,0,1.447,0.245,2.072,0.735 c0.626,0.49,1.027,1.099,1.205,1.825l1.217,4.853h0.324c0.718,0,1.33,0.253,1.836,0.759c0.505,0.506,0.758,1.118,0.758,1.835H23.722z"></path>
+		</g>
+	</svg>
+	<svg id="etrends-customSymbols-growth-Population" style="display:none;">
+		<g transform="translate(0,-1)">
+			<path fill="#247cb7" d="M7.475,12C6.113,12.042,5,12.58,4.134,13.613H2.445c-0.689,0-1.269-0.17-1.739-0.51 C0.235,12.764,0,12.265,0,11.609c0-2.966,0.521-4.45,1.563-4.45c0.05,0,0.233,0.088,0.548,0.265C2.427,7.601,2.836,7.779,3.34,7.96 c0.504,0.181,1.004,0.271,1.5,0.271c0.563,0,1.122-0.097,1.676-0.29C6.475,8.252,6.454,8.53,6.454,8.773 C6.454,9.941,6.794,11.017,7.475,12z M20.975,20.029c0,1.009-0.307,1.805-0.92,2.389c-0.614,0.584-1.43,0.876-2.445,0.876H6.592 c-1.017,0-1.832-0.292-2.445-0.876s-0.92-1.38-0.92-2.389c0-0.445,0.015-0.88,0.044-1.305c0.03-0.424,0.088-0.882,0.177-1.373 c0.088-0.492,0.199-0.947,0.333-1.368c0.135-0.421,0.315-0.831,0.542-1.229c0.227-0.398,0.487-0.738,0.781-1.021 s0.653-0.507,1.078-0.674c0.425-0.167,0.893-0.251,1.406-0.252c0.084,0,0.265,0.091,0.542,0.271c0.277,0.182,0.584,0.383,0.92,0.605 s0.786,0.424,1.349,0.605c0.563,0.18,1.13,0.271,1.702,0.271c0.572,0,1.139-0.091,1.702-0.271c0.563-0.182,1.013-0.383,1.349-0.605 s0.644-0.424,0.92-0.605c0.277-0.18,0.459-0.271,0.543-0.271c0.512,0,0.98,0.084,1.405,0.252s0.784,0.393,1.077,0.674 c0.295,0.282,0.555,0.622,0.782,1.021c0.227,0.399,0.407,0.809,0.542,1.229c0.135,0.42,0.246,0.876,0.334,1.368 s0.146,0.949,0.176,1.373c0.03,0.424,0.045,0.859,0.045,1.305H20.975z M8.067,3.933c0,0.891-0.315,1.651-0.945,2.281 c-0.63,0.63-1.391,0.945-2.282,0.945c-0.891,0-1.651-0.315-2.281-0.945c-0.63-0.63-0.945-1.391-0.945-2.281 c0-0.891,0.315-1.651,0.945-2.282c0.63-0.63,1.391-0.945,2.281-0.945c0.891,0,1.651,0.315,2.282,0.945 C7.752,2.281,8.067,3.042,8.067,3.933z M16.941,8.773c0,1.336-0.473,2.477-1.418,3.422s-2.086,1.418-3.422,1.418 c-1.336,0-2.477-0.473-3.422-1.418s-1.418-2.086-1.418-3.422s0.473-2.477,1.418-3.422c0.945-0.945,2.086-1.418,3.422-1.418 c1.336,0,2.477,0.473,3.422,1.418C16.469,6.297,16.941,7.438,16.941,8.773z M24.201,11.609c0,0.656-0.234,1.153-0.705,1.494 s-1.051,0.511-1.739,0.511h-1.689c-0.865-1.033-1.979-1.572-3.341-1.614c0.682-0.983,1.021-2.059,1.021-3.227 c0-0.244-0.021-0.521-0.063-0.832c0.555,0.193,1.113,0.29,1.676,0.29c0.496,0,0.996-0.09,1.5-0.271s0.914-0.359,1.229-0.536 c0.315-0.177,0.498-0.265,0.548-0.265C23.682,7.159,24.201,8.643,24.201,11.609z M22.588,3.933c0,0.891-0.314,1.651-0.945,2.281 c-0.629,0.63-1.391,0.945-2.281,0.945s-1.65-0.315-2.281-0.945c-0.63-0.63-0.945-1.391-0.945-2.281c0-0.891,0.315-1.651,0.945-2.282 c0.631-0.63,1.391-0.945,2.281-0.945s1.652,0.315,2.281,0.945C22.273,2.281,22.588,3.042,22.588,3.933z"></path>
+		</g>
+	</svg>
+	<svg id="etrends-customSymbols-growth-EnergyConsumption" style="display:none;">
+		<g transform="translate(-2,0)">
+			<path fill="#0000e0" d="M14,19h-4c-0.276,0-0.5,0.225-0.5,0.5S9.724,20,10,20h4c0.275,0,0.5-0.225,0.5-0.5S14.275,19,14,19z M14,21 h-4c-0.276,0-0.5,0.225-0.5,0.5S9.724,22,10,22h4c0.275,0,0.5-0.225,0.5-0.5S14.275,21,14,21z M14.25,23h-4.5l1.188,0.782 C11.092,23.92,11.318,24,11.553,24h0.895c0.233,0,0.461-0.08,0.614-0.218L14.25,23z M18,9.201c0,3.568-3.214,5.982-3.214,8.799 H9.214C9.214,15.184,6,12.77,6,9.201c0-3.723,2.998-5.772,5.997-5.772C14.998,3.429,18,5.48,18,9.201z M22,8.51v1.372h-2.538 C19.482,9.659,19.5,9.434,19.5,9.201c0-0.237-0.018-0.464-0.035-0.69L22,8.51L22,8.51z M11.352,1.957V0h1.371v1.964 c-0.242-0.022-0.484-0.035-0.726-0.035C11.782,1.929,11.567,1.939,11.352,1.957z M7.609,3.251l-1.04-1.94l1.208-0.648l1.037,1.933 C8.396,2.777,7.992,2.997,7.609,3.251z M18.195,4.986l1.941-1.394l0.799,1.115L18.882,6.18C18.691,5.75,18.459,5.353,18.195,4.986z M15.186,2.597l1.037-1.934l1.209,0.648l-1.041,1.941C16.008,2.998,15.604,2.779,15.186,2.597z M5.117,6.18L3.063,4.708l0.799-1.115 l1.942,1.393C5.54,5.352,5.309,5.749,5.117,6.18z M18.824,12.403l2.354,0.955l-0.514,1.271l-2.426-0.981 C18.449,13.249,18.646,12.834,18.824,12.403z M5.716,13.559l-2.356,1.06l-0.562-1.251l2.34-1.052 C5.311,12.748,5.509,13.16,5.716,13.559z M4.538,9.882H2V8.51h2.535C4.517,8.736,4.5,8.964,4.5,9.201 C4.5,9.434,4.518,9.659,4.538,9.882z"></path>
+		</g>
+	</svg>
+	<svg id="etrends-customSymbols-growth-CO2" style="display:none;">
+		<g transform="translate(0,0)">
+			<path fill="#7a1578" d="M5,0c0.193,0,0.361,0.071,0.502,0.212s0.212,0.309,0.212,0.502v9.944l5.982-4.788 c0.126-0.104,0.275-0.156,0.446-0.156c0.193,0,0.361,0.071,0.502,0.212c0.143,0.141,0.213,0.309,0.213,0.502v4.229l5.981-4.788 c0.126-0.104,0.275-0.156,0.446-0.156c0.193,0,0.361,0.071,0.502,0.212C19.93,6.067,20,6.235,20,6.429v12.856 c0,0.193-0.071,0.361-0.213,0.503C19.646,19.93,19.479,20,19.285,20H0.714c-0.193,0-0.361-0.07-0.502-0.212S-0.001,19.479,0,19.285 V0.714c0-0.193,0.07-0.361,0.212-0.502C0.353,0.07,0.52,0,0.714,0H5L5,0z"></path>
+		</g>
+	</svg>
+	<svg id="etrends-customSymbols-growth-AggregateEmissions" style="display:none;">
+		<g transform="translate(0,0)">
+			<path fill="#fafafa" d="M23.02,1.9H1.9v17.28h21.12V1.9z"></path>
+			<path fill="#b200fd" d="M21.868,11.326l-1.601,1.594l-6.51-6.492l-2.872,2.874L5.201,3.7L3.847,5.062l7.043,6.952l2.881-2.882 l5.137,5.143l-1.647,1.642l5.76,1.172L21.868,11.326z M23.02,19.18v1.92H-0.02V1.9H1.9v17.28H23.02z"></path>
+		</g>
+	</svg>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+	<!--D3 libraries -->
+	<script src="dist/js/d3-libs.min.js"></script>
+	<!--D3 charts, plugins and custom code -->
+	<script src="src/js/EtrendsUtilities.js"></script>	
+	<script src="src/js/LineAreaChart.js"></script>
+	<script src="src/js/MapChartTooltip.js"></script>
+	<script src="src/js/MapChartResize.js"></script>
+	<script src="src/js/MapChartDebounce.js"></script>
+	<script src="src/js/MapChartLegend.js"></script>
+	<script src="src/js/MapChartTitle.js"></script>	
+	<script src="src/js/MapChartExportMenu.js"></script>	
+	<script src="src/js/growth.js"></script>
+	<script src="src/js/babyLegend.js"></script>
+	<script>
+      d3_queue.queue([1])
+  //have to pass the empty args other wise d3_queue passes callback as args
+    .defer(etrends.growth.babyLegend.getDataURLs,{})
+      .await(function () {
+        console.log("growth setup loaded");
+		etrends.growth.init();
+      });
+	</script>
+
+ </body>	
+ </html>
