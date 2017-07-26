@@ -33,7 +33,7 @@
   pollutantData.pb = {file:"1990-2015/pb.csv",title:"Lead 3-month Concentration",standard:.15,units:"\u03BCg/m\u00B3",digits:2,pollutantLabel:"Lead"}
   pollutantData.pb.breaks = [.07,.15,1.0];  
   pollutantData.pb.emissions = [];
-  pollutantData.pb.emissionsAlternateText = "As a result of the permanent phase-out of leaded gasoline, controls on emissions of lead compounds through EPA’s air toxics program, and other national and state regulations, airborne lead concentrations in the U.S. decreased 94 percent between 1980 and 2007. Since 1996, national Pb emissions have not changed significantly. In EPA’s most recent national inventory, the 2011 NEI, the highest amounts of Pb emissions are from Piston Engine Aircrafts, and Ferrous and Non-ferrous Metals industrial sources."
+  pollutantData.pb.emissionsAlternateText = "As a result of the permanent phase-out of leaded gasoline, controls on emissions of lead compounds through EPA’s air toxics program, and other national and state regulations, airborne lead concentrations in the U.S. decreased 98 percent between 1980 and 2005.  After 2005, the EPA methodology for lead changed and is not comparable to the 2005 and earlier numbers.  Since 2008, emissions have continued to decrease by 23 percent from 2008 to 2014.  In the 2014 NEI, the highest amounts of Pb emissions are from Piston Engine Aircrafts, and Ferrous and Non-ferrous Metals industrial sources."
 
 //Note used unicode characters to get subscripts for svg in charts  
   pollutantData.no2_mean = {file:"1990-2015/no2_mean.csv",title:"NO<sub>2</sub> Annual Concentration",standard:53,units:"ppb",digits:0,pollutantLabel:"NO<sub>2</sub> Annual"}

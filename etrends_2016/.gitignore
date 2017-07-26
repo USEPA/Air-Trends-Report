@@ -1,11 +1,11 @@
 *
-!.gitignore
 !Gruntfile.js
 !package.json
 !bower.json
 !.csslintrc
-!index.html
+!Web.config
 !README.md
+!*.html
 !src/
 !src/**
 !data/
@@ -16,7 +16,5 @@
 !img/**
 !video/
 !video/**
-!dist/
-!dist/**
 !Toxics2015Sparkplots/
 !Toxics2015Sparkplots/**

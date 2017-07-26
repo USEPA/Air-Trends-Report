@@ -418,7 +418,7 @@ $(function() {
 
 		Highcharts.Chart.prototype.downloadServerSide = function(content, extension, mime) {
 		  var options = (this.options.exporting || {}).csv || {};
-		  Highcharts.post(options.url || 'http://www.highcharts.com/studies/csv-export/download.php', {
+		  Highcharts.post(options.url || 'https://www.highcharts.com/studies/csv-export/download.php', {
 			data: content,
 			type: mime,
 			extension: extension
@@ -1666,4 +1666,28 @@ $(document).ready(function(){
 		// Animate loader off screen
 		$(".se-pre-con").fadeOut("slow");;
 	});
+
+// Insert date stamp for AQI forecast image
+Date.prototype.toMyString = function () {
+   //If month/day is single digit value add perfix as 0
+    function AddZero(obj) {
+          obj = obj + '';
+          if (obj.length == 1)
+              obj = "0" + obj
+          return obj;
+    }
+
+    var output = "";
+    output += this.getFullYear();
+    output += AddZero(this.getMonth()+1);
+    output += AddZero(this.getDate());
+
+    return output; 
+}
+
+var d = new Date();
+
+var link = document.getElementById("aqi-forecast-link");
+
+link.setAttribute("src","https://files.airnowtech.org/airnow/today/forecast_aqi_"+d.toMyString()+"_usa.jpg");
 
