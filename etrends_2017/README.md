@@ -13,7 +13,4 @@ EPA released its 2016 annual air trends report in the form of an interactive web
 * Check out air trends where you live.
 * Users will also be able to share this content across social media, with access to Facebook, Twitter, Pinterest, and other major social media sites.
 
-This repository contains the code used in the 2017 report currently in development at https://gisdev5.rtpnc.epa.gov/etrends_2017/
-
-The 2016 repo has been entered into the EPA's Reusable Component Services (RCS) system at: https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
-
+The repo has been entered into the EPA's Reusable Component Services (RCS) system at: https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
