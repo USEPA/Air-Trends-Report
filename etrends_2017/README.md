@@ -4,7 +4,7 @@ The United States Environmental Protection Agency (EPA) GitHub project code is p
 
 ## Description
 
-EPA released its 2016 annual air trends report in the form of an interactive web application (https://gispub.epa.gov/air/trendsreport/2017/). The report features a suite of visualization tools that allow the user to:
+EPA publishes an annual air trends report in the form of an interactive web application (https://gispub.epa.gov/air/trendsreport/2017/). The report features a suite of visualization tools that allow the user to:
 
 * Learn about air pollution and how it can affect our health and environment.
 * Compare key air emissions to gross domestic product, vehicle miles traveled, population, and energy consumption back to 1970.
