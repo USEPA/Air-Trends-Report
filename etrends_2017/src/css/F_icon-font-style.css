@@ -1,0 +1,564 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?8sm66e');
+  src:  url('../../fonts/icomoon.eot?8sm66e#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?8sm66e') format('truetype'),
+    url('../../fonts/icomoon.woff?8sm66e') format('woff'),
+    url('../../fonts/icomoon.svg?8sm66e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.icon {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+     /*line-height: 1;*/
+	vertical-align:-10%;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.subtext .icon {
+	vertical-align:-3%;
+}
+.icon-sm {
+	font-size: 90%;
+}
+.icon-lg {
+	font-size: 133%;
+}
+.icon-2x {
+	font-size: 200%;
+}
+.icon-3x {
+	font-size: 300%;
+}
+.icon-4x {
+	font-size: 400%;
+}
+.icon-reddit:before {
+  content: "\eac6";
+}
+.icon-epa_logo_black_sm:before {
+  content: "\e909";
+}
+.icon-epaflower:before {
+    content: "\e908";
+}
+.icon-arrow-up:before {
+    content: "\e907";
+	color: rgb(255,0,255);
+}
+.icon-square-o:before {
+    content: "\e906";
+	padding-right: 5px;
+}
+.icon-check-circle-o:before {
+    content: "\e901";
+}
+.icon-check-square-o:before {
+    content: "\e903";
+	padding-right: 2px;
+}
+.icon-circle-thin:before {
+    content: "\e904";
+}
+.icon-circle-o:before {
+    content: "\e905";
+}
+.icon-home:before {
+    content: "\f015";
+}
+.icon-line-chart-down:before {
+    content: "\e900";
+}
+.icon-envelope-o:before {
+    content: "\f003";
+}
+.icon-close:before {
+    content: "\f00d";
+}
+.icon-remove:before {
+    content: "\f00d";
+}
+.icon-times:before {
+    content: "\f00d";
+}
+.icon-play-circle-o:before {
+    content: "\f01d";
+}
+.icon-arrow-down:before {
+    content: "\f063";
+	color: #009900;
+}
+.icon-bar-chart:before {
+    content: "\f080";
+}
+.icon-bar-chart-o:before {
+    content: "\f080";
+}
+.icon-twitter:before {
+    content: "\f099";
+}
+.icon-facebook:before {
+    content: "\f09a";
+}
+.icon-facebook-f:before {
+    content: "\f09a";
+}
+.icon-hand-o-right:before {
+    content: "\f0a4";
+}
+.icon-hand-o-down:before {
+    content: "\f0a7";
+}
+.icon-globe:before {
+    content: "\f0ac";
+	vertical-align:-10%;
+}
+.icon-bars:before {
+    content: "\f0c9";
+	font-size:18px;
+}
+.icon-navicon:before {
+    content: "\f0c9";
+}
+.icon-reorder:before {
+    content: "\f0c9";
+}
+.icon-pinterest:before {
+    content: "\f0d2";
+}
+.icon-google-plus:before {
+    content: "\f0d5";
+}
+.icon-envelope:before {
+    content: "\f0e0";
+}
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+.icon-angle-double-down:before {
+    content: "\f103";
+	color: rgba(255,255,255,.65);
+}
+.icon-play-circle:before {
+    content: "\f144";
+	vertical-align:5%;
+}
+.icon-youtube-square:before {
+    content: "\f166";
+}
+.icon-youtube:before {
+    content: "\f167";
+}
+.icon-share-alt:before {
+    content: "\f1e0";
+	/*font-size:18px;*/
+}
+.icon-caret-down:before {
+  content: "\f0d7";
+  /*font-size:18px;*/
+}
+.icon-line-chart:before {
+    content: "\f201";
+}
+.icon-pause-circle:before {
+    content: "\f28b";
+	vertical-align:5%;
+}
+.icon-pause-circle-o:before {
+    content: "\f28c";
+}
+.icon-chevron-circle-down:before {
+    content: "\e902";
+}
+.icon-spinner:before {
+  content: "\e90a";
+}
+.icon-spinner2:before {
+  content: "\e97b";
+}
+.icon-spinner9:before {
+  content: "\e982";
+}
+.icon-enlarge:before {
+  content: "\e989";
+}
+.icon-shrink:before {
+  content: "\e98a";
+}/*
+.icon-Menu_Dots:before {
+  content: "\e90b";
+}*/
+.icon-download:before {
+  content: "\f019";
+}
+.icon-github:before {
+  content: "\f09b";
+}
+.icon-list_horizontal_AI:before {
+  content: "\e90b";
+}
+.icon-menu_dots_AI:before {
+  content: "\e90c";
+}
+.icon-list-menu-7:before {
+  content: "\e90d";
+}
+.icon-export:before {
+  content: "\e90e";
+}
+.icon-print:before {
+  content: "\f02f";
+}
+@keyframes anim-rotate {
+	0% {
+		-moz-transform: rotate(0);  
+		-webkit-transform: rotate(0);  
+		-o-transform: rotate(0);  
+		-ms-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-moz-transform: rotate(360deg);  
+		-webkit-transform: rotate(360deg);  
+		-o-transform: rotate(360deg);  
+		-ms-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+.spinner {
+	display: inline-block;
+	/*font-size:1em;
+	height: 1em;
+	line-height: 1;*/
+	margin: .5em;
+	animation: anim-rotate 2s infinite linear;
+	color: #0071bc;
+	/*text-shadow: 0 0 .25em rgba(255,255,255, .1);*/
+}
+/*
+.hi-icon-wrap {
+	text-align: center;
+	margin: 0 auto;
+	padding: 1em 0 1.5em;
+}
+
+.hi-icon {
+	display: inline-block;
+	font-size: 0px;
+	cursor: pointer;
+	margin: 7.5px 15px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color: #fff;
+	border-bottom:none;
+}
+
+.hi-icon:after {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	content: '';
+	-webkit-box-sizing: content-box; 
+	-moz-box-sizing: content-box; 
+	box-sizing: content-box;
+}
+
+.hi-icon:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-size: 24px;
+	line-height: 45px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	display: block;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media(min-width:768px) {
+	.hi-icon-wrap {
+		text-align: center;
+		margin: 0 auto;
+		padding: .2em 0 .5em;
+	}
+
+	.hi-icon {
+		display: inline-block;
+		font-size: 0px;
+		cursor: pointer;
+		margin: 15px 30px;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		text-align: center;
+		position: relative;
+		z-index: 1;
+		color: #fff;
+		border-bottom:none;
+	}
+
+	.hi-icon:after {
+		pointer-events: none;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		content: '';
+		-webkit-box-sizing: content-box; 
+		-moz-box-sizing: content-box; 
+		box-sizing: content-box;
+	}
+
+	.hi-icon:before {
+		font-family: 'icomoon';
+		speak: none;
+		font-size: 48px;
+		line-height: 90px;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		display: block;
+		-webkit-font-smoothing: antialiased;
+	}
+}*/
+
+/* Effect 8 
+.hi-icon-effect-8 .hi-icon {
+	background: rgba(255,255,255,0.2);
+	-webkit-transition: -webkit-transform ease-out 0.1s, background 0.2s;
+	-moz-transition: -moz-transform ease-out 0.1s, background 0.2s;
+	transition: transform ease-out 0.1s, background 0.2s;
+}
+
+.hi-icon-effect-8 .hi-icon:after {
+	top: 0;
+	left: 0;
+	padding: 0;
+	z-index: -1;
+	box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+.hi-icon-effect-8 .hi-icon:hover {
+	background: rgba(255,255,255,0.05);
+	-webkit-transform: scale(0.93);
+	-moz-transform: scale(0.93);
+	-ms-transform: scale(0.93);
+	transform: scale(0.93);
+	color: #fff;
+}
+
+.hi-icon-effect-8 .hi-icon:hover:after {
+	-webkit-animation: sonarEffect 1.3s ease-out 75ms;
+	-moz-animation: sonarEffect 1.3s ease-out 75ms;
+	animation: sonarEffect 1.3s ease-out 75ms;
+}
+
+@-webkit-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+		-webkit-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@-moz-keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+		-moz-transform: scale(1.5);
+		opacity: 0;
+	}
+}
+@keyframes sonarEffect {
+	0% {
+		opacity: 0.3;
+	}
+	40% {
+		opacity: 0.5;
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+	}
+	100% {
+		box-shadow: 0 0 0 2px rgba(255,255,255,0.1), 0 0 10px 10px #0071bc, 0 0 0 10px rgba(0,153,0,0.5);
+		transform: scale(1.5);
+		opacity: 0;
+	}
+}*/
+/* Landing Page Title Effect https://tympanus.net/codrops/2015/05/13/inspiration-for-text-styles-and-hover-effects/ */
+/* Grid */
+.grid__item {
+	/*height: calc(100vh - 40px);*/
+	height: 100vh;
+	min-height: 460px;
+	/*max-width: calc(100vw - 40px);*/
+	max-width: 100vw;
+	/*background: #DDD;
+	margin: 20px;
+	padding: 100px 0;*/
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-transform: translate3d(0,0,0); /* Solves Safari bug because of SVG clipping mask */
+}
+/* General link styles */
+a.link {
+	outline: none;
+	text-decoration: none;
+	position: relative;
+	/*font-size: 8em;
+	line-height: 1;*/
+	/*color: #9e9ba4;  initial color of main text */
+	display: inline-block;
+	/*border-bottom:none;*/
+}
+/* Yaku */
+a.link--yaku,
+a.link--yaku:focus {
+	color: rgba(255,255,255,.55); /* initial text color */
+	font-family: "Playfair Display", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 7em; /* was 10 em */
+	overflow: hidden;
+	padding: 0 0 10px;
+	line-height: 1.4; /* added to add padding above main text */
+	border-bottom:none;
+}
+.link--yaku::before{
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border-width: 4px 0;
+	border-color: rgba(255,255,255,1);
+	border-style: solid;
+	left: 0;
+	-webkit-transform: translate3d(-151%,0,0); /* how far outside of the text the border is before hovering; was 101% */
+	transform: translate3d(-151%,0,0);
+	-webkit-transition: -webkit-transform 0.5s; /* amount of time to draw borders */
+	transition: transform 0.5s;
+}
+.link--yaku:hover::before {
+	-webkit-transform: translate3d(0,0,0); /* how much of the borders show on hover */
+	transform: translate3d(0,0,0);
+}
+.link--yaku span {
+	display: inline-block;
+	position: relative;
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	transform: perspective(1000px) rotate3d(0,1,0,0deg);
+	-webkit-transition: -webkit-transform 0.5s, color 0.5s;
+	transition: transform 0.5s, color 0.5s;
+}
+.link--yaku:hover span {
+	color: rgba(255,255,255,1); /* color of main text after finished rotating */
+	-webkit-transform: perspective(1000px) rotate3d(0,1,0,360deg);
+	transform: perspective(1000px) rotate3d(0,1,0,360deg);
+}
+.link--yaku span:nth-child(3),
+.link--yaku:hover span:first-child {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.link--yaku span:nth-child(2),
+.link--yaku:hover span:nth-child(2) {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+.link--yaku span:first-child,
+.link--yaku:hover span:nth-child(3) {
+	-webkit-transition-delay: .4s;
+	transition-delay: .4s;
+}
+.link--yaku .subtext {
+	/*font-style: italic;*/
+	font-size: 20%;
+	font-weight: 400;
+	position: absolute;
+	right: 15px;
+	color: #bbd9f7; /*subtext color */
+	bottom: 5px;
+	opacity: 0;
+	-webkit-transform: translate3d(-10px,-10px,0);
+	transform: translate3d(-10px,-10px,0);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+.link--yaku:hover .subtext {
+	opacity: 1; /* subtxt opacity */
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+@media screen and (max-width: 728px) { /* was 42em ~672px wide */
+	a.link--yaku, a.link--yaku:focus { font-size: 4em; }
+}
+
+
+/* when attempting to set up title as svg 
+ from combo of http://soqr.fr/testsvg/embed-svg-liquid-layout-responsive-web-design.php and https://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/ */
+.svg-container{
+	display: inline-block;
+	position: relative;
+	width: 50%;
+	/*height:100%;*/
+	padding-bottom: 17%; /*svg height divided by width * 50% padding-bottom */
+	/*vertical-align: middle; set by reportIntro-body table */
+	overflow: hidden;
+}
+.svg-content { 
+	/*display: inline-block;*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 108.5px; /* 7em x 15.5px = 108.5 */
+	fill: #ffffff;
+	opacity: .65;
+	height:100%;
+}

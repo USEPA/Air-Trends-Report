@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Annual Air Trends Report">
+    <meta name="author" content="U.S. EPA">
+	<meta name="keywords" content="environment,air,trends,naaqs,health,air quality,concentrations,emissions,air pollution,pollutants,EPA">
+    <title>Our Nation's Air 2017</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/css/etrends.css" /> 
+	<link rel="shortcut icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+  </head>
+ <body id="page-top" >
+
+    <div id="fullpage">	
+		<section class="secFP">	
+			<div class="container-fluid">
+			   	<div class="row paddingfromtop">
+					<div class="col-md-6 col-lg-5" >
+						<h3>Visibility Map</h3>
+						<div id="visibility-tabs" class="etrends-chart-tabs" >
+							<ul>
+							</ul>
+						</div>
+						<div id="visibility-map-container" class="etrends-map-container">
+							<div id="visibility-map-header" style="position:relative;">
+								<div id="visibility-map-home" class="etrends-map-home" style="cursor: pointer;" onclick="etrends.visibility.map.resetZoom();" title="Reset map"></div>
+								<div style="" id="visibility-map-title" class="etrends-chart-title">
+								</div>
+								<div class="etrends-chart-menu"></div>
+								<div id="visibility-map-menu-tooltip" class="visibility-chart-menu-tooltip etrends-tooltip etrends-chart-menu-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>												
+								</div>
+							</div>
+							<div id="visibility-map" style="position:relative">
+								<div id="visibility-map-tooltip" class="etrends-tooltip" style="display:none;width:400px;">
+										<div id="visibility-chart-container" class="etrends-chart-container">
+											<div id="visibility-chart-header" style="position:relative;">												
+												<div style="" id="visibility-chart-title" class="etrends-chart-title"><span></span></div>
+												<div class="etrends-chart-menu"></div>
+												<div id="visibility-chart-menu-tooltip" class="visibility-chart-menu-tooltip etrends-tooltip etrends-chart-menu-tooltip" style="display:none;white-space:nowrap">
+													<div class="content"></div>												
+												</div>
+											</div>
+
+											<div id="visibility-chart" class="etrends-chart" style="position:relative">
+												<div id="visibility-chart-tooltip" class="visibility-chart-tooltip etrends-tooltip" style="display:none;white-space:nowrap">
+													<div class="content"></div>
+												</div>
+												<div id="visibility-chart-percentile-tooltip" class="etrends-tooltip" style="display:none;width:25em;white-space:normal">
+													The blue band shows the distribution of values among the national stat sites, displaying the middle 80 percent. Ninety percent of sites have values below the top line, while ten percent have values below the bottom line.
+												</div>
+												<div class="etrends-chart-svg"></div>
+											</div>
+											<div id="visibility-chart-legend" class="etrends-chart-legend"></div>
+										  <div class="attribution"><a href="http://vista.cira.colostate.edu/Improve/" target="_blank" title="Visit IMPROVE program website">Source: IMPROVE</a></div>
+										</div>																
+									<div class="content" style=""></div>
+									<div style="margin-top:2em">
+										<a class="etrends-tooltip-maximize" style="cursor: pointer;" onclick="etrends.visibility.map.tooltip.maximizeWidth();"><i class="icon icon-enlarge" aria-hidden="true" title="Maximize chart"></i> Maximize</a>  
+										<a class="etrends-tooltip-minimize" style="display:none;cursor: pointer;" onclick="etrends.visibility.map.tooltip.minimizeWidth();"><i class="icon icon-shrink" aria-hidden="true" title="Minimize chart"></i> Minimize</a>  
+										<a class="etrends-tooltip-close" style="cursor: pointer;" onclick="etrends.visibility.map.closeToolTip();">Close <i class="icon icon-times" aria-hidden="true" title="Close chart"></i></a>
+									</div>
+									<textarea style="display:none" class="template">
+										<table style="" align="center">
+											<tr><td class="etrends-tooltip-label">Site ID:</td><td><<d.Siteid>></td></tr>
+											<tr><td class="etrends-tooltip-label">Site Name:</td><td><<d.Site_Name>></td></tr>
+											<tr><td class="etrends-tooltip-label">National Stats Site:</td><td><<d.National_Trend_site>></td></tr>
+											<tr><td class="etrends-tooltip-label">Overall Trend:</td><td><<d.Trend>></td></tr>
+										</table>								           
+									</textarea>
+									<textarea style="display:none" class="visibility-chart-tooltip-template">
+										<table>
+											<tr><td class="etrends-tooltip-label">Year:</td><td><<d.year:0>></td></tr>
+											<tr><td class="etrends-tooltip-label">Maximum:</td><td><<d.max:digits>> <<units>></td></tr>
+											<tr><td class="etrends-tooltip-label">90th Percentile:</td><td><<d.p90:digits>> <<units>></td></tr>
+											<tr><td class="etrends-tooltip-label">10th Percentile:</td><td><<d.p10:digits>> <<units>></td></tr>
+											<tr><td class="etrends-tooltip-label">Minimum:</td><td><<d.min:digits>> <<units>></td></tr>
+											<tr><td class="etrends-tooltip-label">National Average:</td><td><<d.avg:digits>> <<units>></td></tr>
+											<tr class="<<f.isHidden:d.selectedSite>>"><td class="etrends-tooltip-label etrends-chart-line-selectedSite">Selected Site:</td><td><<d.selectedSite:digits>> <<units>></td></tr>
+										</table>           
+									</textarea>
+								</div>
+							</div>
+							<div id="visibility-map-legend" class="etrends-map-legend"></div>
+						  <div class="attribution"><a href="http://vista.cira.colostate.edu/Improve/" target="_blank" title="Visit IMPROVE program website">Source: IMPROVE</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>	
+<!-- Export and Print Menu -->
+	<textarea style="display:none" class="etrends-chart-menu-tooltip-template-standard">
+		<ul class="export-list-style">
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.print('<<fileName>>',1500)"><i class="icon icon-print" aria-hidden="true"></i> Print</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportCSV('<<fileName>>.csv')"><i class="icon icon-export" aria-hidden="true"></i> Export Data</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportPNG('<<fileName>>.png',1500)"><i class="icon icon-export" aria-hidden="true"></i> Export PNG</a></li>
+		</ul>
+		<span style="display:<<convertYdomainToPercentDisplay>>" class="checkbox">
+			<label style="line-height:20px;padding-left:5px;">
+				<<convertYdomainToPercentLabel>>
+				<input class="etrends-tooltip-showPercent" type="checkbox" <<convertYdomainToPercentChecked>> onclick="<<dd.self.host.namespace>>.toggleYdomainToPercent(<<dd.self.host.namespace>>.export.revertConvertYdomainToPercent ? !this.checked : this.checked);" />
+			</label>
+		</span>
+	</textarea>
+	<!--Visibility and Toxics custom map symbols -->
+	<svg style="display:none" id="etrends-customSymbols-circle-thin-double-down">
+		<path fill="#00008B" stroke="#f2f2f2" stroke-width="2px" d="M30.863,16.5c0,2.566-0.631,4.932-1.896,7.1c-1.265,2.166-2.979,3.883-5.147,5.146	c-2.166,1.264-4.532,1.896-7.098,1.896c-2.566,0-4.932-0.634-7.099-1.896c-2.167-1.264-3.883-2.98-5.147-5.146	c-1.264-2.168-1.896-4.533-1.896-7.1c0-2.566,0.632-4.932,1.896-7.099s2.98-3.883,5.147-5.147c2.167-1.264,4.533-1.896,7.099-1.896	c2.565,0,4.932,0.632,7.098,1.896c2.168,1.264,3.884,2.98,5.147,5.147C30.232,11.568,30.863,13.934,30.863,16.5z"></path>
+		<path d="m 22.651299,16.310924 -5.924543,5.924535 -5.924553,-5.924535 1.073909,-1.039168 4.122636,4.122638 0,-9.008015 1.455271,0 0,9.008015 4.157375,-4.122638 z"
+			style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.83075857;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" ></path>
+	</svg>
+	<svg style="display:none" id="etrends-customSymbols-circle-thin-single-down">
+		<path fill="#2574A9" stroke="#f2f2f2" stroke-width="2px" d="M30.863,16.5c0,2.566-0.631,4.932-1.896,7.1c-1.265,2.166-2.979,3.883-5.147,5.146	c-2.166,1.264-4.532,1.896-7.098,1.896c-2.566,0-4.932-0.634-7.099-1.896c-2.167-1.264-3.883-2.98-5.147-5.146	c-1.264-2.168-1.896-4.533-1.896-7.1c0-2.566,0.632-4.932,1.896-7.099s2.98-3.883,5.147-5.147c2.167-1.264,4.533-1.896,7.099-1.896	c2.565,0,4.932,0.632,7.098,1.896c2.168,1.264,3.884,2.98,5.147,5.147C30.232,11.568,30.863,13.934,30.863,16.5z"></path>
+		<path  d="m 23.7375,16.5005 -7.016001,7.016 -7.0159985,-7.016 1.2717395,-1.230601 4.882139,4.882141 0,-10.6675399 1.723369,0 0,10.6675399 4.923274,-4.882141 z"
+			style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1" ></path>
+	</svg>
+	<svg style="display:none" id="etrends-customSymbols-circle-thin-minus">
+		<path fill="#40A58E" stroke="#F2F2F2" stroke-width="2px" d="M30.863,16.5c0,2.566-0.631,4.932-1.896,7.1c-1.265,2.166-2.979,3.883-5.147,5.146	c-2.166,1.264-4.532,1.896-7.098,1.896c-2.566,0-4.932-0.634-7.099-1.896c-2.167-1.264-3.883-2.98-5.147-5.146	c-1.264-2.168-1.896-4.533-1.896-7.1c0-2.566,0.632-4.932,1.896-7.099s2.98-3.883,5.147-5.147c2.167-1.264,4.533-1.896,7.099-1.896	c2.565,0,4.932,0.632,7.098,1.896c2.168,1.264,3.884,2.98,5.147,5.147C30.232,11.568,30.863,13.934,30.863,16.5z"></path>
+		<path d="m 10.553867,15.467368 12.335267,0 0,2.066264 -12.335267,0 z"
+			style="opacity:0.7;fill:#ffffff;stroke:#ffffff;stroke-width:1.53373361;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" ></path>
+	</svg>
+	<svg style="display:none" id="etrends-customSymbols-circle-thin-single-up">
+		<path fill="#A74165" stroke="#F2F2F2" stroke-width="2px" d="M30.863,16.5c0,2.566-0.631,4.932-1.896,7.1c-1.265,2.166-2.979,3.883-5.147,5.146	c-2.166,1.264-4.532,1.896-7.098,1.896c-2.566,0-4.932-0.634-7.099-1.896c-2.167-1.264-3.883-2.98-5.147-5.146	c-1.264-2.168-1.896-4.533-1.896-7.1c0-2.566,0.632-4.932,1.896-7.099s2.98-3.883,5.147-5.147c2.167-1.264,4.533-1.896,7.099-1.896	c2.565,0,4.932,0.632,7.098,1.896c2.168,1.264,3.884,2.98,5.147,5.147C30.232,11.568,30.863,13.934,30.863,16.5z"></path>
+		<path d="m 9.7055006,16.5005 7.0160004,-7.016 7.015999,7.016 -1.27174,1.230601 -4.882139,-4.882141 0,10.66754 -1.723369,0 0,-10.66754 -4.923274,4.882141 z"
+			style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:1" ></path>
+	</svg>
+	<svg style="display:none" id="etrends-customSymbols-circle-thin-double-up">
+		<path fill="#B200FD" stroke="#F2F2F2" stroke-width="2px" d="M30.863,16.5c0,2.566-0.631,4.932-1.896,7.1c-1.265,2.166-2.979,3.883-5.147,5.146	c-2.166,1.264-4.532,1.896-7.098,1.896c-2.566,0-4.932-0.634-7.099-1.896c-2.167-1.264-3.883-2.98-5.147-5.146	c-1.264-2.168-1.896-4.533-1.896-7.1c0-2.566,0.632-4.932,1.896-7.099s2.98-3.883,5.147-5.147c2.167-1.264,4.533-1.896,7.099-1.896	c2.565,0,4.932,0.632,7.098,1.896c2.168,1.264,3.884,2.98,5.147,5.147C30.232,11.568,30.863,13.934,30.863,16.5z"></path>
+		<path  d="m 10.791702,16.690076 5.924543,-5.924535 5.924553,5.924535 -1.073909,1.039168 -4.122636,-4.122638 0,9.008015 -1.455271,0 0,-9.008015 -4.157375,4.122638 z"
+			style="opacity:0.7;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.83075857;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" ></path>
+	</svg>
+	<!-- Note for circles I used css style attribute to override a stroke set for circles in etrends-map-points circle class -->
+	<svg id="etrends-customSymbols-Undetermined" style="display:none;">
+		<circle stroke-width="2px" stroke="#f2f2f2" r="15" cx="16" cy="16" fill="#999999" opacity="1" ></circle>
+	</svg>
+	<svg id="etrends-customSymbols-NoData" style="display:none">
+		<circle r="15" cx="15" cy="15" fill="black" opacity="1" ></circle>
+	</svg>
+	<svg id="etrends-customSymbols-MovingPoint" style="display:none">
+		<circle r="6" cx="6" cy="6" fill="yellow" stroke="black" stroke-width="2.5" opacity="1" ></circle>
+	</svg>
+	<svg id="etrends-customSymbols-MissingSymbol" style="display:none">
+		<circle r="15" cx="15" cy="15" fill="red"></circle>
+	</svg>	
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+	<!--D3 libraries -->
+	<script src="dist/js/d3-libs.min.js"></script>
+	<!--D3 charts, plugins and custom code -->
+	<script src="src/js/EtrendsUtilities.js"></script>	
+	<script src="src/js/ClassifiedPointsMap.js"></script>
+	<script src="src/js/LineAreaChart.js"></script>
+	<script src="src/js/MapChartTooltip.js"></script>
+	<script src="src/js/MapChartResize.js"></script>
+	<script src="src/js/MapChartDebounce.js"></script>
+	<script src="src/js/MapChartLegend.js"></script>
+	<script src="src/js/MapChartTitle.js"></script>	
+	<script src="src/js/MapChartExportMenu.js"></script>	
+	<script src="src/js/StatsCalculator.js"></script>
+	<script src="src/js/visibility.js"></script>
+	<script>
+		etrends.visibility.init();
+	</script>
+
+ </body>	
+ </html>
