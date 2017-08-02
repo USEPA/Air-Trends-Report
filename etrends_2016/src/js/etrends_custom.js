@@ -1691,3 +1691,21 @@ var link = document.getElementById("aqi-forecast-link");
 
 link.setAttribute("src","https://files.airnowtech.org/airnow/today/forecast_aqi_"+d.toMyString()+"_usa.jpg");
 
+/*!
+ * Remove emissions tab tip text when lead is selected
+ */
+ 
+	$(document).ready(function(){
+		$('#naaqs-pollutant-dropdown').on('change', function() {
+		  if ( this.value == 'pb')
+		  
+		  {
+			$(".emissions-tab-tip").hide();
+		  }
+		  else
+		  {
+			$(".emissions-tab-tip").show();
+		  }
+		});
+	});
+
