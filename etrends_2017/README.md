@@ -13,4 +13,6 @@ EPA publishes an annual air trends report in the form of an interactive web appl
 * Check out air trends where you live.
 * Users will also be able to share this content across social media, with access to Facebook, Twitter, Pinterest, and other major social media sites.
 
+This repository contains the code used throughout the 2017 trends report.
+
 The repo has been entered into the EPA's Reusable Component Services (RCS) system at: https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
