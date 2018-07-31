@@ -15,5 +15,5 @@ EPA released its 2016 annual air trends report in the form of an interactive web
 
 This repository contains the code used in the 2018 report.
 
-The 2016 repo has been entered into the EPA's Reusable Component Services (RCS) system at: https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
+The air trends report repo has been entered into the EPA's Reusable Component Services (RCS) system at: https://ofmpub.epa.gov/sor_internet/registry2/reusereg/searchandretrieve/details/general/9717
 
