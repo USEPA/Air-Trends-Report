@@ -1,0 +1,305 @@
+/* BOOTSTRAP CSS CHANGES to panels, labels, modals, forms, selects, thumbnails and nav-tabs */
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 3px;
+}
+.panel {
+  margin-bottom: 20px;
+  background-color: #fafafa; /* default is #fff change for different accordion background color */
+  color: #1a1a1a; /* added */
+  border: 1px solid transparent;  /*default is 1px */
+  border-radius: 3px;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+		  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  /*-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+		 box-shadow: 0 1px 1px rgba(0, 0, 0, .05); */
+} 
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.143em;
+  color: inherit;
+}
+.panel-info {
+  border-color: #e6e6e6;
+}
+.panel-heading {
+  padding: 7px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px; /*needs to match line 1404 radius */
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; /* added because not using panel-footer*/
+  border-bottom-left-radius: 3px;
+}
+.panel-info > .panel-heading {
+  color: #0071bc;
+  background-color: #fff;
+  /*border-color: #42dca3;*/
+}
+.panel-info  a {
+	border-bottom: none;
+}
+.panel-info > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #e6e6e6;
+}/*
+.panel-body h4 {
+	margin: 0 0 5px;
+	display: inline;
+}*/
+.panel-body{
+	padding: 10px 15px 0;
+}
+/*.panel-body{
+	font-size:90%;
+	line-height:1.5;
+}*/
+.label-custom {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 95%; /*75%*/
+  font-weight: 600; /*bold*/
+  line-height: 1.1; /*1*/
+  color: inherit; /*#fff*/
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  text-transform: uppercase; /*na*/
+  background-color: #e6e6e6;
+}
+.mark_blue{
+	background-color: #2574A9;
+    color: #fff;
+}
+.mark_pink{
+	background-color: #A74165;
+    color: #fff;
+}
+.mark_green{
+	background-color: #40A58E;
+    color: #fff;
+}
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  color: #1a1a1a; /* added */
+  -webkit-background-clip: padding-box;
+		  background-clip: padding-box;
+  border: 1px solid #e6e6e6;
+  border: 5px solid rgba(20, 96, 170, .4);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+		  box-shadow: 0 3px 9px rgba(0, 0, 0, .5); 
+} 
+.modal-header {
+  min-height: 16.42857143px;
+  padding: 6px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.modal-footer {
+  padding: 6px;
+  text-align: right;
+  border-top: 1px solid #e6e6e6;
+}
+.modal.fade .modal-dialog {
+	-webkit-transform: scale(0.1);
+	-moz-transform: scale(0.1);
+	-ms-transform: scale(0.1);
+	transform: scale(0.1);
+	top: 300px;
+	opacity: 0;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+.modal.fade.in .modal-dialog {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-transform: translate3d(0, -300px, 0);
+	transform: translate3d(0, -300px, 0);
+	opacity: 1;
+}
+.modal-open[style] {
+	padding-right: 0px !important;
+}
+.modal {
+		z-index:9999;
+}
+.close {
+  float: right;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 1;
+  color: #0071bc;
+  /*text-shadow: 0 1px 0 #fff;
+  filter: alpha(opacity=20);*/
+  opacity: .8;
+  outline: none;
+}
+.close:hover, .close:active{
+	color:#0071bc;
+}
+
+select::-ms-expand {	
+	display: none; /*Removes default style and caret IE*/
+}
+select::-ms-value {
+	background: none; /* Removes default blue background on selections in IE http://stackoverflow.com/questions/13170137/how-to-modify-select-tags-default-highlight-behaviour-in-ie-and-opera*/
+	color: #0071bc; /* but IE default text is white so this is needed */
+}
+select {
+    border: 2px solid #e6e6e6;
+	border-radius: 3px;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+}
+select:-moz-focusring { 
+	color: transparent;
+    text-shadow: 0 0 0 #0071bc; 
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.429em;
+  padding: .36em .76em;
+  font-size: .92em;
+  line-height: 1.42857143;
+  color: #0071bc; /* default is 555 */
+  background-color: #fff;  /* default is fff */
+  background-image: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  /*-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);*/
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+		  box-shadow: 1px 1px 6px rgba(0, 0, 0, .2);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	 transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; 
+}
+.form-control:focus {
+  border-color: #e6e6e6; /* needed to remove default bootstrap blue border when selected */
+  outline: 0 !important; 
+  -webkit-box-shadow: inset 0 1px 1px rgba(255,255,255,.075), 0 0 8px rgba(20, 96, 170, .6);
+          box-shadow: inset 0 1px 1px rgba(255,255,255,.075), 0 0 8px rgba(20, 96, 170, .6);
+}
+.form-control-caret {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+PHBhdGggZmlsbD0iIzE0NjBhYSIgZD0iTTE2IDExcTAgMC40MDYtMC4yOTcgMC43MDNsLTcgN3EtMC4yOTcgMC4yOTctMC43MDMgMC4yOTd0LTAuNzAzLTAuMjk3bC03LTdxLTAuMjk3LTAuMjk3LTAuMjk3LTAuNzAzdDAuMjk3LTAuNzAzIDAuNzAzLTAuMjk3aDE0cTAuNDA2IDAgMC43MDMgMC4yOTd0MC4yOTcgMC43MDN6Ij48L3BhdGg+PC9zdmc+');
+  background-size: .85em;
+  padding-right: 25px;
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/*
+.thumbnail {
+  display: block;
+  padding: 4px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  -webkit-transition: border .2s ease-in-out;
+       -o-transition: border .2s ease-in-out;
+          transition: border .2s ease-in-out;
+}
+*/
+.thumbnail .caption {
+  padding: 5px;
+  color: #0071bc;
+}
+.thumbnail a {
+	border-bottom: none;
+}
+.img-center{
+	margin:0 auto;
+}
+
+.nav-tabs {
+  position:relative;
+  border-bottom: 0;
+  text-align:center;
+}
+
+.nav-tabs > li > a { /*non active tab */
+  line-height: 1.42857143;
+  border: solid 1px #e6e6e6;
+  border-bottom: 0;
+  border-radius: 3px 3px 0 0;
+  font-size:1.2em;
+  color: #1a1a1a;
+  background-color: transparent;
+  padding: .25em .75em;
+  margin: 0 .25em;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+		  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.15);
+}
+
+.nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+  border-color:#e6e6e6;
+  background-color: #0071bc;
+  color: #fff;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  color: #1a1a1a;
+  cursor: pointer;
+  background-color: #fff;
+  border:solid 1px #e6e6e6;
+  border-radius: 3px 3px 0 0;
+  padding: .25em .75em;
+  margin: 0 .25em;
+  border-bottom-color: #fff;
+  outline:0;
+  z-index:1;
+  -webkit-box-shadow: 0 5px 0 #fff, 0 -2px 8px -2px rgba(0, 0, 0, 0.15);
+		  box-shadow: 0 5px 0 #fff, 0 -2px 8px -2px rgba(0, 0, 0, 0.15);
+}
+
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+}
+
+.checkbox {
+	margin-top:0;
+	margin-bottom:0;
+}
+.checkbox input[type=checkbox] {
+	position:relative;
+	margin-left:3px;
+	margin-bottom: 0;
+}
+.dropdown-menu{
+	margin-top:0;
+	text-align:center;
+}
+.dropdown-menu > li > a {
+	padding:3px 0;
+}
+
+/* Navbar height adjustments */
+.navbar {
+	min-height:38px;
+}
+.navbar-brand {
+  float: left;
+  height: 38px;
+  padding: 9px 15px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-nav > li > a {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  line-height: 20px;
+}

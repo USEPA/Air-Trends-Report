@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Annual Air Trends Report">
+    <meta name="author" content="U.S. EPA">
+	<meta name="keywords" content="environment,air,trends,naaqs,health,air quality,concentrations,emissions,air pollution,pollutants,EPA">
+    <title>Our Nation's Air</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/css/etrends.css" /> 
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=GvkW242bLb">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png?v=GvkW242bLb">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png?v=GvkW242bLb">
+	<link rel="manifest" href="manifest.json?v=GvkW242bLb">
+	<link rel="mask-icon" href="safari-pinned-tab.svg?v=GvkW242bLb" color="#1e376d">
+	<link rel="shortcut icon" href="favicon.ico?v=GvkW242bLb">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-TileImage" content="mstile-144x144.png?v=GvkW242bLb">
+	<meta name="msapplication-config" content="browserconfig.xml?v=GvkW242bLb">
+	<meta name="theme-color" content="#ffffff">
+  </head>
+ <body id="page-top" >
+
+	 <div id="fullpage">	
+		<section class="secFP">	
+			<div class="container-fluid">
+			   	<div class="row paddingfromtop">
+					<div class="col-md-8 col-md-offset-2">
+						<div id="naaqs-concentrations-averages-chart-container" class="etrends-chart-container">
+							<span class="sr-only">Line chart depicting overall decline in national air quality concentration averages for the criteria air pollutants from 1990 to 2016. </span>
+							<div id="naaqs-concentrations-averages-chart-header" style="position:relative;">												
+								<div style="" id="naaqs-concentrations-averages-chart-title" class="etrends-chart-title"><span></span></div>
+								<div class='etrends-chart-menu'></div>
+								<div id="naaqs-concentrations-averages-chart-menu-tooltip" class="etrends-tooltip etrends-chart-menu-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>												
+								</div>
+							</div>
+							<div id="naaqs-concentrations-averages-chart" class="etrends-chart" style="position:relative">
+								<div id="naaqs-concentrations-averages-chart-tooltip" class="etrends-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>
+									<textarea style="display:none" class="template">
+										<table>
+											<tr><td class="etrends-tooltip-label">Year:</td><td><<d.year:0>></td></tr>
+												<<loop:series>>
+											<tr style="display:<<f.seriesDisplayHideMissing:<<l.name>>>>">
+												<td class="etrends-tooltip-label etrends-chart-line-<<l.class>>"><<f.customSymbol:<<l.name>>>> <<l.name>>:</td><td><<d.<<l.name>>:digits>><<units>></td>
+											</tr>
+												<</loop>>
+										</table>           
+									</textarea>
+								</div>
+								<div class="etrends-chart-svg"></div>
+							</div>
+							<div id="naaqs-concentrations-averages-chart-legend" class="etrends-chart-legend"></div>
+							<div class="attribution"><a href="https://www.epa.gov/aqs" target="_blank" title="Visit EPA Air Quality System website">Source: U.S. EPA Air Quality System</a></div>
+						</div>	
+					</div>
+				</div>
+			</div>								
+		</section>
+	</div>
+	<!-- Export and Print Menu -->
+	<textarea style="display:none" class="etrends-chart-menu-tooltip-template-standard">
+		<ul class="export-list-style">
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.print('<<fileName>>',1500)" class="exportPrint"><i class="icon icon-print" aria-hidden="true"></i> Print</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportCSV('<<fileName>>.csv')" class="exportCSV"><i class="icon icon-export" aria-hidden="true"></i> Export Data</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportPNG('<<fileName>>.png',1500)" class="exportPNG"><i class="icon icon-export" aria-hidden="true"></i> Export PNG</a></li>
+		</ul>
+		<span style="display:<<convertYdomainToPercentDisplay>>" class="checkbox">
+			<label style="line-height:20px;padding-left:5px;">
+				<<convertYdomainToPercentLabel>>
+				<input class="etrends-tooltip-showPercent" type="checkbox" <<convertYdomainToPercentChecked>> onclick="<<dd.self.host.namespace>>.toggleYdomainToPercent(<<dd.self.host.namespace>>.export.revertConvertYdomainToPercent ? !this.checked : this.checked);" />
+			</label>
+		</span>
+		<div class="customControls"></div>
+	</textarea>
+	<!-- Concentration averages and emission totals line chart symbols -->
+	<svg id="etrends-customSymbols-circle" style="display:none">
+		<circle r="6" cx="6" cy="6" ></circle>
+	</svg>
+	<svg id="etrends-customSymbols-square" style="display:none">
+		<rect height="12" width="12" ></rect>
+	</svg>
+	<svg id="etrends-customSymbols-triangle-down" style="display:none" class="etrends-chart-point-Pb_3-month">
+		<path d="M0,0l12,12L24,0H0z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-triangle-up" style="display:none">
+		<path d="M12,0L0,12h24L12,0z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-star" style="display:none">
+		<path d="M32,12.408l-11.057-1.607L16,0.783l-4.944,10.018L0,12.408l8,7.798L6.111,31.217L16,26.018l9.889,5.199L24,20.206L32,12.408z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-diamonds" style="display:none">
+		<path d="M16,0L0,16l16,16l16-16L16,0z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-heart" style="display:none">
+		<path d="M23.6,2c-3.363,0-6.258,2.736-7.599,5.594C14.659,4.736,11.764,2,8.4,2C3.763,2,0,5.764,0,10.401
+			c0,9.433,9.516,11.906,16.001,21.232C22.131,22.365,32,19.533,32,10.401C32,5.764,28.236,2,23.6,2z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-spades" style="display:none" width="28.00038" height="32" viewBox="0 0 28.00038 32">
+		<path  d="m 23.549288,10.88 c -6.049,-4.496 -8.133,-8.094 -9.549,-10.88 l 0,0 c 0,0 0,0 0,0 l 0,0 c -1.415,2.785 -3.5,6.384 -9.5489999,10.88 -10.314,7.665 -0.606,18.365 7.9299999,12.476 -0.556,3.654 -2.4539999,6.318 -4.3809999,7.465 l 0,1.179 12.0009999,0 0,-1.179 c -1.928,-1.147 -3.825,-3.811 -4.382,-7.465 8.535,5.889 18.244,-4.811 7.93,-12.476 z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-clubs" style="display:none">
+		<path d="M24.588,12.274c-1.845,0-3.503,0.769-4.684,2.022c-0.5,0.531-1.367,1.16-2.305,1.713c0.44-1.683,1.834-3.803,2.801-4.733
+			c1.238-1.193,2-2.87,2-4.734c0-3.59-2.859-6.503-6.4-6.541c-3.541,0.038-6.4,2.951-6.4,6.541c0,1.865,0.761,3.542,2,4.734
+			c0.967,0.93,2.36,3.05,2.801,4.733c-0.939-0.553-1.806-1.182-2.306-1.713c-1.18-1.253-2.838-2.022-4.683-2.022
+			c-3.575,0-6.471,2.927-6.471,6.541c0,3.615,2.897,6.543,6.471,6.543c1.845,0,3.503-0.793,4.683-2.045
+			c0.525-0.559,1.451-1.254,2.447-1.832c-0.094,4.614-2.298,8.004-4.541,9.34V32h12v-1.18c-2.244-1.334-4.448-4.726-4.541-9.34
+			c0.995,0.578,1.922,1.273,2.447,1.832c1.18,1.252,2.838,2.045,4.683,2.045c3.575,0,6.471-2.928,6.471-6.543
+			c0-3.613-2.896-6.541-6.471-6.541H24.588z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-stop2" style="display:none">
+		<path d="M4,4h24v24H4V4z"></path>
+	</svg>
+	<svg id="etrends-customSymbols-primitive-dot" style="display:none">
+		<path d="M-0.003,16c0-4.422,3.578-8,8-8c4.42,0,8,3.578,8,8s-3.58,8-8,8C3.575,24-0.003,20.422-0.003,16z"></path>
+	</svg>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+	<!--D3 libraries -->
+	<script src="dist/js/d3-libs.min.js"></script>
+	<!--D3 charts, plugins and custom code -->
+	<script src="src/js/EtrendsUtilities.js"></script>	
+	<script src="src/js/LineAreaChart.js"></script>
+	<script src="src/js/MapChartTooltip.js"></script>
+	<script src="src/js/MapChartResize.js"></script>
+	<script src="src/js/MapChartDebounce.js"></script>
+	<script src="src/js/MapChartLegend.js"></script>
+	<script src="src/js/MapChartTitle.js"></script>	
+	<script src="src/js/MapChartExportMenu.js"></script>	
+	<script src="src/js/naaqs-concentrations-averages.js"></script>
+	<script>
+		etrends.naaqs.concentrations.averages.init();
+	</script>
+
+ </body>	
+ </html>

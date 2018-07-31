@@ -1,0 +1,324 @@
+/* 
+ * Navbar items including social share button
+*/
+
+.navbar-custom {
+    margin-bottom: 0;
+    /*border-bottom: 1px solid rgba(255,255,255,.3);*/
+    font-family: "Montserrat","Merriweather", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+	/*background: 0 0; changed here and the in the media query to ensure image doesn't interfere with nav items*/
+	background: 0 0; 
+	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+	font-weight:600;
+}
+.navbar-custom a,
+.navbar-custom i,
+.navbar-custom .caret {
+    color: rgba(255,255,255,1);  /*transparent font color on landing page that will be overidden once top-nav-collapse added */
+   /* color: #1a1a1a; */
+	border-bottom: none;
+}
+.navbar-custom.top-nav-collapse { /* js will add the .top-nav-collapse class once scrolling down the page >50px */
+	padding: 0;
+	background: #0071bc; 
+}
+.navbar-custom.top-nav-collapse a, 
+.navbar-custom.top-nav-collapse i , 
+.navbar-custom.top-nav-collapse .caret{
+	color:#fff;
+}
+/*.navbar-custom .navbar-brand {
+    font-weight: 600;
+}*/
+.navbar-custom .navbar-brand:hover {
+    /*background-color: rgba(255,255,255,.8);  EPA logo */
+	background-color: #205493;
+}
+.navbar-custom .navbar-brand:hover i{
+    /*color: #20603c;*/
+	color: #ffffff;	
+}
+.navbar-custom .navbar-brand:active{
+    /* EPA logo */
+	background-color: #112e51;
+}
+.navbar-custom  .navbar-toggle {
+	/*padding: 4px 6px 4px 0px;
+    font-size: 1.143em;*/
+    color: #fff;
+	border-radius:0;
+}
+
+.navbar-custom .navbar-header button,
+.navbar-custom .navbar-header a,
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+.navbar-custom .nav li a:focus {
+    /*outline: 0;*/
+    background-color: transparent;
+}
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    /*color: #20603c;
+    background-color: rgba(255,255,255,.8);   li INTRO thru download */
+	color: #ffffff;
+	background-color: #205493;
+}
+.navbar-custom .nav li a:active {
+	color: #fff;
+	background-color: #112e51;
+}
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+/* this changes the navigation li background color when active */
+.navbar-custom .nav li.active a {
+    /*background-color: rgba(255,255,255,.4);*/
+	background-color: #205493;
+}
+.navbar-custom .nav li.active a:hover {
+    /*background-color: rgba(255,255,255,.8);*/
+	background-color: #205493;
+}
+.navbar-custom .nav li.active  a.no-bkgrnd{
+    background-color: transparent;
+}
+.navbar-custom .nav li a.no-bkgrnd:hover{
+    /*background-color: rgba(255,255,255,.8);*/
+	background-color: #205493;
+}
+.navbar-custom .nav li.active a:active, .navbar-custom .nav li a.no-bkgrnd:active {
+    /*background-color: rgba(255,255,255,.8);*/
+	background-color: #112e51;
+}
+@media(min-width:768px) {
+    .navbar-custom {
+        /*padding: 20px 0;
+        background: 0 0;*/
+		padding: 20px 0 0 0; /* home page padding from top of navbar */
+		background: 0 0; 
+		border-bottom: none;
+        letter-spacing: 1px;
+       	z-index: 6;
+    }
+}
+
+.navbar-header {
+	white-space:nowrap;
+    margin-left: -25px;
+	margin-right: -15px;
+}
+@media (min-width: 768px) {
+	.navbar-header {
+		white-space:nowrap;
+		margin-left: -10px;
+	}
+}
+.navbar-header button:hover {
+    outline: 0;
+	/*background-color: rgba(255,255,255,.8);  share and nav button when collapsed */
+	background-color: #205493;
+}
+.navbar-header button:hover i  {
+	background-color: transparent;
+	/*color: #20603c;*/
+	color: #ffffff;
+}
+.navbar-header button:active {
+    outline: 0;
+	/*background-color: rgba(255,255,255,.8);  share and nav button when collapsed */
+	background-color: #112e51;
+}
+/* Collapse navbar at a smaller screen size http://stackoverflow.com/questions/19827605/change-bootstrap-navbar-collapse-breakpoint-without-using-less */
+@media (max-width: 1000px) {
+    .navbar-header {
+        float: none;
+		margin-right: -10px;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+	}
+    .navbar-toggle {
+        display: block;
+		/*margin: 7px 0px 5px 4px; */
+		/*padding-right: 0px; moves bars to the right*/
+		margin:0; /* overrides bootstrap margin settings for navbar-toggle */
+		/* padding: 13px 10px 13px 10px; overrides bootstrap padding settings for navbar-toggle */
+		/*height:50px;  this line and the next mimic how navbar-brand is set up */
+		line-height:20px;
+		
+		padding: 8px 10px 9px 10px; /* overrides bootstrap padding settings for navbar-toggle */
+		height:38px; /* this line and the next mimic how navbar-brand is set up */
+		
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.3);
+    }
+    .navbar-fixed-top {
+		top: 0;
+		border-width: 0 0 1px;
+	}
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+		margin-top: 7.5px;
+	}
+	.navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 7px;
+        padding-bottom: 7px;
+    }
+    .collapse.in{
+  		display:block !important;
+	}
+	/*.navbar-custom a,
+	.navbar-custom i,
+	.navbar-custom .caret {
+		color: #fff;
+	}
+	.navbar-custom .btn-mobile-share{
+		border: 1px solid #e6e6e6;
+	}*/
+}
+
+/* Social Share dropdown http://bootsnipp.com/snippets/0l9Vd */
+/*#singleShare .tooltip.right .tooltip-inner {
+    color: #0071bc;
+	font-weight:bold;
+	background-color:#d9d9d9;
+	border: none !important;
+}
+#singleShare .tooltip.right .tooltip-arrow {
+    border-right-color: #d9d9d9;
+}*/
+/*.btn-share {
+    background-color: #BEBEBE;
+    border-color: #CCCCCC;
+    color: #333333;
+}*/
+.mobile-social-share ul {
+    background-color: #fafafa;
+	min-width: 50px;
+    padding: 0;
+}
+.mobile-social-share li {
+	margin: 3px;
+}
+
+/* Share icon container; no button border */
+.btn-mobile-share {
+    /*border: 1px solid rgba(230,230,230,.65);  #e6e6e6 
+	border-radius: 3px;*/
+	outline: 0;
+	border: 1px solid transparent;
+	color: rgba(255,255,255,.65);
+    background-color: transparent;
+	min-width:57px;
+	/*height: 50px;*/
+	height:38px;
+	/*padding: 13px 10px;*/
+	font-size: 18px; /*font size set in icon-font-style.css */
+	line-height: 20px;
+	padding: 0;  /* to override bootstrap padding on button element */
+}
+.navbar-custom.top-nav-collapse .btn-mobile-share {
+	/*border: 1px solid #e6e6e6;*/
+	color: #fff;
+}
+ul.dropdown-menu li a {
+	width:50px;
+	font-size:18px;
+	/*color:#FFFFFF!important;*/
+	border: none;
+}
+ul.dropdown-menu i{
+	color:#fff;
+}
+.btn-twitter {
+    background-color: #3399CC !important;
+}
+.btn-facebook {
+    background-color: #3D5B96 !important;
+}
+.btn-reddit{
+	background-color: #a6ccf2 !important;
+}
+.btn-linkedin {
+    background-color: #1884BB !important;
+}
+.btn-pinterest {
+    background-color: #CC1E2D !important;
+}
+.btn-mail {
+    background-color: #FFC90E !important;
+}
+/* Fade effect for share menu */
+.dropdown-menu.fade {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+}
+.open > .dropdown-menu.fade {
+  pointer-events: auto;
+  opacity: 1;
+}
+/* Share button tooltip style; based on timeline example and bootstrap override */
+.tooltip{
+	font-family: 'Montserrat','Lato',"Source Sans Pro", "Helvetica Neue", "Helvetica", 'Roboto', "Arial",  sans-serif;
+	line-height: 1.5;
+}
+persona{
+	color: #7fffd4;
+	font-weight:600;
+}
+.dropdown-menu .tooltip.in,
+.story_tooltip .tooltip.in {
+  opacity: .97;
+  filter: alpha(opacity=97);
+}
+.dropdown-menu .tooltip-inner{
+    width:150px;
+    /*text-decoration:none;*/
+    background-color:#20603c;
+}
+.story_tooltip .tooltip-inner {
+	max-width: 350px;
+	text-align: left;
+	text-decoration:none;
+    /*background-color:#20603c;*/
+    background-color: #277236;
+	font-size:14px;
+}
+.dropdown-menu .tooltip.right .tooltip-arrow{
+	border-right-color: #20603c;
+}
+.dropdown-menu .tooltip.left .tooltip-arrow {
+	border-left-color: #20603c;
+}
+.story_tooltip .tooltip.right .tooltip-arrow {
+	border-right-color: #277236;
+}
+.story_tooltip .tooltip.left .tooltip-arrow {
+	border-left-color: #277236;
+}
+.story_tooltip .tooltip.bottom .tooltip-arrow,
+.story_tooltip .tooltip.bottom-left .tooltip-arrow,
+.story_tooltip .tooltip.bottom-right .tooltip-arrow {
+	border-bottom-color: #277236;
+}
+.story_tooltip .tooltip.top .tooltip-arrow,
+.story_tooltip .tooltip.top-left .tooltip-arrow,
+.story_tooltip .tooltip.top-right .tooltip-arrow {
+	border-top-color: #277236;
+}

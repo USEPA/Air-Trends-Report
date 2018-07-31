@@ -1,0 +1,266 @@
+"site_id","site","latitude","longitude","local_site_name","noaa_region","POC","statistic","val2010","val2011","val2012","val2013","val2014","val2015","val2016","val2017","trendsite","nyrs","region","state","cbsa","used_in_nat_agg","parameter_name","trend","beta","prob"
+01-083-0005,010830005,34.645848497,-86.9473112,Pryor Field Lead Monitoring Site,Southeast,0,RQMAX,,,0.01,,,,,,0,1,6,Alabama,"Huntsville, AL",No,Pb,Undetermined/Insufficient Data,,
+02-020-0051,020200051,61.215497,-149.830175,"Merrill Field, Pb Monitoring Station",None,0,RQMAX,,,0.07,,,,,,0,1,0,Alaska,"Anchorage, AK",No,Pb,Undetermined/Insufficient Data,,
+04-019-1028,040191028,32.29515,-110.9823,CHILDREN'S PARK NCore,Southwest,0,RQMAX,,,0,0,0,0,,,0,4,7,Arizona,"Tucson, AZ",No,Pb,Undetermined/Insufficient Data,,
+06-025-0005,060250005,32.676186139,-115.484144,Calexico-Ethel Street,West,0,RQMAX,0.02,0.02,0.03,0.02,0.03,0.02,,,1,6,8,California,"El Centro, CA",Yes,Pb,No Trend,0,0.4524305556
+06-037-1402,060371402,34.217930001,-118.48757,Van Nuys Airport,West,0,RQMAX,0.04,0.04,0.06,,,,,,0,3,8,California,"Los Angeles-Long Beach-Anaheim, CA",No,Pb,Undetermined/Insufficient Data,,
+06-037-4002,060374002,33.82376,-118.18921,Long Beach (North),West,0,RQMAX,0.01,0.01,0.01,0,,,,,0,4,8,California,"Los Angeles-Long Beach-Anaheim, CA",No,Pb,Undetermined/Insufficient Data,,
+06-065-1003,060651003,33.94603,-117.40063,Riverside (Magnolia),West,0,RQMAX,0.01,0.01,0,0.01,0.01,,,,0,5,8,California,"Riverside-San Bernardino-Ontario, CA",No,Pb,Undetermined/Insufficient Data,,
+06-071-1004,060711004,34.10374,-117.62914,Upland,West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,,1,7,8,California,"Riverside-San Bernardino-Ontario, CA",Yes,Pb,No Trend,0,0.5475694444
+06-073-0003,060730003,32.791194001,-116.942092,El Cajon,West,0,RQMAX,,,0.01,0.01,,,,,0,2,8,California,"San Diego-Carlsbad, CA",No,Pb,Undetermined/Insufficient Data,,
+06-073-1018,060731018,32.817978,-116.968133,El Cajon - Floyd Smith Dr.,West,0,RQMAX,,,,,,0.01,0.01,,0,2,8,California,"San Diego-Carlsbad, CA",No,Pb,Undetermined/Insufficient Data,,
+06-081-2002,060812002,37.508813,-122.247291,San Carlos Airport,West,0,RQMAX,,,0.33,0.22,,,,,0,2,8,California,"San Francisco-Oakland-Hayward, CA",No,Pb,Undetermined/Insufficient Data,,
+06-081-2004,060812004,37.508162,-122.246305,San Carlos Airport II,West,0,RQMAX,,,,,,0.02,0.03,,0,2,8,California,"San Francisco-Oakland-Hayward, CA",No,Pb,Undetermined/Insufficient Data,,
+06-085-2010,060852010,37.457621,-122.112286,Palo Alto Airport,West,0,RQMAX,,,0.12,0.12,0.13,,,,0,3,8,California,"San Jose-Sunnyvale-Santa Clara, CA",No,Pb,Undetermined/Insufficient Data,,
+08-005-0007,080050007,39.572756401,-104.8489917,Centennial Airport,Southwest,0,RQMAX,0.01,0.02,0.02,0.02,0.03,,,,0,5,7,Colorado,"Denver-Aurora-Lakewood, CO",No,Pb,Undetermined/Insufficient Data,,
+08-031-0025,080310025,39.704005001,-104.998113,DENVER MUNICIPAL ANIMAL SHELTER,Southwest,0,RQMAX,0.01,0.01,0.01,,,,,,0,3,7,Colorado,"Denver-Aurora-Lakewood, CO",No,Pb,Undetermined/Insufficient Data,,
+11-001-0043,110010043,38.921847001,-77.013178,MCMILLAN  NCore-PAMS,Northeast,0,RQMAX,,,0,0,0,0,0.01,,0,5,3,District of Columbia,"Washington-Arlington-Alexandria, DC-VA-MD-WV",No,Pb,Undetermined/Insufficient Data,,
+13-015-0003,130150003,34.236660001,-84.805,,Southeast,0,RQMAX,0.02,0.02,0.03,0.01,,,,,0,4,6,Georgia,"Atlanta-Sandy Springs-Roswell, GA",No,Pb,Undetermined/Insufficient Data,,
+13-089-0003,130890003,33.698642843,-84.27261363,NR-285,Southeast,0,RQMAX,0,0,0,0,,0,0,,1,6,6,Georgia,"Atlanta-Sandy Springs-Roswell, GA",Yes,Pb,No Trend,0,0.5475694444
+17-031-0001,170310001,41.670991895,-87.7324569,VILLAGE GARAGE,Central,0,RQMAX,0.02,,,,,,,,0,1,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-0026,170310026,41.873720409,-87.64532569,CERMAK PUMP STATION,Central,0,RQMAX,0.03,0.02,0.03,,,,,,0,3,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-0052,170310052,41.96548483,-87.74992806,MAYFAIR PUMP STATION,Central,0,RQMAX,0.02,0.02,0.02,,,,,,0,3,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-0113,170310113,41.663611,-87.622483,ArcelorMittal Steel,Central,0,RQMAX,,,,,0.03,0.01,,,0,2,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-3103,170313103,41.965193481,-87.87626473,IEPA TRAILER,Central,0,RQMAX,0.01,0.01,0.04,0.01,,,,,0,4,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-3301,170313301,41.782766008,-87.80537679,GRAVES ES,Central,0,RQMAX,0.03,,,,,,,,0,1,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-031-4201,170314201,42.139996191,-87.79922692,NORTHBROOK WATER PLANT,Central,0,RQMAX,0.01,0.01,0.01,0.01,0,0.01,,,1,6,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,No Trend,0,0.5475694444
+17-031-6003,170316003,41.872201577,-87.8261648,COOK COUNTY COURT COMPLEX,Central,0,RQMAX,0.04,0.03,0.04,0.02,,,,,0,4,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-089-0113,170890113,41.884417,-88.282692,Johnson Controls,Central,0,RQMAX,,,,,0.03,0.05,0.05,,0,3,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+17-119-3007,171193007,38.860669471,-90.10585111,WATER PLANT,Central,0,RQMAX,0.04,,,,,,,,0,1,1,Illinois,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+17-143-0037,171430037,40.697007,-89.58473722,CITY OFFICE BUILDING,Central,0,RQMAX,0.01,,,,,,,,0,1,1,Illinois,"Peoria, IL",No,Pb,Undetermined/Insufficient Data,,
+17-143-0110,171430110,40.653703,-89.643375,PUMP STATION,Central,0,RQMAX,0.02,0.01,0.01,0.01,,,,,0,4,1,Illinois,"Peoria, IL",No,Pb,Undetermined/Insufficient Data,,
+17-143-0210,171430210,40.562633,-89.747114,DAVID RESIDENCE,Central,0,RQMAX,0.01,0.02,0.01,0.01,,,,,0,4,1,Illinois,"Peoria, IL",No,Pb,Undetermined/Insufficient Data,,
+17-163-0010,171630010,38.612034481,-90.16047663,IEPA-RAPS TRAILER,Central,0,RQMAX,0.03,,,,,,,,0,1,1,Illinois,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+17-195-0110,171950110,41.788383,-89.706728,SAUK MEDICAL CLINIC,Central,0,RQMAX,0.02,0.03,0.03,0.02,,,,,0,4,1,Illinois,"Sterling, IL",No,Pb,Undetermined/Insufficient Data,,
+17-201-0110,172010110,42.240867,-89.091467,J. RUBIN & COMPANY,Central,0,RQMAX,0.06,0.04,0.03,0.05,,,,,0,4,1,Illinois,"Rockford, IL",No,Pb,Undetermined/Insufficient Data,,
+18-089-0023,180890023,41.652739607,-87.43955073,SITE MOVED FROM EAST CHICAGO FIELD SCHOOL,Central,0,RQMAX,0.04,0.08,0.07,,,,,,0,3,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+18-097-0076,180970076,39.758924537,-86.28969434,,Central,0,RQMAX,0.01,0.02,,,,,,,0,2,1,Indiana,"Indianapolis-Carmel-Anderson, IN",No,Pb,Undetermined/Insufficient Data,,
+18-097-0078,180970078,39.811097001,-86.114469,Indpls- Washington Park/  in parking lot next to police station,Central,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,,1,7,1,Indiana,"Indianapolis-Carmel-Anderson, IN",Yes,Pb,No Trend,0,0.5475694444
+18-127-0023,181270023,41.616618401,-87.146959,Portage- Hwy 12,Central,0,RQMAX,0.02,0.02,,,,,,,0,2,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+18-163-0020,181630020,37.975248173,-87.56783036,Evansville PO,Central,0,RQMAX,0.01,,,,,,,,0,1,1,Indiana,"Evansville, IN-KY",No,Pb,Undetermined/Insufficient Data,,
+19-163-0015,191630015,41.530010621,-90.58761081,"DAVENPORT, JEFFERSON SCH.",Upper Midwest,0,RQMAX,,0.01,,,,,,,0,1,2,Iowa,"Davenport-Moline-Rock Island, IA-IL",No,Pb,Undetermined/Insufficient Data,,
+20-209-0021,202090021,39.117219,-94.635605,JFK,South,0,RQMAX,,,0.01,0.01,0.01,0.01,,,0,4,5,Kansas,"Kansas City, MO-KS",No,Pb,Undetermined/Insufficient Data,,
+21-019-0016,210190016,38.3315,-82.59106,LOCKWOOD,Central,0,RQMAX,0.01,0,0,0,,,,,0,4,1,Kentucky,"Huntington-Ashland, WV-KY-OH",No,Pb,Undetermined/Insufficient Data,,
+21-207-0001,212070001,37.069444001,-84.98925,SALEM ELEMENTARY (RUSSELL SPRINGS),Central,0,RQMAX,,0.04,0.06,0.03,0.02,,,,0,4,1,Kentucky,,No,Pb,Undetermined/Insufficient Data,,
+25-019-0001,250190001,41.260556,-70.058333,NANTUCKET MEMORIAL AIRPORT,Northeast,0,RQMAX,,,0.01,,,,,,0,1,3,Massachusetts,,No,Pb,Undetermined/Insufficient Data,,
+26-029-0011,260290011,45.16023542,-85.12769554,East Jordan,Upper Midwest,0,RQMAX,,,0.01,,,,,,0,1,2,Michigan,,No,Pb,Undetermined/Insufficient Data,,
+26-125-0013,261250013,42.667943279,-83.41303306,,Upper Midwest,0,RQMAX,,,0.02,,,,,,0,1,2,Michigan,"Detroit-Warren-Dearborn, MI",No,Pb,Undetermined/Insufficient Data,,
+26-157-0001,261570001,43.368605303,-83.56906498,,Upper Midwest,0,RQMAX,,,0.03,0.01,0,,,,0,3,2,Michigan,,No,Pb,Undetermined/Insufficient Data,,
+27-003-6020,270036020,45.198083,-93.370916,Federal Cartridge,Upper Midwest,0,RQMAX,0.03,0.03,0.04,0.01,,,,,0,4,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-095-3051,270953051,46.205300001,-93.75945,Mille Lacs Band,Upper Midwest,0,RQMAX,,,0,,,,,,0,1,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-123-0818,271230818,44.926753,-93.059292,Hollman Field,Upper Midwest,0,RQMAX,,,,,,,0.01,,0,1,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-123-1908,271231908,44.973096,-93.199879,South St. Anthony Park,Upper Midwest,0,RQMAX,,,,,,,0.01,,0,1,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-145-3053,271453053,45.564637,-94.226345,Foundry Circle,Upper Midwest,0,RQMAX,0,0.01,0.01,0,,,,,0,4,2,Minnesota,"St. Cloud, MN",No,Pb,Undetermined/Insufficient Data,,
+29-093-0016,290930016,37.624063845,-91.12839629,Doe Run Buick - South #1,Central,0,RQMAX,0.64,0.88,,,,,,,0,2,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-093-0021,290930021,37.651843391,-91.13106642,Doe Run Buick - North # 5,Central,0,RQMAX,0.72,1.15,,,,,,,0,2,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-093-0027,290930027,37.485386562,-90.69002223,Doe Run Glover - Post Office #2,Central,0,RQMAX,0.07,0.08,0.04,0.63,,,,,0,4,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-093-0029,290930029,37.472176782,-90.68930219,Doe Run Glover - Big Creek #5,Central,0,RQMAX,0.11,0.11,0.05,0.06,,,,,0,4,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-093-0032,290930032,37.653943357,-91.13128644,Bixby West,Central,0,RQMAX,0.56,,,,,,,,0,1,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-093-9007,290939007,37.653943357,-91.13128644,,Central,0,RQMAX,0.58,,,,,,,,0,1,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-097-0005,290970005,37.170016424,-94.46329999,,Central,0,RQMAX,0.02,0.02,,,,,,,0,2,1,Missouri,"Joplin, MO",No,Pb,Undetermined/Insufficient Data,,
+29-099-0004,290990004,38.26339,-90.37883,"Herculaneum, Main Street",Central,0,RQMAX,1.12,1.11,,,,,,,0,2,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-099-0022,290990022,38.260694,-90.381083,,Central,0,RQMAX,0.63,,,,,,,,0,1,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-099-0024,290990024,38.25872,-90.38091,"Herculaneum, Church Street",Central,0,RQMAX,0.51,0.66,,,,,,,0,2,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-099-0026,290990026,38.296054058,-90.393104,Pevely North,Central,0,RQMAX,0.07,0.04,0.08,0.06,0.03,0.01,0.01,,1,7,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.01,0.0155753968
+29-099-9001,290999001,38.26339,-90.37883,"Herculaneum, Main Street",Central,0,RQMAX,1.1,1.03,,,,,,,0,2,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-099-9003,290999003,38.268254492,-90.37390334,,Central,0,RQMAX,0.55,,,,,,,,0,1,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-099-9006,290999006,38.243054872,-90.3738233,Ursuline North,Central,0,RQMAX,0.09,0.06,0.1,0.07,,,,,0,4,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-179-0001,291790001,37.534735285,-91.14869678,Bill's Creek,Central,0,RQMAX,0.05,0.06,0.04,0.05,0.03,0.02,0.02,,1,7,1,Missouri,,Yes,Pb,Decreasing,-0.005,0.0070684524
+29-179-0003,291790003,37.364208144,-91.12238567,Corridon,Central,0,RQMAX,0.1,0.03,,,,,,,0,2,1,Missouri,,No,Pb,Undetermined/Insufficient Data,,
+29-187-0006,291870006,37.864910595,-90.50814704,Park Hills,Central,0,RQMAX,0.05,0.13,0.04,0.03,0.02,,,,0,5,1,Missouri,"Farmington, MO",No,Pb,Undetermined/Insufficient Data,,
+29-189-2003,291892003,38.649770909,-90.35065914,,Central,0,RQMAX,0.01,,,,,,,,0,1,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+29-510-0085,295100085,38.656428945,-90.19834827,Blair Street,Central,0,RQMAX,,,0.03,0.03,0.02,0.01,,,0,4,1,Missouri,"St. Louis, MO-IL",No,Pb,Undetermined/Insufficient Data,,
+31-127-0002,311270002,40.402544001,-95.841639,,Northern Rockies,0,RQMAX,0.09,0.12,0.05,0.03,0.01,0,,,1,6,9,Nebraska,,Yes,Pb,Decreasing,-0.015833333,0.0027529762
+32-003-0540,320030540,36.141875,-115.078742,Jerome Mack-NCore,West,0,RQMAX,,,,0.01,0.01,0.01,0,,0,4,8,Nevada,"Las Vegas-Henderson-Paradise, NV",No,Pb,Undetermined/Insufficient Data,,
+36-071-3004,360713004,41.46964,-74.37217,SCOTCHTOWN,Northeast,0,RQMAX,0,0.01,0.01,0.01,0,0,,,1,6,3,New York,"New York-Newark-Jersey City, NY-NJ-PA",Yes,Pb,No Trend,0,0.1993799603
+36-103-0005,361030005,40.73669,-73.41664,Republic Airpot,Northeast,0,RQMAX,,,,0.01,,,,,0,1,3,New York,"New York-Newark-Jersey City, NY-NJ-PA",No,Pb,Undetermined/Insufficient Data,,
+36-103-0024,361030024,40.8129,-72.8621,Brookhaven Airport,Northeast,0,RQMAX,,,0.03,,,,,,0,1,3,New York,"New York-Newark-Jersey City, NY-NJ-PA",No,Pb,Undetermined/Insufficient Data,,
+39-017-0015,390170015,39.490720001,-84.36374,OHIO BELL,Central,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,,,1,6,1,Ohio,"Cincinnati, OH-KY-IN",Yes,Pb,No Trend,0,0.5475694444
+39-029-0022,390290022,40.635275001,-80.546642,SCHOOL (EASTSIDE),Central,0,RQMAX,0.04,0.04,0.02,0.02,0.01,0.01,,,1,6,1,Ohio,"Salem, OH",Yes,Pb,Decreasing,-0.004642857,0.0070684524
+39-035-0060,390350060,41.492117001,-81.678449,GT CRAIG,Central,0,RQMAX,,,0.03,0.02,0.03,0.02,0.01,,0,5,1,Ohio,"Cleveland-Elyria, OH",No,Pb,Undetermined/Insufficient Data,,
+39-035-0072,390350072,41.425850001,-81.49078,CENTURY,Central,0,RQMAX,0.02,0.04,0.02,0.02,0.01,0.01,0.01,,1,7,1,Ohio,"Cleveland-Elyria, OH",Yes,Pb,Decreasing,-0.00225,0.0305059524
+39-049-0025,390490025,39.928450001,-82.98104,ANN ST.,Central,0,RQMAX,0.01,0.01,0.01,0.01,0.01,,,,0,5,1,Ohio,"Columbus, OH",No,Pb,Undetermined/Insufficient Data,,
+39-091-0006,390910006,40.341467001,-83.7585,BELLEFONTAINE,Central,0,RQMAX,0.01,0,0,0,0,0,0,,1,7,1,Ohio,"Bellefontaine, OH",Yes,Pb,No Trend,0,0.2742063492
+39-113-7001,391137001,39.714510001,-84.21804,MORAIINE FS,Central,0,RQMAX,,,0.01,0.01,0.01,0.01,0,,0,5,1,Ohio,"Dayton, OH",No,Pb,Undetermined/Insufficient Data,,
+39-151-0017,391510017,40.786878001,-81.394186,CANTON FS 8,Central,0,RQMAX,0.02,0.02,0.02,0.02,0.02,,,,0,5,1,Ohio,"Canton-Massillon, OH",No,Pb,Undetermined/Insufficient Data,,
+39-155-0012,391550012,41.172787001,-80.555638,ELMWOOD,Central,0,RQMAX,0.01,0.01,0.01,0.01,,,,,0,4,1,Ohio,"Youngstown-Warren-Boardman, OH-PA",No,Pb,Undetermined/Insufficient Data,,
+39-167-0010,391670010,39.413598001,-81.47062,The Ohio Valley Educational Service Center,Central,0,RQMAX,0.01,0.01,0.01,0.01,0,,,,0,5,1,Ohio,"Marietta, OH",No,Pb,Undetermined/Insufficient Data,,
+40-143-1127,401431127,36.204902001,-95.976537,NORTH TULSA - FIRE STATION#24,South,0,RQMAX,,,0.01,0.01,0,0,0,,0,5,5,Oklahoma,"Tulsa, OK",No,Pb,Undetermined/Insufficient Data,,
+41-071-1702,410711702,45.230123,-123.163513,CENTER OF AN ISLAND BETWEEN HWY 99W AND RIVERSIDE DRIVE,Northwest,0,RQMAX,0.03,0.04,0.05,,,,,,0,3,4,Oregon,"Portland-Vancouver-Hillsboro, OR-WA",No,Pb,Undetermined/Insufficient Data,,
+42-003-0002,420030002,40.49976657,-80.0713372,Avalon,Northeast,0,RQMAX,0.02,,,,,,,,0,1,3,Pennsylvania,"Pittsburgh, PA",No,Pb,Undetermined/Insufficient Data,,
+42-003-1009,420031009,40.618909685,-79.71937333,Natrona,Northeast,0,RQMAX,0.14,0.06,0.04,0.02,0.02,,,,0,5,3,Pennsylvania,"Pittsburgh, PA",No,Pb,Undetermined/Insufficient Data,,
+42-055-0002,420550002,40.059828,-77.710608,,Northeast,0,RQMAX,0.05,,0.01,0.01,0.01,0.01,0.01,,1,6,3,Pennsylvania,"Chambersburg-Waynesboro, PA",Yes,Pb,No Trend,0,0.0894345238
+42-063-0005,420630005,40.652511,-79.292769,,Northeast,0,RQMAX,0.05,,0.02,0.01,0.01,0.01,0.01,,1,6,3,Pennsylvania,"Indiana, PA",Yes,Pb,Decreasing,-0.004583333,0.0155753968
+42-101-0048,421010048,39.991389,-75.080833,North East Waste (NEW),Northeast,0,RQMAX,,,,,0.02,0.02,0.04,,0,3,3,Pennsylvania,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",No,Pb,Undetermined/Insufficient Data,,
+42-101-0449,421010449,39.9825,-75.083056,CASTOR AND DELAWARE AVENUES (ITO),Northeast,0,RQMAX,0.03,,,,,,,,0,1,3,Pennsylvania,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",No,Pb,Undetermined/Insufficient Data,,
+42-101-1002,421011002,40.035984597,-75.00240543,BAXTER (BAX),Northeast,0,RQMAX,,0.02,0.05,0.04,,,,,0,3,3,Pennsylvania,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",No,Pb,Undetermined/Insufficient Data,,
+45-019-0003,450190003,32.882289001,-79.977538,JENKINS AVE. FIRE STATION,Southeast,0,RQMAX,,0.01,,,,,,,0,1,6,South Carolina,"Charleston-North Charleston, SC",No,Pb,Undetermined/Insufficient Data,,
+45-045-0015,450450015,34.84389511,-82.4145845,Greenville ESC,Southeast,0,RQMAX,,0.01,,,,,,,0,1,6,South Carolina,"Greenville-Anderson-Mauldin, SC",No,Pb,Undetermined/Insufficient Data,,
+45-079-0019,450790019,33.991509001,-81.024141,BATES HOUSE,Southeast,0,RQMAX,,0.02,,,,,,,0,1,6,South Carolina,"Columbia, SC",No,Pb,Undetermined/Insufficient Data,,
+47-157-0075,471570075,35.151699,-89.850249,Memphis NCORE site,Central,0,RQMAX,,,0,0,0,0,0,,0,5,1,Tennessee,"Memphis, TN-MS-AR",No,Pb,Undetermined/Insufficient Data,,
+47-163-3001,471633001,36.525556,-82.273333,UPWIND MONITOR FROM DOMINANT WIND DIRECTION,Central,0,RQMAX,0.08,,0.07,0.06,,,,,0,3,1,Tennessee,"Kingsport-Bristol-Bristol, TN-VA",No,Pb,Undetermined/Insufficient Data,,
+47-163-3002,471633002,36.524722,-82.268056,Blountville ozone monitoring site,Central,0,RQMAX,0.04,,0.04,0.03,,,,,0,3,1,Tennessee,"Kingsport-Bristol-Bristol, TN-VA",No,Pb,Undetermined/Insufficient Data,,
+47-163-3003,471633003,36.528056,-82.268333,SECONDARY PREDOMINANT DOWNWIND MONITOR,Central,0,RQMAX,0.04,,0.04,0.03,,,,,0,3,1,Tennessee,"Kingsport-Bristol-Bristol, TN-VA",No,Pb,Undetermined/Insufficient Data,,
+48-029-1052,480291052,29.342,-98.472,San Antonio 99th Street,South,0,RQMAX,,,,0.02,,,,,0,1,5,Texas,"San Antonio-New Braunfels, TX",No,Pb,Undetermined/Insufficient Data,,
+48-113-0069,481130069,32.820061,-96.860117,Dallas Hinton,South,0,RQMAX,,,0.01,0.01,0,0.01,0.01,,0,5,5,Texas,"Dallas-Fort Worth-Arlington, TX",No,Pb,Undetermined/Insufficient Data,,
+48-141-0002,481410002,31.757654,-106.482922,Tillman,South,0,RQMAX,0.04,0.03,0.03,,,,,,0,3,5,Texas,"El Paso, TX",No,Pb,Undetermined/Insufficient Data,,
+48-141-0033,481410033,31.776944,-106.501667,Kern,South,0,RQMAX,0.02,0.02,,,,,,,0,2,5,Texas,"El Paso, TX",No,Pb,Undetermined/Insufficient Data,,
+48-141-0055,481410055,31.746775,-106.402806,Ascarate Park SE,South,0,RQMAX,,0.01,0.02,0.01,0.01,0.01,0.01,,1,6,5,Texas,"El Paso, TX",Yes,Pb,No Trend,0,0.4524305556
+48-141-0058,481410058,31.893913,-106.425827,Skyline Park,South,0,RQMAX,0.02,0.02,0.02,,,,,,0,3,5,Texas,"El Paso, TX",No,Pb,Undetermined/Insufficient Data,,
+48-201-1034,482011034,29.767997,-95.220582,Houston East,South,0,RQMAX,0.01,0.01,0.01,0.01,0,,,,0,5,5,Texas,"Houston-The Woodlands-Sugar Land, TX",No,Pb,Undetermined/Insufficient Data,,
+48-201-1039,482011039,29.670025,-95.128508,Houston Deer Park #2,South,0,RQMAX,,,0,0,0,0,0,,0,5,5,Texas,"Houston-The Woodlands-Sugar Land, TX",No,Pb,Undetermined/Insufficient Data,,
+51-027-0006,510270006,37.247778001,-82.0180556,Vansant,Southeast,0,RQMAX,,0.01,0.01,0.01,,,,,0,3,6,Virginia,,No,Pb,Undetermined/Insufficient Data,,
+51-087-0014,510870014,37.556520001,-77.40027,MathScience Innovation Center,Southeast,0,RQMAX,,0,0.01,0,0,0,,,0,5,6,Virginia,"Richmond, VA",No,Pb,Undetermined/Insufficient Data,,
+51-770-0011,517700011,37.273994001,-79.999448,Cherry Hill,Southeast,0,RQMAX,0.11,0.05,0.05,0.11,,,,,0,4,6,Virginia,"Roanoke, VA",No,Pb,Undetermined/Insufficient Data,,
+53-033-0029,530330029,47.3223,-122.22604,Auburn-23rd St,Northwest,0,RQMAX,,,0.06,,,,,,0,1,4,Washington,"Seattle-Tacoma-Bellevue, WA",No,Pb,Undetermined/Insufficient Data,,
+53-061-0013,530610013,47.90208,-122.10039,Snohomish-Airport Way (Harvey Field),Northwest,0,RQMAX,,,0.02,,,,,,0,1,4,Washington,"Seattle-Tacoma-Bellevue, WA",No,Pb,Undetermined/Insufficient Data,,
+72-013-0001,720130001,18.457039071,-66.69669257,,None,0,RQMAX,0.25,0.34,0.2,0.13,0.12,0.01,0,,1,7,0,Puerto Rico,"Arecibo, PR",Yes,Pb,Decreasing,-0.0425,0.0008680556
+72-021-0010,720210010,18.420089117,-66.1506155,,None,0,RQMAX,,,0,0.01,0.01,,,,0,3,0,Puerto Rico,"San Juan-Carolina-Caguas, PR",No,Pb,Undetermined/Insufficient Data,,
+72-123-0002,721230002,17.953005792,-66.26146111,,None,0,RQMAX,,,0.02,0.01,0.01,,,,0,3,0,Puerto Rico,"Coco, PR",No,Pb,Undetermined/Insufficient Data,,
+06-019-0011,060190011,36.78532176,-119.7741739,Fresno - Garland,West,0,RQMAX,,,0.01,0.01,0.01,0.01,0.01,0,1,6,8,California,"Fresno, CA",Yes,Pb,No Trend,0,0.2742063492
+06-037-5005,060375005,33.9508,-118.43043,LAX Hastings,West,0,RQMAX,0.01,0.01,0,0,0.01,0.01,0.01,0,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,0,0.4524305556
+15-003-0010,150030010,21.32374479,-158.0886127,Kapolei,None,0,RQMAX,,,0,0,0,0,0,0,1,6,0,Hawaii,"Urban Honolulu, HI",Yes,Pb,No Trend,0,0.5475694444
+22-033-0009,220330009,30.461981,-91.179219,Capitol,South,0,RQMAX,,,,,,0,0,0,0,3,5,Louisiana,"Baton Rouge, LA",No,Pb,Undetermined/Insufficient Data,,
+22-033-0014,220330014,30.593966,-91.251946,Baker LSP,South,0,RQMAX,,,,,,0,0,0,0,3,5,Louisiana,"Baton Rouge, LA",No,Pb,Undetermined/Insufficient Data,,
+26-081-0020,260810020,42.984173043,-85.67133874,GR-Monroe,Upper Midwest,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0,0,1,8,2,Michigan,"Grand Rapids-Wyoming, MI",Yes,Pb,No Trend,0,0.0894345238
+26-163-0001,261630001,42.228620136,-83.20820002,Allen Park,Upper Midwest,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0,0.01,0,1,8,2,Michigan,"Detroit-Warren-Dearborn, MI",Yes,Pb,No Trend,0,0.1375496032
+26-163-0097,261630097,42.261669201,-83.1578933,,Upper Midwest,0,RQMAX,,,,,,,,0,0,1,2,Michigan,"Detroit-Warren-Dearborn, MI",No,Pb,Undetermined/Insufficient Data,,
+27-037-0020,270370020,44.763230001,-93.03255,Flint Hills Refinery 420,Upper Midwest,0,RQMAX,,,0,0.01,0.01,0.01,0.01,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.1993799603
+27-037-0423,270370423,44.775530001,-93.06299,Flint Hills Refinery 423,Upper Midwest,0,RQMAX,,,,,,,,0,0,1,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-037-0470,270370470,44.738460001,-93.23725,Apple Valley,Upper Midwest,0,RQMAX,,,0,0,0,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-053-0962,270530962,44.965242001,-93.254759,Near Road I-35/I-94,Upper Midwest,0,RQMAX,,,,,0.01,0,0,0,0,4,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-053-0963,270530963,44.953660001,-93.25821,Andersen School,Upper Midwest,0,RQMAX,,,0,0,0,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-053-0966,270530966,44.979440001,-93.26613,City of Lakes Building,Upper Midwest,0,RQMAX,,,0,0.01,0,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-053-1007,270531007,45.039720001,-93.29874,Humboldt Avenue,Upper Midwest,0,RQMAX,,,0,0,0,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-137-7001,271377001,47.523355001,-92.536305,Virginia City Hall,Upper Midwest,0,RQMAX,,,0.01,0,0,0,0,0,1,6,2,Minnesota,"Duluth, MN-WI",Yes,Pb,No Trend,-0.001547619,0.0543402778
+27-137-7549,271377549,46.771070001,-92.11732,Michigan Street,Upper Midwest,0,RQMAX,,,,,,,0,0,0,2,2,Minnesota,"Duluth, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-137-7555,271377555,46.729380001,-92.15998,Waseca Road,Upper Midwest,0,RQMAX,,,0,0,0,0,0,0,1,6,2,Minnesota,"Duluth, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-163-0438,271630438,44.857110001,-93.00352,Saint Paul Park Refinery 438,Upper Midwest,0,RQMAX,,,0,0,0.01,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+27-163-0446,271630446,45.027980001,-92.77415,Point Road,Upper Midwest,0,RQMAX,,,0,0,0,0,0,0,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.5475694444
+31-055-0019,310550019,41.247486001,-95.973142,4102 Woolworth Ave. on Healthcenter Warehouse,Northern Rockies,0,RQMAX,,,0.01,0.01,0.01,0,0,0,1,6,9,Nebraska,"Omaha-Council Bluffs, NE-IA",Yes,Pb,No Trend,-0.001547619,0.0543402778
+35-001-0023,350010023,35.134300001,-106.5852,DEL NORTE HIGH SCHOOL,Southwest,0,RQMAX,,,0.01,0.01,0,0,0,0,1,6,7,New Mexico,"Albuquerque, NM",Yes,Pb,Decreasing,-0.001666667,0.0305059524
+39-167-0008,391670008,39.431470001,-81.50131,WASHINGTON COUNTY CAREER CENTER,Central,0,RQMAX,0.01,0.01,0.01,0.01,0,0,0,0,1,8,1,Ohio,"Marietta, OH",Yes,Pb,Decreasing,-0.001666667,0.0305059524
+40-121-0416,401210416,34.8293959,-95.8436423,,South,0,RQMAX,0,0,0,0.06,0,,,0,1,6,5,Oklahoma,"McAlester, OK",Yes,Pb,No Trend,0,0.5475694444
+45-079-0007,450790007,34.093959,-80.962304,PARKLANE,Southeast,0,RQMAX,,0.01,0,0,0,0,0,0,1,7,6,South Carolina,"Columbia, SC",Yes,Pb,No Trend,0,0.0894345238
+47-163-3004,471633004,36.524433001,-82.27261,,Central,0,RQMAX,0.05,0.08,0.07,0.05,0,0.01,0,0,1,8,1,Tennessee,"Kingsport-Bristol-Bristol, TN-VA",Yes,Pb,Decreasing,-0.0125,0.0155753968
+48-061-0006,480610006,25.892518,-97.49383,Brownsville,South,0,RQMAX,0,0.01,0.01,0,0.01,0,0,0,1,8,5,Texas,"Brownsville-Harlingen, TX",Yes,Pb,No Trend,0,0.2742063492
+48-141-1021,481411021,31.86247,-106.5473,Ojo De Agua,South,0,RQMAX,,,,0.02,,0,0,0,0,4,5,Texas,"El Paso, TX",No,Pb,Undetermined/Insufficient Data,,
+48-375-0024,483750024,35.280273,-101.71564,Amarillo SH 136,South,0,RQMAX,,0.01,0.02,0,0,0,0,0,1,7,5,Texas,"Amarillo, TX",Yes,Pb,No Trend,-0.001547619,0.0894345238
+48-479-0016,484790016,27.517449,-99.515219,Laredo Vidaurri,South,0,RQMAX,0.03,,,0.01,0,0.01,0.01,0,1,6,5,Texas,"Laredo, TX",Yes,Pb,Decreasing,-0.003944444,0.0070684524
+06-037-1103,060371103,34.066590001,-118.22688,Los Angeles-North Main Street,West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,0,0.5475694444
+06-037-1302,060371302,33.901389001,-118.205,Compton,West,0,RQMAX,0.02,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,0,0.2742063492
+06-037-1404,060371404,34.026111001,-117.981667,Closet World (Quemetco),West,0,RQMAX,0.11,0.06,0.03,0.04,0.03,0.01,0.02,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,Decreasing,-0.01,0.0027529762
+06-037-1406,060371406,34.008333001,-118.190556,ATSF (Exide),West,0,RQMAX,0.06,0.07,0.03,0.02,0.02,0.02,0.02,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,Decreasing,-0.005833333,0.0070684524
+06-037-1602,060371602,34.011940001,-118.06995,Pico Rivera #2,West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,0,0.5475694444
+06-037-4004,060374004,33.79236,-118.17533,Long Beach (South),West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,0,0.5475694444
+06-065-8001,060658001,33.999580001,-117.41601,Rubidoux,West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Riverside-San Bernardino-Ontario, CA",Yes,Pb,No Trend,0,0.5475694444
+06-071-9004,060719004,34.10688,-117.27411,San Bernardino,West,0,RQMAX,0.01,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,8,California,"Riverside-San Bernardino-Ontario, CA",Yes,Pb,No Trend,0,0.5475694444
+12-057-0100,120570100,27.970328001,-82.38005,KENLY,Southeast,0,RQMAX,0.04,0.04,0.04,0.01,0.01,0.01,0.01,0.01,1,8,6,Florida,"Tampa-St. Petersburg-Clearwater, FL",Yes,Pb,No Trend,-0.004642857,0.0543402778
+17-031-0110,170310110,41.855770378,-87.65792758,PEREZ ELEMENTRY SCHOOL,Central,0,RQMAX,0.24,0.29,0.05,0.04,0.03,0.03,0.01,0.01,1,8,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,Decreasing,-0.01,0.0008680556
+18-089-0033,180890033,41.649211001,-87.447464,Abraham Linc. Elem. School,Central,0,RQMAX,0.13,0.14,0.13,0.1,0.15,0.42,0.01,0.01,1,8,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,No Trend,-0.013571429,0.2742063492
+18-089-0034,180890034,41.653479574,-87.43558403,East Chicago-Marina,Central,0,RQMAX,,,,0.02,0.06,0.05,0.01,0.01,0,5,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+18-089-2008,180892008,41.639460104,-87.49362295,HAMMOND CAAP- Hammond- 141st St.,Central,0,RQMAX,0.04,0.03,0.05,0.03,0.03,0.02,0.02,0.01,1,8,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,Decreasing,-0.004142857,0.0070684524
+21-151-0003,211510003,37.738458,-84.284952,MAYFIELD ELEMENTARY,Central,0,RQMAX,0.05,0.07,0.25,0.01,0.01,0.02,0.02,0.01,1,8,1,Kentucky,"Richmond-Berea, KY",Yes,Pb,No Trend,-0.005857143,0.1375496032
+27-003-1002,270031002,45.137679536,-93.20761498,Anoka County Airport,Upper Midwest,0,RQMAX,,,0.01,0.02,0.01,0.01,0.02,0.01,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.3597718254
+27-053-1909,270531909,45.013611001,-93.272049,Bottineau / Marshall Terrace,Upper Midwest,0,RQMAX,,,,,,,,0.01,0,1,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+27-123-0871,271230871,44.959390001,-93.03587,Harding High School,Upper Midwest,0,RQMAX,,,0.01,0.01,0,0,0.01,0.01,1,6,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.3597718254
+29-099-0025,290990025,38.243054872,-90.3738233,Ursuline North,Central,0,RQMAX,0.08,0.05,0.08,0.07,0.05,0.01,0.01,0.01,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.010833333,0.0155753968
+36-071-3001,360713001,41.46107,-74.36343,WALLKILL BALLARD ROAD,Northeast,0,RQMAX,0.04,0.1,0.02,0.03,0.02,0.02,0.02,0.01,1,8,3,New York,"New York-Newark-Jersey City, NY-NJ-PA",Yes,Pb,Decreasing,-0.004142857,0.0155753968
+36-071-3002,360713002,41.45869,-74.35404,WALLKILL WAKEFERN,Northeast,0,RQMAX,0.08,1.03,0.06,0.11,0.02,0.03,0.03,0.01,1,8,3,New York,"New York-Newark-Jersey City, NY-NJ-PA",Yes,Pb,Decreasing,-0.01,0.0305059524
+39-029-0020,390290020,40.639595001,-80.524019,WATER PLANT,Central,0,RQMAX,0.02,0.02,0.02,0.02,0.02,0.01,0.01,0.01,1,8,1,Ohio,"Salem, OH",Yes,Pb,No Trend,-0.001547619,0.0543402778
+39-029-0023,390290023,40.634688,-80.545695,SCHOOL EASTSIDE,Central,0,RQMAX,,,,,,,0.01,0.01,0,2,1,Ohio,"Salem, OH",No,Pb,Undetermined/Insufficient Data,,
+39-035-0038,390350038,41.477011001,-81.682383,ST. THEODO,Central,0,RQMAX,0.02,0.01,0.01,0.01,0.02,0.01,0.01,0.01,1,8,1,Ohio,"Cleveland-Elyria, OH",Yes,Pb,No Trend,0,0.2742063492
+39-035-0042,390350042,41.482300001,-81.708906,FS  4,Central,0,RQMAX,0.03,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,8,1,Ohio,"Cleveland-Elyria, OH",Yes,Pb,No Trend,0,0.2742063492
+39-049-0039,390490039,39.928531,-82.980105,,Central,0,RQMAX,,,,,,0.01,0.01,0.01,0,3,1,Ohio,"Columbus, OH",No,Pb,Undetermined/Insufficient Data,,
+39-101-0004,391010004,40.57665,-83.14022,STORAGE RENTAL,Central,0,RQMAX,,,0.02,0.02,0.01,0.01,0.01,0.01,1,6,1,Ohio,"Marion, OH",Yes,Pb,Decreasing,-0.001666667,0.0305059524
+40-037-0146,400370146,36.013567164,-96.09914381,,South,0,RQMAX,,,,,,,0.01,0.01,0,2,5,Oklahoma,"Tulsa, OK",No,Pb,Undetermined/Insufficient Data,,
+40-115-9006,401159006,36.9846,-94.8249,,South,0,RQMAX,0.02,0.02,0.02,0.01,0.04,0.01,0.01,0.01,1,8,5,Oklahoma,"Miami, OK",Yes,Pb,No Trend,-0.001547619,0.1375496032
+42-003-0008,420030008,40.465420328,-79.96075745,Lawrenceville,Northeast,0,RQMAX,,0.01,0.01,0.01,0.01,0.01,0.01,0.01,1,7,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,No Trend,0,0.5475694444
+42-003-0070,420030070,40.363016001,-80.102156,Bridgeville,Northeast,0,RQMAX,0.05,0.06,0.02,0.03,0.19,0.01,0.01,0.01,1,8,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,No Trend,-0.006190476,0.0894345238
+42-007-0006,420070006,40.638936,-80.365653,,Northeast,0,RQMAX,0.07,0.08,0.07,0.08,0.02,0.01,0.01,0.01,1,8,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,Decreasing,-0.010833333,0.0305059524
+42-007-0007,420070007,40.673656,-80.317731,,Northeast,0,RQMAX,0.24,0.25,0.19,0.22,0.2,0.01,0.01,0.01,1,8,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,Decreasing,-0.037166667,0.0155753968
+42-007-0505,420070505,40.685018535,-80.3247752,,Northeast,0,RQMAX,0.09,,0.15,0.13,0.05,0.02,0.02,0.01,1,7,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,Decreasing,-0.016666667,0.0305059524
+42-011-0020,420110020,40.385981,-75.912856,,Northeast,0,RQMAX,0.19,0.2,0.51,0.12,0.02,0.02,0.03,0.01,1,8,3,Pennsylvania,"Reading, PA",Yes,Pb,Decreasing,-0.030833333,0.0305059524
+42-011-1717,420111717,40.377222,-75.914444,A420111717LAT/LON POINT IS OF SAMPLING INLET,Northeast,0,RQMAX,0.2,0.18,0.22,0.17,0.03,0.03,0.01,0.01,1,8,3,Pennsylvania,"Reading, PA",Yes,Pb,Decreasing,-0.032833333,0.0027529762
+42-045-0002,420450002,39.835556,-75.3725,A420450002LAT/LON POINT IS OF CORNER OF TRAILER,Northeast,0,RQMAX,0.05,,0.01,0.01,0.01,0.01,0.01,0.01,1,7,3,Pennsylvania,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Yes,Pb,No Trend,0,0.0894345238
+42-045-0004,420450004,39.862928,-75.325689,,Northeast,0,RQMAX,0.05,0.04,0.01,0.01,0.01,0.01,0.01,0.01,1,8,3,Pennsylvania,"Philadelphia-Camden-Wilmington, PA-NJ-DE-MD",Yes,Pb,No Trend,0,0.0894345238
+42-079-0036,420790036,41.348869,-75.747322,,Northeast,0,RQMAX,0.14,,0.01,0.06,0.06,0.02,0.01,0.01,1,7,3,Pennsylvania,"Scranton--Wilkes-Barre--Hazleton, PA",Yes,Pb,Decreasing,-0.013375,0.0155753968
+42-129-0009,421290009,40.392922,-79.024456,,Northeast,0,RQMAX,0.05,0.03,0.02,0.02,0.01,0.01,0.01,0.01,1,8,3,Pennsylvania,"Pittsburgh, PA",Yes,Pb,Decreasing,-0.0045,0.0070684524
+48-085-0003,480850003,33.142336,-96.824683,Frisco 5th St,South,0,RQMAX,0.37,0.19,0.12,0.05,0.01,0.01,0.01,0.01,1,8,5,Texas,"Dallas-Fort Worth-Arlington, TX",Yes,Pb,Decreasing,-0.038333333,0.0027529762
+48-085-0007,480850007,33.147414,-96.825769,Frisco 7,South,0,RQMAX,0.2,0.19,0.07,0.02,0.02,0,0.01,0.01,1,8,5,Texas,"Dallas-Fort Worth-Arlington, TX",Yes,Pb,Decreasing,-0.024166667,0.0027529762
+48-085-0009,480850009,33.144662,-96.828809,Frisco Eubanks,South,0,RQMAX,,0.52,0.31,0.08,0.02,0.01,0.01,0.01,1,7,5,Texas,"Dallas-Fort Worth-Arlington, TX",Yes,Pb,Decreasing,-0.08,0.0008680556
+48-085-0029,480850029,33.136025,-96.824473,Frisco Stonebrook,South,0,RQMAX,,0.18,0.05,0.07,0.01,0.01,0.01,0.01,1,7,5,Texas,"Dallas-Fort Worth-Arlington, TX",Yes,Pb,Decreasing,-0.022142857,0.0155753968
+51-009-0007,510090007,37.412220001,-79.116233,Central Virginia Training Center - Solid Rock Academy ELC*,Southeast,0,RQMAX,,0.02,0.01,0.01,0.01,0.01,0.03,0.01,1,7,6,Virginia,"Lynchburg, VA",Yes,Pb,No Trend,0,0.3597718254
+54-011-0006,540110006,38.424133001,-82.4259,HENDERSON CENTER/MARSHALL UNIVERSITY - MOVED FROM WATER CO. 5/98,Central,0,RQMAX,,,0.01,0.01,0.01,0.01,0.01,0.01,1,6,1,West Virginia,"Huntington-Ashland, WV-KY-OH",Yes,Pb,No Trend,0,0.5475694444
+06-037-1405,060371405,34.006389001,-118.193056,Rehrig (Exide),West,0,RQMAX,0.39,0.46,0.15,0.1,0.07,0.02,0.03,0.02,1,8,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,Decreasing,-0.046666667,0.0027529762
+06-073-1023,060731023,33.130822,-117.272686,Palomar Airport,West,0,RQMAX,,,,,,0.02,0.01,0.02,0,3,8,California,"San Diego-Carlsbad, CA",No,Pb,Undetermined/Insufficient Data,,
+17-031-0022,170310022,41.687165438,-87.53931548,WASHINGTON HS,Central,0,RQMAX,0.05,0.05,0.04,0.05,0.04,0.04,0.02,0.02,1,8,1,Illinois,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,Decreasing,-0.004642857,0.0155753968
+18-089-0032,180890032,41.603581701,-87.3326576,Gary- 4th Ave./ Railcats,Central,0,RQMAX,,0.06,0.02,0.01,0.01,0.02,0.02,0.02,1,7,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",Yes,Pb,No Trend,-0.0025,0.1993799603
+18-097-0063,180970063,39.760868515,-86.29719458,Indpls.- Rockville Rd.,Central,0,RQMAX,0.08,0.06,0.04,0.02,0.02,0.02,0.01,0.02,1,8,1,Indiana,"Indianapolis-Carmel-Anderson, IN",Yes,Pb,Decreasing,-0.009285714,0.0070684524
+18-127-0027,181270027,41.635181178,-87.15036734,Burns Harbor- Port of Indiana,Central,0,RQMAX,,,0.04,0.08,,0.02,0.01,0.02,0,5,1,Indiana,"Chicago-Naperville-Elgin, IL-IN-WI",No,Pb,Undetermined/Insufficient Data,,
+26-067-0002,260670002,43.101720001,-85.22327,Belding,Upper Midwest,0,RQMAX,,,0.05,0.06,0.04,0.03,0.02,0.02,1,6,2,Michigan,"Ionia, MI",Yes,Pb,Decreasing,-0.005,0.0155753968
+26-067-0003,260670003,43.099943001,-85.222266,,Upper Midwest,0,RQMAX,0.28,0.11,0.06,0.05,0.05,0.04,0.01,0.02,1,8,2,Michigan,"Ionia, MI",Yes,Pb,Decreasing,-0.01625,0.0008680556
+26-163-0033,261630033,42.30667449,-83.14875385,PROPERTY OWNED BY DEARBORN PUBLIC SCHOOLS,Upper Midwest,0,RQMAX,0.01,0.02,0.01,0.01,0.02,0.02,0.01,0.02,1,8,2,Michigan,"Detroit-Warren-Dearborn, MI",Yes,Pb,No Trend,0,0.2742063492
+29-087-0008,290870008,40.027222,-95.235833,"Forest City, Exide Levee (ESP SCHULYKILL WEST SITE LOCATED ON A LEVEE)",Central,0,RQMAX,,,1.34,0.73,0.15,0.02,0.02,0.02,1,6,1,Missouri,,Yes,Pb,Decreasing,-0.228333333,0.0027529762
+29-093-0033,290930033,37.489726488,-90.69257232,Glover,Central,0,RQMAX,0.05,0.06,0.03,0.26,0.08,0.06,0.07,0.02,1,8,1,Missouri,,Yes,Pb,No Trend,-0.001,0.5475694444
+29-099-0009,290990009,38.286214216,-90.3810236,Pevely,Central,0,RQMAX,0.07,0.05,0.19,0.07,0.04,0.01,0.02,0.02,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.009166667,0.0305059524
+29-179-0002,291790002,37.468956434,-91.08859478,Fletcher,Central,0,RQMAX,0.04,0.07,0.04,0.03,0.03,0.02,0.05,0.02,1,8,1,Missouri,,Yes,Pb,No Trend,-0.003666667,0.0894345238
+39-029-0019,390290019,40.631545001,-80.547181,PORT (AUTHORITY),Central,0,RQMAX,0.06,0.05,0.02,0.02,0.01,0.01,0.02,0.02,1,8,1,Ohio,"Salem, OH",Yes,Pb,No Trend,-0.005,0.0894345238
+39-035-0049,390350049,41.446342001,-81.6507,FERRO,Central,0,RQMAX,0.53,0.41,0.03,0.02,0.02,0.02,0.02,0.02,1,8,1,Ohio,"Cleveland-Elyria, OH",Yes,Pb,Decreasing,-0.0075,0.0155753968
+39-101-0003,391010003,40.57158,-83.135648,PROSPECT,Central,0,RQMAX,0.05,0.06,0.09,0.03,0.03,0.03,0.02,0.02,1,8,1,Ohio,"Marion, OH",Yes,Pb,Decreasing,-0.005,0.0155753968
+40-115-9007,401159007,36.985702,-94.83931,,South,0,RQMAX,0.02,0.03,0.03,0.02,0.04,0.02,0.02,0.02,1,8,5,Oklahoma,"Miami, OK",Yes,Pb,No Trend,0,0.3597718254
+42-011-0022,420110022,40.478319,-75.753947,,Northeast,0,RQMAX,0.12,0.04,0.03,0.02,0.02,0.02,0.02,0.02,1,8,3,Pennsylvania,"Reading, PA",Yes,Pb,Decreasing,-0.003666667,0.0155753968
+42-073-0011,420730011,40.860031,-80.279092,,Northeast,0,RQMAX,,,0.02,0.02,0.02,0.02,0.03,0.02,1,6,3,Pennsylvania,"New Castle, PA",Yes,Pb,No Trend,0,0.3597718254
+45-041-8003,450418003,34.1675,-79.56266,JCI River (Woods),Southeast,0,RQMAX,,,0.01,,0.08,0.03,0.03,0.02,0,5,6,South Carolina,"Florence, SC",No,Pb,Undetermined/Insufficient Data,,
+47-093-0027,470930027,35.983056001,-83.952253,Burnside,Central,0,RQMAX,0.02,0.04,0.03,0.03,,,,0.02,0,5,1,Tennessee,"Knoxville, TN",No,Pb,Undetermined/Insufficient Data,,
+47-093-1017,470931017,35.978074001,-83.950666,Rule High School (relo),Central,0,RQMAX,0.03,0.04,0.03,0.02,,,,0.02,0,5,1,Tennessee,"Knoxville, TN",No,Pb,Undetermined/Insufficient Data,,
+48-141-0037,481410037,31.768291,-106.50126,El Paso UTEP,South,0,RQMAX,,,,,,,0.01,0.02,0,2,5,Texas,"El Paso, TX",No,Pb,Undetermined/Insufficient Data,,
+51-770-0016,517700016,37.27494,-79.98567,Roanoke - Mario Industries,Southeast,0,RQMAX,,,,,,0.01,0.01,0.02,0,3,6,Virginia,"Roanoke, VA",No,Pb,Undetermined/Insufficient Data,,
+55-117-0008,551170008,43.744451001,-87.776424,KOHLER,Upper Midwest,0,RQMAX,0.15,0.07,0.1,0.11,0.09,0.05,0.05,0.02,1,8,2,Wisconsin,"Sheboygan, WI",Yes,Pb,Decreasing,-0.016333333,0.0155753968
+13-215-0010,132150010,32.436200001,-84.9341,Columbus-Joy Road,Southeast,0,RQMAX,,,0.17,0.12,,0.05,0.05,0.03,0,5,6,Georgia,"Columbus, GA-AL",No,Pb,Undetermined/Insufficient Data,,
+17-119-0010,171190010,38.694438305,-90.15395426,AIR PRODUCTS,Central,0,RQMAX,0.44,0.21,0.36,0.06,0.04,0.02,0.02,0.03,1,8,1,Illinois,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.04375,0.0070684524
+29-099-0013,290990013,38.271754437,-90.37668344,"Herculaneum, Sherman",Central,0,RQMAX,0.2,0.17,0.3,0.24,0.13,0.04,0.03,0.03,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.031,0.0155753968
+29-099-9004,290999004,38.271754437,-90.37668344,"Herculaneum, Sherman",Central,0,RQMAX,0.26,0.24,0.44,0.26,0.15,0.04,0.03,0.03,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.041,0.0070684524
+29-179-0034,291790034,37.564914826,-91.11435575,Oates,Central,0,RQMAX,0.09,0.09,0.16,0.09,0.06,0.04,0.03,0.03,1,8,1,Missouri,,Yes,Pb,Decreasing,-0.01,0.0070684524
+29-187-0007,291870007,37.8141914,-90.50748694,St. Joe State Park,Central,0,RQMAX,0.04,,0.13,0.08,0.05,0.03,0.02,0.03,1,7,1,Missouri,"Farmington, MO",Yes,Pb,No Trend,-0.010833333,0.0543402778
+39-035-0061,390350061,41.473092001,-81.675956,OLD ASPHALT PLANT,Central,0,RQMAX,0.02,0.02,0.02,0.06,0.03,0.03,0.03,0.03,1,8,1,Ohio,"Cleveland-Elyria, OH",Yes,Pb,No Trend,0.001547619,0.1375496032
+42-011-0021,420110021,40.477075,-75.756919,,Northeast,0,RQMAX,0.14,0.04,0.05,0.04,0.03,0.04,0.03,0.03,1,8,3,Pennsylvania,"Reading, PA",Yes,Pb,Decreasing,-0.003666667,0.0155753968
+04-007-8000,040078000,33.4190167,-110.82967,MIAMI GOLF COURSE,Southwest,0,RQMAX,,0.06,0.04,0.03,0.05,0.03,0.04,0.04,1,7,7,Arizona,"Payson, AZ",Yes,Pb,No Trend,-0.003333333,0.1375496032
+17-115-0110,171150110,39.862576,-88.940748,MUELLER,Central,0,RQMAX,0.12,0.2,0.08,0.05,0.05,0.04,0.04,0.04,1,8,1,Illinois,"Decatur, IL",Yes,Pb,Decreasing,-0.012380952,0.0027529762
+18-035-0009,180350009,40.158417101,-85.4150209,Muncie- Mt. Pleasant Blvd.  LOCATED NE OF PLANT - DOWNWIND SITE,Central,0,RQMAX,0.26,0.25,0.34,0.06,0.05,0.11,0.11,0.04,1,8,1,Indiana,"Muncie, IN",Yes,Pb,No Trend,-0.030714286,0.0543402778
+27-053-0909,270530909,45.012102001,-93.276699,Lowry Avenue,Upper Midwest,0,RQMAX,,,,,,0.12,0.06,0.04,0,3,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+29-099-0005,290990005,38.267084506,-90.3788535,,Central,0,RQMAX,0.33,0.4,0.29,0.31,0.14,0.06,0.06,0.04,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.052,0.0027529762
+31-053-0005,310530005,41.424819,-96.480819,,Northern Rockies,0,RQMAX,0.07,,0.14,0.11,0.09,0.08,0.06,0.04,1,7,9,Nebraska,"Fremont, NE",Yes,Pb,No Trend,-0.012916667,0.0543402778
+45-041-8001,450418001,34.15567,-79.56983,JCI Railroad,Southeast,0,RQMAX,,,0.05,,,0.04,0.02,0.04,0,4,6,South Carolina,"Florence, SC",No,Pb,Undetermined/Insufficient Data,,
+04-013-4018,040134018,33.684627,-112.08635,Deer Valley,Southwest,0,RQMAX,,,0.04,0.04,0.05,0.05,0.05,0.05,1,6,7,Arizona,"Phoenix-Mesa-Scottsdale, AZ",Yes,Pb,Increasing,0.0016666667,0.0305059524
+06-071-1407,060711407,34.093979,-117.527254,SA Recycling,West,0,RQMAX,,,,,,0.03,0.06,0.05,0,3,8,California,"Riverside-San Bernardino-Ontario, CA",No,Pb,Undetermined/Insufficient Data,,
+19-155-0011,191550011,41.254250001,-95.887249,,Upper Midwest,0,RQMAX,0.26,0.14,0.2,0.13,0.1,0.07,0.07,0.05,1,8,2,Iowa,"Omaha-Council Bluffs, NE-IA",Yes,Pb,Decreasing,-0.03,0.0008680556
+21-151-0005,211510005,37.736349,-84.291774,EASTERN KENTUCKY UNIVERSITY (EKU),Central,0,RQMAX,,,2.24,0.08,0.05,0.11,0.05,0.05,1,6,1,Kentucky,"Richmond-Berea, KY",Yes,Pb,Decreasing,-0.338928571,0.0155753968
+47-093-0023,470930023,35.98104,-83.954311,,Central,0,RQMAX,,0.17,0.16,0.11,0.09,0.06,0.13,0.06,1,7,1,Tennessee,"Knoxville, TN",Yes,Pb,Decreasing,-0.019166667,0.0070684524
+06-085-2011,060852011,37.329841,-121.815438,Reid Hillview Airport,West,0,RQMAX,,,0.09,0.1,0.1,0.1,0.08,0.07,1,6,8,California,"San Jose-Sunnyvale-Santa Clara, CA",Yes,Pb,No Trend,0,0.3597718254
+12-057-1073,120571073,27.964830001,-82.37921,OPEN GRASSY AREA APP 60FT S OF 14TH AVE BETWEEN 70TH & 66TH STREET,Southeast,0,RQMAX,0.13,0.42,0.39,0.11,0.06,0.15,0.04,0.07,1,8,6,Florida,"Tampa-St. Petersburg-Clearwater, FL",Yes,Pb,No Trend,-0.026666667,0.0543402778
+13-215-0011,132150011,32.429700001,-84.9316,Columbus-Cusseta,Southeast,0,RQMAX,0.07,0.07,0.03,0.02,,,0.08,0.07,1,6,6,Georgia,"Columbus, GA-AL",Yes,Pb,No Trend,0.0018333333,0.3597718254
+42-071-0009,420710009,40.108944,-76.472235,,Northeast,0,RQMAX,,,0.07,0.07,0.23,0.23,0.07,0.07,1,6,3,Pennsylvania,"Lancaster, PA",Yes,Pb,No Trend,0,0.3597718254
+49-035-1001,490351001,40.708611,-112.094722,Magna,Southwest,0,RQMAX,0.04,0.06,0.05,0.08,0.1,0.07,0.05,0.07,1,8,7,Utah,"Salt Lake City, UT",Yes,Pb,No Trend,0.00325,0.1993799603
+26-147-0031,261470031,42.982093089,-82.4500805,,Upper Midwest,0,RQMAX,,,,0.04,0.03,0.05,0.07,0.08,0,5,2,Michigan,"Detroit-Warren-Dearborn, MI",No,Pb,Undetermined/Insufficient Data,,
+27-053-0910,270530910,45.008297001,-93.277041,Pacific Street,Upper Midwest,0,RQMAX,,,,,,,0.08,0.08,0,2,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",No,Pb,Undetermined/Insufficient Data,,
+45-041-8002,450418002,34.16416,-79.57233,JCI Entrance,Southeast,0,RQMAX,,,,0.03,0.04,0.06,0.07,0.08,0,5,6,South Carolina,"Florence, SC",No,Pb,Undetermined/Insufficient Data,,
+01-109-0003,011090003,31.790560001,-85.97917,TROY LEAD,Southeast,0,RQMAX,0.89,1.03,1.3,0.26,0.08,0.07,0.09,0.09,1,8,6,Alabama,"Troy, AL",Yes,Pb,No Trend,-0.145,0.0894345238
+06-037-1403,060371403,33.955000001,-118.056389,Uddelholm (Trojan Battery),West,0,RQMAX,0.08,0.11,0.08,0.08,0.04,0.04,,0.09,1,7,8,California,"Los Angeles-Long Beach-Anaheim, CA",Yes,Pb,No Trend,-0.002916667,0.2742063492
+29-099-0023,290990023,38.26216,-90.38126,"Herculaneum, North Cross",Central,0,RQMAX,0.52,0.56,0.44,0.45,0.16,0.06,0.11,0.09,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.080416667,0.0070684524
+29-099-9002,290999002,38.267084506,-90.3788535,"Herculaneum, Dunklin High School",Central,0,RQMAX,0.33,0.43,0.35,0.31,0.12,0.06,0.05,0.09,1,8,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.0545,0.0070684524
+72-013-0002,720130002,18.453389233,-66.69498698,,None,0,RQMAX,,,,2.5,2.04,0.41,0.07,0.09,0,5,0,Puerto Rico,"Arecibo, PR",No,Pb,Undetermined/Insufficient Data,,
+29-093-9008,290939008,37.652140001,-91.11689,Doe Run Buick - Buick NE,Central,0,RQMAX,,0.39,0.24,0.35,0.22,0.09,0.16,0.1,1,7,1,Missouri,,Yes,Pb,Decreasing,-0.04425,0.0070684524
+42-025-0214,420250214,40.814204,-75.580448,,Northeast,0,RQMAX,,,,0.15,0.15,0.16,0.11,0.1,0,5,3,Pennsylvania,"Allentown-Bethlehem-Easton, PA-NJ",No,Pb,Undetermined/Insufficient Data,,
+27-037-0465,270370465,44.834310001,-93.11622,Gopher Resources,Upper Midwest,0,RQMAX,0.26,0.11,0.11,0.11,0.12,0.13,0.11,0.11,1,8,2,Minnesota,"Minneapolis-St. Paul-Bloomington, MN-WI",Yes,Pb,No Trend,0,0.3597718254
+39-051-0001,390510001,41.57588,-83.9959,DELTA,Central,0,RQMAX,0.08,0.18,0.08,0.06,0.09,0.07,0.12,0.11,1,8,1,Ohio,"Toledo, OH",Yes,Pb,No Trend,0.0033928571,0.4524305556
+12-057-1066,120571066,27.960148,-82.381873,GULF COAST LEAD,Southeast,0,RQMAX,0.73,0.98,0.98,0.49,0.13,0.06,0.09,0.13,1,8,6,Florida,"Tampa-St. Petersburg-Clearwater, FL",Yes,Pb,Decreasing,-0.133666667,0.0305059524
+22-095-0003,220950003,30.040961,-90.466783,LaPlace,South,0,RQMAX,,,,,,0.01,0.01,0.13,0,3,5,Louisiana,"New Orleans-Metairie, LA",No,Pb,Undetermined/Insufficient Data,,
+29-093-0034,290930034,37.65214,-91.11689,Buick NE,Central,0,RQMAX,,0.4,0.37,0.33,0.26,0.14,0.19,0.13,1,7,1,Missouri,,Yes,Pb,Decreasing,-0.044166667,0.0008680556
+20-169-0004,201690004,38.776439,-97.607384,Salina lead,South,0,RQMAX,0.42,0.23,0.21,0.23,0.15,0.11,0.18,0.15,1,8,5,Kansas,"Salina, KS",Yes,Pb,Decreasing,-0.028333333,0.0155753968
+48-257-0020,482570020,32.731919,-96.317911,Terrell Temtex,South,0,RQMAX,,0.1,0.04,0.05,0.04,0.04,0.06,0.17,1,7,5,Texas,"Dallas-Fort Worth-Arlington, TX",Yes,Pb,No Trend,0,0.5475694444
+04-007-1002,040071002,33.002516667,-110.7654667,Globe Highway,Southwest,0,RQMAX,,0.27,0.2,0.12,0.17,0.12,0.14,0.21,1,7,7,Arizona,"Payson, AZ",Yes,Pb,No Trend,-0.015,0.1375496032
+29-099-0027,290990027,38.263394,-90.379667,"Herculaneum, Mott Street",Central,0,RQMAX,,0.7,0.59,0.57,0.32,0.11,0.14,0.21,1,7,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.091666667,0.0070684524
+29-099-0020,290990020,38.26351,-90.37993,"Herculaneum, City Hall (Mott Street)",Central,0,RQMAX,0.86,,0.52,0.66,0.36,0.11,0.11,0.23,1,7,1,Missouri,"St. Louis, MO-IL",Yes,Pb,Decreasing,-0.113,0.0070684524
+04-007-1003,040071003,33.0035,-110.7822,Hillcrest AMS,Southwest,0,RQMAX,,,,,,,0.31,0.28,0,2,7,Arizona,"Payson, AZ",No,Pb,Undetermined/Insufficient Data,,
+13-215-0009,132150009,32.434400001,-84.9293,Columbus-Allied,Southeast,0,RQMAX,,,0.23,0.06,,0.04,0.36,0.36,0,5,6,Georgia,"Columbus, GA-AL",No,Pb,Undetermined/Insufficient Data,,
