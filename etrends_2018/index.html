@@ -11,7 +11,7 @@
 	<meta property="og:title" content="Air Quality Improves as America Grows" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://gispub.epa.gov/air/trendsreport/2018/" />
-	<meta property="og:image" content="https://gispub.epa.gov/air/trendsreport/2018/img/AirTrendsReport_Flyer_opengraph.PNG" />
+	<meta property="og:image" content="https://gispub.epa.gov/air/trendsreport/2018/img/AirTrends_Flyer_opengraph.png" />
 	<meta property="og:description" content="Read EPA's annual air trends report, Our Nation's Air, to learn about air quality improvements to protect human health and the environment." />
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -20,8 +20,8 @@
 	<meta name="twitter:title" content="Air Quality Improves as America Grows" />
 	<meta name="twitter:description" content="Read EPA's annual air trends report, Our Nation's Air, to learn about air quality improvements to protect human health and the environment." />
 	<meta name="twitter:url" content="https://gispub.epa.gov/air/trendsreport/2018/" />
-	<meta name="twitter:image" content="https://gispub.epa.gov/air/trendsreport/2018/img/AirTrendsReport_Flyer_opengraph.PNG" />
-	<meta name="twitter:image:alt" content="The EPA air trends infographic has four graphics depicting improving air quality trends since 1970. The top left chart shows the 253 percent increase of the United States gross domestic product against a 73 percent drop in air pollutant emissions since 1970. The top right chart shows decreasing national average ozone and particulate matter concentrations since 1990 with the averages falling below the most recent standard. The bottom right chart shows the 66 percent reduction in unhealthy air quality days from 2000. And the bottom left chart shows the descreasing emissions from 1990 for sulfur dioxide, nitrous oxides, volatile organic compounds, direct particulate matter and carbon monoxide." />
+	<meta name="twitter:image" content="https://gispub.epa.gov/air/trendsreport/2018/img/AirTrends_Flyer_opengraph.png" />
+	<meta name="twitter:image:alt" content="The EPA air trends infographic has four graphics depicting improving air quality trends since 1970. The top left chart shows the 262 percent increase of the United States gross domestic product against a 73 percent drop in air pollutant emissions since 1970. The top right chart shows decreasing national average ozone and particulate matter concentrations since 1990 with the averages falling below the most recent standard. The bottom right chart shows the 65 percent reduction in unhealthy air quality days from 2000. And the bottom left chart shows the descreasing emissions from 1990 for sulfur dioxide, nitrous oxides, volatile organic compounds, direct particulate matter and carbon monoxide." />
     <title>Our Nation's Air 2018</title>
     <!-- Bootstrap and Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="dist/css/etrends.min.css" /> 
@@ -43,9 +43,22 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 	<!-- Crazy egg code -->
+	<script >
+	setTimeout(function(){var a=document.createElement("script");
+	var b=document.getElementsByTagName("script")[0];
+	a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0005/9240.js?"+Math.floor(new Date().getTime()/3600000);
+	a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+   <!-- Google Analytics  -->
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-   <!-- Google Analytics -->
-
+	 ga('create', 'UA-32633028-1', 'auto');
+	 ga('send', 'pageview');
+	</script>
   <!-- End Google Analytics -->
    </head>
  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" >
@@ -97,7 +110,7 @@
 									</a>
 								</li>
 								<li>
-									<a data-toggle="tooltip" data-original-title="Share via Pinterest" data-placement="right" class="btn btn-pinterest" href="https://pinterest.com/pin/create/button/?url=U.S.%20EPA&media=https%3A//gispub.epa.gov/air/trendsreport/2018/img/AirTrendsReport_Flyer.jpg&description=Check%20out%20the%20Environmental%20Protection%20Agency's%20annual%20air%20trends%20report!%20https%3A//gispub.epa.gov/air/trendsreport/2018" target="_blank">
+									<a data-toggle="tooltip" data-original-title="Share via Pinterest" data-placement="right" class="btn btn-pinterest" href="https://pinterest.com/pin/create/button/?url=U.S.%20EPA&media=https%3A//gispub.epa.gov/air/trendsreport/2018/img/AirTrends_Flyer.png&description=Check%20out%20the%20Environmental%20Protection%20Agency's%20annual%20air%20trends%20report!%20https%3A//gispub.epa.gov/air/trendsreport/2018" target="_blank">
 										<i class="icon icon-pinterest icon-lg" aria-hidden="true"></i>
 									</a>
 								</li>
@@ -155,8 +168,7 @@
     <main id="fullpage" >
 	  <div style="overflow-x:hidden;">
 		<section id="home_section" class="secFP home_bkgrnd " >
-			<div class="bg-text-overlay">trends</div>
-			<div class="container-fluid" style="position:absolute;top:95vh;transform:translateY(-100%);width:100%;">
+			<div class="container-fluid title_container">
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 title" >
 						OUR NATION'S AIR
@@ -170,8 +182,7 @@
 				<div class="row paddingfromtop">
 					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
 						<p class="h2">Welcome!</p>
-						<p class="em1_45">The U.S. Environmental Protection Agency (EPA) is committed to protecting public health by improving air quality and reducing air pollution. This annual report, entitled <em>Our Nation's Air</em>, summarizes the nation's air quality status and trends through 2017. Please read and enjoy the full report below and <a href="documentation/AirTrends_Flyer.pdf" title="Download Highlights!" target="_blank">download and share the one page summary. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> Additional detail on air trends can be found at EPA's <a href="https://epa.gov/air-trends" target="_blank" title="Visit AirTrends website">AirTrends website. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
-						<p class="em1_45 story_tooltip">Not familiar with air quality jargon? Fear not! Though slightly technical now and then, hover over these chat icons <i class="icon icon-discussion icon-lg" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<q>Mary here! Interact with these chat icons throughout the report.</q>"></i> to read about each section's general concepts.</p>
+						<p class="em1_45">The U.S. Environmental Protection Agency (EPA) is committed to protecting public health by improving air quality and reducing air pollution. This annual report, entitled <em>Our Nation's Air</em>, summarizes the nation's air quality status and trends through 2017. Please read and enjoy the full report below and <a href="documentation/AirTrends_Flyer.pdf" title="Download Highlights!" target="_blank" onclick="ga('send', 'event', 'download', 'pdf click', 'https://gispub.epa.gov/air/trendsreport/2018/documentation/AirTrends_Flyer.pdf');">download and share the one page summary. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> Additional detail on air trends can be found at EPA's <a href="https://epa.gov/air-trends" target="_blank" title="Visit AirTrends website">AirTrends website. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 						<p class="em1_2">Scroll down to read more or use the top menu to jump to a topic. If you encounter any issues viewing content, update or try opening the website in another browser. </p>
 						<img class="epa-logo-size" src="./img/epa_seal_w-ring_RGB-sm_160x160.png" alt="United States Environmental Protection Agency" />
 					</div>
@@ -181,7 +192,6 @@
 	 <!-- Report Content -->
 		<!-- Introduction Section -->
 		<section class="secFP introduction_bkgrnd" id="introduction_section" >
-			<div class="bg-text-overlay">intro</div>
 			<div class="container fadein-trigger ">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 ">
@@ -194,8 +204,8 @@
 			<div class="container-fluid fadein-trigger " >
 				<div class="row paddingfromtop " >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1 ">
-						<h3 class="story_tooltip">Air Quality Improves as America Grows <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary:</persona> <q>Mom, what do you do at the EPA?</q><br/><persona>Mom: </persona><q>I along with a lot of other people at state, local and tribal governments work to reduce air pollution so all of us can work and play outside free from harmful pollution. Air quality trends show that our work is having an impact!</q>"></i></h3>
-						<p class="em1_2">Nationally, concentrations of the criteria and hazardous air pollutants have dropped significantly since 1990:</p>
+						<h3 class="story_tooltip">Air Quality Improves as America Grows</h3>
+						<p class="em1_2">Nationally, concentrations of air pollutants have dropped significantly since 1990:</p>
 						<ul class="em1 ">
 							<li>Carbon Monoxide (CO) 8-Hour, <i class="icon icon-arrow-down" aria-hidden="true" title="Down"></i> 77%</li>
 							<li>Lead (Pb) 3-Month Average, <i class="icon icon-arrow-down" aria-hidden="true" title="Down"></i> 80%</li>
@@ -268,11 +278,6 @@
 						</div>																
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" >
-						<div class="em1 text-center leaf-fact"><i class="icon icon-leaf" aria-hidden="true"></i> Air pollution is the 4th largest threat to human health, behind high blood pressure, dietary risks and smoking <cite>(International Energy Agency, 2016)</cite>.</div>
-					</div>
-				</div>
 			</div>
 				<div class="modal fade" id="modal-1" tabindex="-1" role="dialog" aria-labelledby="dialogheader_Emission_Trends">
 					<div class="modal-dialog modal-lg" role="document">
@@ -308,7 +313,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Air Pollution Includes Gases and Particles <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>What is air pollution?</q><br/><persona>Mom: </persona><q>It’s a mixture of gases like carbon monoxide emitted from cars, particles that are so tiny they can fit on the width of a human hair, and some pollution is even formed by chemical reactions.</q>"></i></h3>
+						<h3 class="story_tooltip">Air Pollution Includes Gases and Particles</h3>
 						<p class="em1_2">Air pollution consists of gas and particle contaminants that are present in the atmosphere. Gaseous pollutants include sulfur dioxide (SO<sub>2</sub>), oxides of nitrogen (NO<sub>x</sub>), ozone (O<sub>3</sub>), carbon monoxide (CO), volatile organic compounds (VOCs), certain toxic air pollutants and some gaseous forms of metals. Particle pollution (PM<sub>2.5</sub> and PM<sub>10</sub>) includes a mixture of compounds that can be grouped into five major categories: sulfate, nitrate, elemental (black) carbon, organic carbon and crustal material.</p> 
 						<p class="em1_2">Some pollutants are released directly into the atmosphere while other pollutants are formed in the air from chemical reactions. Ground-level ozone forms when emissions of NO<sub>x</sub> and VOCs react in the presence of sunlight. Air pollution impacts human health and the environment through a variety of pathways.</p>
 						<div class="text-center modal-btn-padding"><button type="button" class="btn button--rayen btn-dbl-border" data-toggle="modal" data-target="#modal-2" title="Read about the six common pollutants" data-text="View"><span>Six Common Pollutants</span></button></div><br>
@@ -353,7 +358,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Understanding Emission Sources Helps Control Air Pollution <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>So where do all of these gases and particles come from?</q><br/><persona>Mom: </persona><q>Car and truck exhaust is an example. Air pollution also comes from energy and industrial processes that generate power, goods and services we rely upon as part of our daily lives. The federal, state, tribal and local governments work to protect human health and the environment by limiting the amount of harmful emissions.</q>"></i></h3>
+						<h3 class="story_tooltip">Understanding Emission Sources Helps Control Air Pollution</h3>
 						<p class="em1_2">Generally, emissions of air pollution come from</p>
 						<ul class="em1">
 							<li>stationary fuel combustion sources (such as electric utilities and industrial boilers),</li>
@@ -422,7 +427,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Air Pollution Can Affect Our Health and Environment in Many Ways <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>I know air pollution is bad, but why?</q><br/><persona>Mom: </persona><q>Air pollution can affect a person’s health like making your asthma worse, or damaging our environment like the soil and water farmers and wildlife depend upon.</q>"></i></h3>
+						<h3 class="story_tooltip">Air Pollution Can Affect Our Health and Environment in Many Ways</h3>
 						<p class="em1_2">Numerous scientific studies have linked air pollution to a variety of health problems. 
 						People at greater risk for experiencing air pollution-related health effects may, depending on the pollutant, include older adults, children and those with heart and respiratory diseases &mdash; <a href="https://youtu.be/yHXUPZCUuGs" target="_blank" title="View 30 second healthy heart video">30-second Healthy Heart video. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 						<!--<div class="leaf-fact"><blockquote class="em1"><i class="icon icon-leaf" aria-hidden="true"></i> Air pollution is the 4th largest threat to human health, behind high blood pressure, dietary risks and smoking.</blockquote></div>-->
@@ -562,7 +567,6 @@
 		</section>
 		<!-- Growth Section -->
 		<section class="secFP growth_bkgrnd" id="growth_section" >
-			<div class="bg-text-overlay">growth</div>
 			<div class="container fadein-trigger">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1" >
@@ -575,11 +579,11 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Economic Growth with Cleaner Air <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>Earlier you said air quality is improving and the economy is growing, but how do you show that?</q><br/><persona>Mom: </persona><q>This chart is a great example. Since the 1970s and 80s when I was growing up, you can see how pollutant emissions have dropped more than 70% while the economy grew more than 250%.</q><br/><persona>Mary: </persona><q>That’s pretty cool!</q>"></i></h3>
+						<h3 class="story_tooltip">Economic Growth with Cleaner Air</h3>
 						<p class="em1_2">Between 1970 and 2017, the combined emissions of the six common pollutants (PM<sub>2.5</sub> and PM<sub>10</sub>, SO<sub>2</sub>, NO<sub>x</sub>, VOCs, CO and Pb) dropped by 73 percent. This progress occurred while the U.S. economy continued to grow, Americans drove more miles and population and energy use increased.</p> 
 						<p class="em1_2">To learn more about the EPA and environmental milestones to reduce pollution please visit the <a href="https://www.epa.gov/history" target="_blank" title="Visit EPA History website">EPA history website. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 						<p class="em_82 tips">Click any of the legend items on the right side of the chart to hide or include trend lines. The y-axis may change based on the selections.</p>
-						<div class="leaf-fact"><blockquote class="em1"><i class="icon icon-leaf" aria-hidden="true"></i> <cite>The Cost of Air Pollution (2016)</cite>, a study by the World Bank and the Institute for Health Metrics and Evaluation (IHME), found that in 2013 worldwide air pollution deaths cost the global economy $225 billion in lost labor income or $5.11 trillion in welfare losses, roughly equivalent to the size of gross domestic product of India, Canada and Mexico combined.</blockquote></div>
+						<div class="leaf-fact"><blockquote class="em1"><i class="icon icon-leaf" aria-hidden="true"></i> In 2008, the United States environmental technologies and services industry supported 1.7 million jobs. The industry generated approximately $300 billion in revenues and exported goods and services worth $44 billion - larger than exports of sectors such as plastics and rubber products. Environmental technology exports help the U.S. balance of trade, generating a $10.9 billion surplus in 2008.</blockquote></div>
 					</div>
 					<div class="col-md-8 col-lg-6">
 						<!--<div class="chart-object-border" id="growthChart"></div>-->
@@ -616,14 +620,13 @@
 			</div>
 		</section>
 		<!-- NAAQS Section -->		
-		<section id="naaqs_section" class="secFP naaqs_margin " style="overflow:hidden;">
-			<div class="bg-text-overlay">naaqs</div>
-			<span class="sr-only">Animated video background showing NASA satellite imagery of declining sulfur dioxide levels across the contiguous 48 states from 2005 to 2016.</span>
+		<section id="naaqs_section" class="secFP" style="overflow:hidden;">
+			<span class="sr-only">Animated video background showing NASA satellite imagery of declining sulfur dioxide levels across the contiguous 48 states from 2005 to 2017.</span>
 			<div id="video-container" > 
 				<div id="video-viewport">
 					<div class="bkrnd-overlay"></div>
-					<video id="nasa-video"  width="640" height="360" data-autoplay loop muted poster="./img/NASA_SO2_snapshot_1280x720.png" > 
-						<source src="./video/MP4/NASA_SO2_1920x1080_H264_6_vidSmaller.mp4" type="video/mp4"/> 
+					<video id="nasa-video"  width="640" height="360" data-autoplay loop muted poster="./img/NASA_SO2_snapshot_1280x720v5.png" > 
+						<source src="./video/MP4/so2_h264_high_70v1_vidsmaller_1680.mp4" type="video/mp4"/> 
 						Your browser does not support the video, please update or try another browser. 
 					</video>
 				</div>
@@ -637,8 +640,8 @@
 			<div class="container " >
 				<div class="row ">
 					<div class="col-md-10 col-md-offset-1 fadein-trigger" id="nasa-text">
-						<h2 class="story_text">Today Americans breathe cleaner air and face lower adverse health effects.</h2>
-						<p class="h6 nasa-drop-shadow">2005 - 2016 SO<sub>2</sub> satellite imagery courtesy of <a  class="nasa-label" href="https://airquality.gsfc.nasa.gov/" target="_blank" title="Visit NASA's Air Quality from Space website">NASA <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
+						<h2 class="story_text">Today Americans breathe cleaner air and face lower risks of adverse health effects.</h2>
+						<p class="h6 nasa-drop-shadow">2005 - 2017 SO<sub>2</sub> satellite imagery courtesy of <a class="nasa-label" href="https://airquality.gsfc.nasa.gov/" target="_blank" title="Visit NASA's Air Quality from Space website">NASA <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 					</div> 
 				</div> 
 			</div>
@@ -647,7 +650,7 @@
 			<div class="container-fluid fadein-trigger" >
 				<div class="row paddingfromtop">
 					<div class="col-md-12 col-lg-10 col-lg-offset-1">	
-						<h3 class="story_tooltip">Criteria Pollutant Trends Show Clean Air Progress <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>What about where we live, how has air pollution changed?</q><br/><persona>Mom: </persona><q>Play with these charts and map to learn how emissions and concentrations (the accumulation of pollution in our air) has changed in our area over time.</q>"></i></h3> 
+						<h3 class="story_tooltip">Criteria Pollutant Trends Show Clean Air Progress</h3>
 					</div>
 				</div>
 			  <div id="naaqs-container">
@@ -655,7 +658,7 @@
 					<div class="col-md-6 col-lg-5 col-lg-offset-1">
 						<div class="naaqsform-group">
 							<span class="sr-only">Based on NAAQS dropdown selection, a synchronized set of charts (air quality concentration chart, emissions stacked area chart and USA map of monitor locations) display. The first is a line chart depicting the overall decline in national air quality concentrations for criteria air pollutants from 1990 to 2017. The chart provides national concentration averages, 10th and 90th percentiles, and minimum and maximum values for each year.</span>
-							<label for="naaqs-pollutant-dropdown" class="semi-bold-600" >Select a NAAQS to view concentration and emission trends <i class="icon icon-line-chart-down icon-lg" aria-hidden="true"></i></label>
+							<label for="naaqs-pollutant-dropdown" class="semi-bold-600" >Select a <a href="https://www.epa.gov/naaqs" target="_blank" title="View National Ambient Air Quality Standards website" >NAAQS <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> to view concentration and emission trends <i class="icon icon-line-chart-down icon-lg" aria-hidden="true"></i></label>
 							<select class="form-control form-control-caret" id="naaqs-pollutant-dropdown" onChange="console.log(this.options[this.selectedIndex].value);etrends.naaqs.concentrations.switchPollutant(this.options[this.selectedIndex].value);">
 								<option value="co" selected>Carbon Monoxide (2nd Maximum Non-overlapping 8-hour)</option>
 								<option value="pb">Lead (Maximum Rolling 3-month Average)</option>
@@ -780,7 +783,7 @@
 						The play/pause button controls animation, or manually change the year by dragging the yellow circle in the chart or the slider's gray square. 
 						<span class="weather-tip"><a href="https://epa.gov/air-trends/trends-ozone-adjusted-weather-conditions" target="_blank" title="Visit Trends in Ozone Adjusted for Weather Conditions">Read about weather influences on ozone. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a>
 						</span>
-						<span class="lead-tip">Few lead sites met <a href="https://github.com/USEPA/Air-Trends-Report/blob/master/etrends_2017/documentation/Air_Trends_Report_Methodologies.docx" target="_blank" title="Read about trend methodolgies" >trend completeness criteria</a> to calculate national stats prior to 2010, and emissions data are only available for National Emissions Inventory (NEI) years.</span>
+						<span class="lead-tip">Few lead sites met <a href="./documentation/Air_Trends_Report_Methodologies.docx" target="_blank" title="Read about trend methodolgies" >trend completeness criteria</a> to calculate national stats prior to 2010, and emissions data are only available for National Emissions Inventory (NEI) years.</span>
 					</p>
 					</div> <!--closes left column on page -->
 
@@ -845,7 +848,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">
-						<h3 class="story_tooltip">Understanding PM<sub>2.5</sub> Composition Helps Reduce Fine Particle Pollution <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>What do you mean when you talk about PM 2.5 composition?</q><br/><persona>Mom: </persona><q>Remember the tiny particles that can fit on the width of a human hair? Those particles are made up of different components, or species. When scientists evaluate these components they’re able to find out if the change in particle pollution was because of a wildfire, by looking at black carbon as an example, or whether the change was due to something else.</q>"></i></h3>  
+						<h3 class="story_tooltip">Understanding PM<sub>2.5</sub> Composition Helps Reduce Fine Particle Pollution</h3>
 						<p class="em1_2">The different components that make up particle pollution come from specific sources and are often formed in the atmosphere. The major components, or species, are elemental carbon (EC), organic carbon (OC), sulfate and nitrate compounds, and crustal materials such as soil and ash.</p>
 						<p class="em1_2">As previously shown, PM<sub>2.5</sub> concentrations are declining. Assessing particle pollution concentrations along with composition data aids in understanding the effectiveness of pollution controls and in quantifying the impacts to public health, regional visibility, ecology and climate. </p>
 						<p class="em_82 tips">Click any point to display 2000-2016 annual and quarterly PM<sub>2.5</sub> speciation trends, and select maximize to enlarge the chart. Double click the map to zoom in and click the home button to reset.</p>
@@ -935,7 +938,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop" >
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Unhealthy Air Quality Days Trending Down <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>You mentioned my asthma and how air pollution can make it worse. Is that why we keep an eye out for 'code orange' air quality days?</q><br/><persona>Mom: </persona><q>Yes! AirNow.gov puts out a daily air pollution forecast that local meteorologists talk about on the news. If the air pollution forecast is code orange or above, people like you with asthma, those with heart or lung disease, older adults and those working or playing outside should take extra precautions.</q>"></i></h3>
+						<h3 class="story_tooltip">Unhealthy Air Quality Days Trending Down</h3>
 						<p class="em1_2">The Air Quality Index (AQI) is a color-coded index EPA uses to communicate daily air pollution for ozone, particle pollution, NO<sub>2</sub>, CO and SO<sub>2</sub>. 
 						A value in the unhealthy range, above the national air quality standard for any pollutant, is of concern first for sensitive groups, then for everyone as the AQI value increases. Fewer unhealthy air quality days means better health, longevity, and quality of life for all of us. </p>
 						<p class="em_82">Shown are the number of days in which the combined ozone and PM<sub>2.5</sub> AQI was unhealthy for sensitive groups (orange) or above (red, purple or maroon) for the years 2000-2017. Click the bar chart, or these links, to view the AQI retrospective reviews: <a href="https://epa.maps.arcgis.com/apps/Cascade/index.html?appid=2f8f3237c6064770a875635ba5217838" target="_blank" title="View PM2.5 Air Quality Index story map">PM<sub>2.5</sub> <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> and <a href="https://epa.maps.arcgis.com/apps/Cascade/index.html?appid=251ccaf637c4469796f448737cc04654" target="_blank" title="View ozone Air Quality Index story map">ozone. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
@@ -978,7 +981,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop">
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">
-						<h3 class="story_tooltip">Air Quality in Nonattainment Areas Improves <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>So what happens when there’s too much air pollution?</q><br/><persona>Mom: </persona><q>EPA goes through a formal, technical process to figure out where data shows the air needs to be better. Then states and tribes put together a plan to reduce the air pollution in those places. The good news is that more places are meeting the health standards over time.</q>"></i></h3>
+						<h3 class="story_tooltip">Air Quality in Nonattainment Areas Improves</h3>
 						<p class="em1_2">EPA works collaboratively with state, local and tribal agencies to identify areas of the U.S. that do not meet the national ambient air quality standards (NAAQS). These areas, known as nonattainment areas, must develop plans to reduce air pollution and attain the NAAQS.</p>
 						<p class="em1_2">Through successful state led implementation, numerous areas across the country are showing improvement and fewer areas are in nonattainment. Since 2010, there were no violations of the standards for CO and NO<sub>2</sub>.</p>
 						<p class="em_82">Shown is a snapshot of the 2008 ozone nonattainment area map. Click the map to view a larger interactive version that includes all current NAAQS nonattainment areas. </p>
@@ -998,7 +1001,6 @@
 			</div>
 		</section>	
 		<section class="secFP haze_bkgrnd" id="visibility_section" >
-			<div class="bg-text-overlay">visibility</div>
 			<div class="container fadein-trigger " >
 				<div class="row" >
 					<div class="col-md-10 col-md-offset-1">
@@ -1013,7 +1015,7 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop">
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">
-						<h3 class="story_tooltip">Visibility Improves in Scenic Areas <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mom: </persona><q>Make sure you pack for our vacation to the Grand Canyon! We can look at the live webcams of the parks we’re visiting at the National Park Service website. Sometimes you can see if it’s a clear or hazy day there.</q><br/><persona>Mary: </persona><q>Why would it be hazy?</q><br/><persona>Mom: </persona><q>Air pollution or events like wildfires. Even at safe health levels air pollution could make it hard to see great distances. But, here again the good news is that visibility is improving across the country so we may have some spectacular views.</q>"></i></h3> 
+						<h3 class="story_tooltip">Visibility Improves in Scenic Areas</h3>
 						<p class="em1_2">EPA and other agencies, such as the National Park Service, monitor visibility trends in 155 of the 156 national parks and wilderness areas (i.e., Class I areas).</p>
 						<p class="em1_2">The map indicates several Class I areas have improving visibility or decreasing haze (indicated by the downward pointing arrows). To learn more about visibility in parks and view live webcams please visit this <a href="https://nature.nps.gov/air/" target="_blank" title="Visit National Park Service website">National Park Service website <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> and <a href="https://epa.maps.arcgis.com/apps/Cascade/index.html?appid=e4dbe2263e1f49fb849af1c73a04e2f2" target="_blank" title="View Visibility story map">EPA's visibility story map. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 						<p class="em_82 tips">Click any point to display 2000-2016 trends, and select maximize to enlarge the chart. Double click the map to zoom in and click the home button to reset.</p>
@@ -1115,7 +1117,6 @@
 		</section>
 		<!-- Toxics Section -->
 		<section id="toxics_section" class="secFP toxics_bkgrnd" >
-			<div class="bg-text-overlay">toxics</div>
 			<div class="container fadein-trigger">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1" >
@@ -1128,11 +1129,11 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop">
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">Air Toxics Levels Trending Down <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>Air toxics sound pretty scary, what are those?</q><br/><persona>Mom: </persona><q>Air toxics such as benzene, lead, mercury etc. are in lots of things and can also negatively impact health and the environment. EPA works with states, local and tribal governments to reduce these emissions as well.</q>"></i></h3>  
+						<h3 class="story_tooltip">Air Toxics Levels Trending Down</h3>
 						<p class="em1_2">Ambient monitoring data show that some of the toxic air pollutants, such as benzene, 1,3-butadiene and several metals, are declining at most sites. </p>
 						<p class="em1_2">Points on the map indicate the long-term statistical trend direction: decreasing, increasing and no trend. Depicted in gray are sites where a trend direction is undetermined due to insufficient data.</p>	
-						<p class="em_82 tips">Use the dropdown menu to select a pollutant, click any point to display trends, and select maximize to enlarge the chart. Double click the map to zoom in and click the home button to reset. View a <a href="./documentation/NATTS_Trends.pdf" target="_blank" title="View NATTS tabular summary">tabular summary <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> of air toxics trends.</p>
-						<span class="sr-only">The NATTS trends table, included as a supplementary visual to the USA map, depicts air toxics mean concentration trends at the 27 national air toxics trends stations from 2003 to 2015. A majority of stations show decreasing or no trend in air toxics across the country.</span>
+						<p class="em_82 tips">Use the dropdown menu to select a pollutant, click any point to display trends, and select maximize to enlarge the chart. Double click the map to zoom in and click the home button to reset. View a <a href="./documentation/NATTS_Trends.pdf" target="_blank" title="View NATTS tabular summary" onclick="ga('send', 'event', 'download', 'pdf click', 'https://gispub.epa.gov/air/trendsreport/2018/documentation/NATTS_Trends.pdf');">tabular summary <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> of air toxics trends.</p>
+						<span class="sr-only">The NATTS trends table, included as a supplementary visual to the USA map, depicts air toxics mean concentration trends at the 27 national air toxics trends stations from 2003 to 2016. A majority of stations show decreasing or no trend in air toxics across the country.</span>
 						<div class="text-center modal-btn-padding"><button type="button" class="btn button--rayen btn-dbl-border" data-toggle="modal" data-target="#modal-6" title="Read about NATA" data-text="View"><span>National Air Toxics Assessment</span></button></div><br>
 						<blockquote><i class="icon icon-leaf" aria-hidden="true"></i> Based on the 2011 NATA, secondary pollution formation is the largest contributor to cancer risks nationwide, accounting for 47 percent of the risk. On-road mobile sources contribute the most risk from directly emitted pollutants (about 18 percent).</blockquote>
 					</div>
@@ -1142,7 +1143,7 @@
 							<select class="form-control form-control-caret" id="toxics-pollutant-dropdown" onChange="etrends.toxics.switchType(this.options[this.selectedIndex].value);"></select>
 						</div>
 						<div id="toxics-map-container" class="etrends-map-container">
-							<span class="sr-only">USA map depicting air toxics mean concentration trends from 2003 to 2015 at the 27 national air toxics trends stations and numerous other monitors tracking air toxics. A vast majority of stations show decreasing or no trend in air toxics across the country.</span>
+							<span class="sr-only">USA map depicting air toxics mean concentration trends from 2003 to 2016 at the 27 national air toxics trends stations and numerous other monitors tracking air toxics. A vast majority of stations show decreasing or no trend in air toxics across the country.</span>
 							<div id="toxics-map-header" style="position:relative;">
 								<div id="toxics-map-home" class="etrends-map-home" style="cursor: pointer;" onclick="etrends.toxics.map.resetZoom();" title="Reset map"></div>
 								<div style="" id="toxics-map-title" class="etrends-chart-title"></div>
@@ -1232,7 +1233,6 @@
 		</section>
 		<!-- Spotlight Section -->
 		<section id="spotlight_section" class="secFP spotlight_bkgrnd" >
-			<div class="bg-text-overlay">spotlight</div>
 			<div class="container fadein-trigger">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
@@ -1246,17 +1246,17 @@
 			<div class="container-fluid fadein-trigger">
 				<div class="row paddingfromtop">
 					<div class="col-md-4 col-lg-4 col-lg-offset-1">	
-						<h3 class="story_tooltip">National Emissions Inventory <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<persona>Mary: </persona><q>How do you track all the air emissions?</q><br/><persona>Mom: </persona><q>EPA's state, local and tribal partners submit emissions information into a system called the Emissions Inventory System (EIS). That data is merged with other data sources to develop a comprehensive estimate of air emissions across the nation called the National Emissions Inventory or NEI. The NEI has a lot of data and takes some time to compile so it's released every 3 years.</q>"></i></h3>
+						<h3 class="story_tooltip">National Emissions Inventory</h3>
 						<p class="em1_2">The National Emissions Inventory (NEI) is a comprehensive and detailed air emissions estimate of criteria pollutants, criteria precursors and hazardous air pollutants from air emissions sources. The NEI is released every three years with version 2 of the 2014 NEI being released in early 2018. The NEI is based upon data provided by state, local, and tribal air agencies for sources in their jurisdictions and supplemented by data developed by the EPA.</p>
 						<p class="em1_2">EPA published an online interactive report summarizing aspects of the NEI while also providing a tool for users to explore emissions data. Click on the image to explore the NEI report, or for more information please visit the <a href="https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei" target="_blank" title="Read more about the National Emissions Inventory">National Emissions Inventory website. <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a></p>
 					</div>
 					<div class="col-md-8 col-lg-6">
 						<div class="hovereffect chart-object-border thumbnail">
-							<span class="sr-only">Image of map depicting organizations participating in the air quality flag program. Click map image to open air quality flags program story map in another browser window.</span>
+							<span class="sr-only">Image of National Emissions Inventory 2014 report dashboard. Click map image to open NEI story map in another browser window.</span>
 							<img src="./img/nei_report_2014_1440x1076.png" alt="National Emissions Inventory report dashboard" class="img-responsive">
 							<div class="overlay">
 								<p class="h2">National Emissions Inventory Report</p>
-								<a href="https://www.epa.gov/air-emissions-inventories/national-emissions-inventory-nei" title="View 2014 NEI report" target="_blank" class="info-hvr">View 
+								<a href="https://gispub.epa.gov/neireport/2014/" title="View 2014 NEI report" target="_blank" class="info-hvr">View 
 								</a>
 							</div>
 						</div>
@@ -1269,11 +1269,11 @@
 			<div class="container-fluid text-center fadein-trigger">
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2" >
-						<p class="h2 paddingfromtop story_tooltip" >Our Nation's Air Continues to Improve <i class="icon icon-discussion" aria-hidden="true" data-toggle="tooltip" data-placement="auto" data-html="true" title="<persona>Mary: </persona><q>That was a lot of information, but it sounds like things are getting better.</q><br/><persona>Mom: </persona><q>Air quality is improving; however, there’s still a lot of work to be done. Keep reading these annual reports to see how things change over time, download the one page summary and scroll down to read about sharing the report.</q>"></i></p>
+						<p class="h2 paddingfromtop story_tooltip" >Our Nation's Air Continues to Improve</p>
 						<p class="em1_45">However, work must continue to ensure healthy air for all communities. EPA and our partners at the state, tribal and local levels will continue to work to address the complex air quality problems we face.</p>
-						<p class="em1_45"><a href="documentation/AirTrends_Flyer.pdf" title="Download Highlights!" target="_blank">Download and share the one page summary <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> and scroll down for additional resources.</p>
-						<div class="leaf-fact em1 text-center"><i class="icon icon-leaf" aria-hidden="true"></i> Approximately 111 million Americans live in counties with air quality concentrations above the level of one or more NAAQS in 2017.</div>
-						<span class="sr-only">The downloadable EPA air trends infographic has four graphics depicting improving air quality trends since 1970. The top left chart shows the 253 percent increase of the United States gross domestic product against a 73 percent drop in air pollutant emissions since 1970. The top right chart shows decreasing national average ozone and particulate matter concentrations since 1990 with the averages falling below the most recent standard. The bottom right chart shows the 66 percent reduction in unhealthy air quality days from 2000. And the bottom left chart shows the descreasing emissions from 1990 for sulfur dioxide, nitrous oxides, volatile organic compounds, direct particulate matter and carbon monoxide.</span>
+						<p class="em1_45"><a href="documentation/AirTrends_Flyer.pdf" title="Download Highlights!" target="_blank" onclick="ga('send', 'event', 'download', 'pdf click', 'https://gispub.epa.gov/air/trendsreport/2018/documentation/AirTrends_Flyer.pdf');">Download and share the one page summary <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> and scroll down for additional resources.</p>
+						<div class="leaf-fact em1 text-center"><i class="icon icon-leaf" aria-hidden="true"></i> Approximately 111 million Americans lived in counties with air quality concentrations above the level of one or more NAAQS in 2017.</div>
+						<span class="sr-only">The downloadable EPA air trends infographic has four graphics depicting improving air quality trends since 1970. The top left chart shows the 262 percent increase of the United States gross domestic product against a 73 percent drop in air pollutant emissions since 1970. The top right chart shows decreasing national average ozone and particulate matter concentrations since 1990 with the averages falling below the most recent standard. The bottom right chart shows the 65 percent reduction in unhealthy air quality days from 2000. And the bottom left chart shows the descreasing emissions from 1990 for sulfur dioxide, nitrous oxides, volatile organic compounds, direct particulate matter and carbon monoxide.</span>
 					</div>
 				</div>
 			</div>
@@ -1282,7 +1282,7 @@
 			<div class="container-fluid social-media-padding fadein-trigger " >
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 " >
-						<p class="h2 story_tooltip">Social Media <i class="icon icon-discussion icon-sm" aria-hidden="true" data-toggle="tooltip" data-placement="auto" data-html="true" title="<persona>Mom: </persona><q>Be sure to email, tweet, post and share this report with others using the share button at the top.</q>"></i></p>
+						<p class="h2 story_tooltip">Social Media</p>
 						<p class="em1_2">Use the share button <i class="icon icon-share-alt" aria-hidden="true"></i> at the top to share this report with others, and follow the latest EPA activities to protect human health and the environment using the links below. </p>
 						<p class="em1_2">Source code, data and documentation are available for download at the GitHub repository below.</p>
 						<ul class="list-inline banner-social-buttons">
@@ -1295,21 +1295,22 @@
 				</div>
 				<div class="row" style="margin-top:40px">
 					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-						<p class="h2 story_tooltip">Additional Resources <i class="icon icon-discussion icon-sm" aria-hidden="true" data-toggle="tooltip" data-placement="auto" data-html="true" title="<persona>Mom: </persona><q>If you ever want to learn more about what we talked about just visit these websites, and always listen to your mother!</q>"></i></p>
+						<p class="h2 story_tooltip">Additional Resources</p>
 						<p class="em1_2">Please visit other EPA air quality related websites.</p>
 						<ul class="list-inline banner-social-buttons">
-							<li><a href="https://epa.gov/air-trends" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirTrends website" data-text="Visit"><span>Air Trends</span></a></li>
-							<li><a href="https://airnow.gov" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirNow website" data-text="Visit"><span>Air Now</span></a></li>
-							<li><a href="https://epa.gov/aircompare/" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirCompare website" data-text="Visit"><span>Air Compare</span></a></li>
-							<li><a href="https://www.epa.gov/outdoor-air-quality-data" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirData website" data-text="Visit"><span>Air Data</span></a></li>
+							<li><a href="https://epa.gov/air-trends" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirTrends website" data-text="Visit"><span>AirTrends</span></a></li>
+							<li><a href="https://airnow.gov" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirNow website" data-text="Visit"><span>AirNow</span></a></li>
+							<li><a href="https://epa.gov/aircompare/" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirCompare website" data-text="Visit"><span>AirCompare</span></a></li>
+							<li><a href="https://www.epa.gov/outdoor-air-quality-data" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit AirData website" data-text="Visit"><span>AirData</span></a></li>
 							<li><a href="https://epa.gov/air-emissions-inventories" class="btn btn-lg-alt button--rayen" target="_blank" title="Visit Air Emissions website" data-text="Visit"><span>Air Emissions</span></a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="row" style="margin-top:60px;margin-bottom:60px;">
+				<!--<div class="row" style="margin-top:60px;margin-bottom:60px;">-->
+				<div class="row" style="margin-top:20px;margin-bottom:10px;">
 					<div class="col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-						<p class="em1_2"><i class="icon icon-cloudy2" aria-hidden="true"></i> Breathe something beautiful <i class="icon icon-droplet" aria-hidden="true"></i> Drink something beautiful <i class="icon icon-globe " aria-hidden="true"></i> Live somewhere beautiful </p>
-						<!--<img class="epa-logo-size img-responsive center-block" src="./img/epa_seal_w-ring_RGB-sm_160x160.png" alt="United States Environmental Protection Agency">-->
+						<!--<p class="em1_2"><i class="icon icon-cloudy2" aria-hidden="true"></i> Breathe something beautiful <i class="icon icon-droplet" aria-hidden="true"></i> Drink something beautiful <i class="icon icon-globe " aria-hidden="true"></i> Live somewhere beautiful </p>-->
+						<img class="epa-logo-size img-responsive center-block" src="./img/epa_seal_w-ring_RGB-sm_160x160.png" alt="United States Environmental Protection Agency">
 						<div class="contact-us"><a href="https://www.epa.gov/air-trends/forms/contact-us-about-air-trends" target="_blank" title="Contact us about air trends">Contact Us <i class="icon icon-external-link" alt="Link opens new browser tab"></i></a> to ask a question, provide feedback, or report a problem.</div>
 					</div>
 				</div>

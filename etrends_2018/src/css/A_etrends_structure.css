@@ -220,28 +220,14 @@ a.link:hover {
 }
 
 /* STORY PAGE IMAGES AND TEXT */
-.picContainer { /* don't think this is needed since using fullpage */
-    display: table;
-    width: 100%;
-    height: 100%; 
-}
-.imageAndText {
-	position: relative;
-} 
-.imageAndText .row {
-	position: absolute; 
-	z-index: 1; 
-	/*top: 50%; 
-	left: 0;*/
-}
 .home_bkgrnd{
 	background: -o-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../img/SkyClouds_012_1920x1080_notext.jpg) no-repeat center/cover scroll;
 	background: -ms-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../img/SkyClouds_012_1920x1080_notext.jpg) no-repeat center/cover scroll;
 	background: -moz-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../img/SkyClouds_012_1920x1080_notext.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../../img/SkyClouds_012_1920x1080_notext.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../../img/SkyClouds_012_1920x1080_notext.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
 }
 .introduction_bkgrnd{
@@ -260,8 +246,8 @@ a.link:hover {
 	background: -moz-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.70)), url(../../img/agriculture_sky_1440x900.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.70)), url(../../img/agriculture_sky_1440x900.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.70)), url(../../img/agriculture_sky_1440x900.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
 }
 .naaqs_bkgrnd{
@@ -270,8 +256,8 @@ a.link:hover {
 	background: -moz-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../img/NASA_NO2_2016_1920x1080.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../img/NASA_NO2_2016_1920x1080.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../../img/NASA_NO2_2016_1920x1080.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
 }
 .haze_bkgrnd{
@@ -280,8 +266,8 @@ a.link:hover {
 	background: -moz-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.70)),  url(../../img/GC_Haze_1440x900.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.70)),  url(../../img/GC_Haze_1440x900.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.70)),  url(../../img/GC_Haze_1440x900.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
 }
 .toxics_bkgrnd{
@@ -290,8 +276,8 @@ a.link:hover {
 	background: -moz-linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.55)),  url(../../img/toxics_1440x900.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.40), rgba(0,0,0,0.55)),  url(../../img/toxics_1440x900.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(../../img/toxics_1440x900.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
 }
 .spotlight_bkgrnd{
@@ -300,10 +286,10 @@ a.link:hover {
 	background: -moz-linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.6)), url(../../img/spotlight_1440x900.jpg) no-repeat center/cover scroll;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.6)), url(../../img/spotlight_1440x900.jpg) no-repeat center/cover scroll;
 	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),  url(../../img/spotlight_1440x900.jpg) no-repeat center/cover scroll;
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 	z-index: -2;
-}
+}/*
 @media(max-width:1024px) {
 	.introduction_bkgrnd,
 	.growth_bkgrnd, 
@@ -313,41 +299,38 @@ a.link:hover {
 	.spotlight_bkgrnd {
 		background-attachment: scroll;
 	}
-}
-.title, .story_title {
-	/*font-family: 'Special Elite', cursive;
-	font-family: 'Source Sans Pro';*/
-	font-size:7em;
-	color: rgba(255,255,255,.75);
-	/*border-bottom: 10px solid rgba(26,26,26,.85);*/
-	display:inline-block;
-	text-transform: uppercase;
-	padding-left:75px;
-	z-index: 2;
-}
+}*/
+/*
 .story_title {
 	font-size: 3em;
 	display:block;
 	text-transform:none;
-}
+}*/
+/*
 .story-text {
-	/*display: table-cell;
-	vertical-align: middle;
-	text-align: left;
-	font-size: 1.714em; */
 	font-size: 1em; 
-	/*color: #fff;
-	text-shadow: 2px 1px 4px #1a1a1a;*/
 	line-height:1.4;
 }
 @media(min-width:768px) { 
 	.story-text {
 	font-size: 1.714em;
 	}
+}*/
+.title_container {
+	position:absolute;
+	top:95vh;
+	transform:translateY(-100%);
+	width:100%;
+}
+.title{
+	font-size:7em;
+	color: rgba(255,255,255,.75);
+	display:inline-block;
+	text-transform: uppercase;
+	padding-left:75px;
+	z-index: 2;
 }
 .story_text {
-	/*font-family: 'Special Elite', cursive;
-	padding-top:20px; */
 	font-size:2.2em;
 	line-height:1.6;
 	font-family: 'Montserrat','Merriweather';	
@@ -364,21 +347,32 @@ a.link:hover {
 	overflow:hidden;
 	color: rgba(191,191,191,.12);
 }
+@media(max-width:835px) { 
+	.title {
+		padding-left:15px;
+	}
+}
 @media(max-width:768px) { 
-	.bg-text-overlay{
-		display:none;
+	.title_container {
+		position:absolute;
+		top:80vh;
+		transform:translateY(-100%);
+		width:75%;
 	}
 	.title {
 		font-size:4em;
-		padding-left:15px;
+		/*padding-left:15px;*/
 	}
 	.story_text {
 		font-size:1.5em;
 	}
+	.bg-text-overlay{
+		display:none;
+	}
 }
 #naaqs_section .bg-text-overlay{ 
-	-webkit-filter: sepia(.4) ;
-    filter: sepia(.4) ;
+	-webkit-filter: sepia(.4);
+    filter: sepia(.4);
 }
 .resource_bkgrnd {
 	width: 100%;

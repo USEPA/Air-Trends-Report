@@ -61,10 +61,10 @@ etrends.visibility.init = function (D3QueueCallback) {
 //  config.symbology = {colors:[d3.rgb(0,80,81)],breaks:[]};
 
   config.types = {};
-	config.types.cleanest = {file:"cleanest.csv",title:"Cleanest Visibility Trend",units:"deciview",digits:1,typeLabel:"Cleanest",tooltip:"Click to view visibility trends on 20 percent cleanest days"}
+	config.types.cleanest = {file:"cleanest.csv",title:"Visibility Trend on Cleanest Days",units:"deciview",digits:1,typeLabel:"Cleanest",tooltip:"Click to view visibility trends on 20 percent cleanest days"}
 //Don't show haziest now
 //	config.types.haziest = {file:"haziest.csv",title:"Haziest Visibility National Trend",standard:9,units:"indexppm",digits:1,typeLabel:"Haziest",tooltip:""}
-	config.types.impaired = {file:"impaired.csv",title:"Most Impaired Visibility Trend",units:"deciview",digits:1,typeLabel:"Most Impaired",tooltip:"Click to view visibility trends on 20 percent most impaired days"}
+	config.types.impaired = {file:"impaired.csv",title:"Visibility Trend on Most Impaired Days",units:"deciview",digits:1,typeLabel:"Most Impaired",tooltip:"Click to view visibility trends on 20 percent most impaired days"}
 
   makeVisibilityTabs();
 
@@ -122,7 +122,7 @@ etrends.visibility.init = function (D3QueueCallback) {
    chart.tooltip.data["f.isMissing"] = function (value) {
      return (value || (value!=="" && value==0)) ? value : "No Data / Incomplete";}; 
 
-   chart.ytitle.text='Visibility (' + config.types[currentType].units + ')'
+   chart.ytitle.text='Haze index (' + config.types[currentType].units + ')'
    chart.xField = "year";
 //no yField gets rid of moving point and adopts highchart tooltip functionality
 //   chart.yField = "avg";
@@ -267,7 +267,7 @@ function makeVisibilityGraph(type) {
     chart.standard = config.types[type].standard;
     
     chart.title.text = config.types[type].title;
-    chart.ytitle.text='Visibility (' + config.types[type].units + ')'
+    chart.ytitle.text='Haze index (' + config.types[type].units + ')'
     chart.tooltip.data.digits= config.types[type].digits; 
     chart.tooltip.data.units = config.types[type].units;
     

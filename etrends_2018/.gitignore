@@ -23,7 +23,7 @@ data/source_files
 img/working_images
 !video/
 !video/**
-video/working_video
+video/MP4/workingvideofiles
 !GAdownloadDemo/
 !GAdownloadDemo/**
 !*.ico

@@ -279,7 +279,8 @@ ul.dropdown-menu i{
 	line-height: 1.5;
 }
 persona{
-	color: #7fffd4;
+	/*color: #7fffd4;*/
+	color: #277236;
 	font-weight:600;
 }
 .dropdown-menu .tooltip.in,

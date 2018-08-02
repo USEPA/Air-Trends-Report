@@ -226,10 +226,26 @@
 .icon-comments-o:before {
   content: "\f0e6";
 }
-.icon-discussion:before {
-  content: "\f04f";
-  color: #277236;
+.welcome-discussion {
+	display: none;
 }
+@media (min-width: 992px) {
+	.welcome-discussion {
+		display: inline-block;
+	}
+	.icon-discussion:before {
+		content: "\f04f";
+		color: #277236;
+		font-size: 1.4em;
+	}
+	.icon-position-absolute {
+		position:absolute;
+		bottom:10px;
+		right:20px;
+		font-size: 2em;
+	}
+}
+
 .icon-leaf:before {
   content: "\e9a4";
   color: #277236;

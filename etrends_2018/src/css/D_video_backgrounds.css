@@ -157,13 +157,13 @@
 	position: absolute;
 	bottom: 0;
 	overflow: hidden;
-	/*z-index: 5;  for accessing the video by click */
+	z-index: -2;  /*for accessing the video by click */
 }
 #video-viewport video {
     min-width: 100%;
     min-height: 100%;
     position: relative;
-    z-index: -3; /*same z-index as background images */
+    z-index: -2; /*same z-index as background images */
 }
 #video-viewport .bkrnd-overlay{
 	height: 100%;
@@ -171,18 +171,18 @@
     position: absolute;
     top: -5px;
     left: 0px;
-    z-index: -2;
+    z-index: -1;
 	background: -webkit-linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
 	background: -moz-linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
 	background: -o-linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
 	background: -ms-linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
 	background: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70));
-	-webkit-filter: sepia(.5) ;
-    filter: sepia(.5) ;
+	/*-webkit-filter: sepia(.5);
+    filter: sepia(.5);*/
 }
-
-#nasa-text {/* property when using video-container old method */
-	z-index:2; /*for accessing the link by click */
+/*for accessing the link by click */
+#nasa-text {   
+	z-index:2; 
 }
 .nasa-drop-shadow {
 	text-shadow: 2px 1px 4px #1a1a1a;
@@ -208,7 +208,7 @@
 	color:#ccc;
 	position:absolute;
 	bottom:20px;
-	right:20px;
+	left:20px;
 	width:68px;
 	z-index:2; /*for accessing the video by click */
 	display:none;

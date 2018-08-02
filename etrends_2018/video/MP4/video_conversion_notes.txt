@@ -1,9 +1,0 @@
-To change air pollution video from 16x9 to 4x3:
-
-1. Go to https://www.online-convert.com and convert mp4 to avi setting kbps to 400 and codec to h264
-2. Open VirtualDub on desktop and create a Video-->Filter-->resize to 4:3
-3. Select Video-->Compression and use the h264 codec to enable compression of saved avi
-4. Save as .avi
-5. Go back to https://www.online-convert.com and convert to mp4, disable audio track and h264 codec
-6. Go to http://www.videosmaller.com/ and compress final 4x3 mp4 video
-7. Create snapshot using VSDC
