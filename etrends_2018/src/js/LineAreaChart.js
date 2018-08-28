@@ -199,6 +199,8 @@ var LineAreaChart = function LineAreaChart(domID,minimumHeight,heightOverwidth,p
 
 //set up resopnsiveness when resized
   this.resizeDebouncer = new MapChartResize(this, function() {
+    //If no data added yet don't try to resize because it will lead to breaks
+    if (! self.data) return;
     self.resize(self);
   }, 200)
 
