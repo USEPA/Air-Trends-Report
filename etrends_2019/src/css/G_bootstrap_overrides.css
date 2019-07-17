@@ -1,0 +1,95 @@
+/* BOOTSTRAP CSS CHANGES to panels, labels, modals, forms, selects, thumbnails and nav-tabs */
+
+/* BLOCKQUOTE */
+blockquote {
+	font-size: .9em;
+	font-style: italic;
+	/* from 3.3.7 */
+	padding: 10px 20px;
+	margin: 0 0 20px;
+	border-left: 5px solid #eeeeee;
+}
+/* BUTTONS */
+button:focus {
+	outline:0;
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+/* MODALS */
+.modal-content {
+  border: 5px solid rgba(20, 96, 170, .4);
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+		  box-shadow: 0 3px 9px rgba(0, 0, 0, .5); 
+} 
+.modal-header {
+   padding: .5rem; 
+}
+.modal-footer {
+  padding: .4rem;
+} 
+/*
+.modal {
+		z-index:9999;
+}*/
+.close, .close:hover, .close:active {
+  color: #0071bc;
+}
+
+/* CARDS */
+.card-header {
+	padding:.35rem 1.25rem;
+	border-bottom: none;
+	background-color:#fff;
+}
+.card-body {
+	padding: .5rem 1rem;
+}
+
+/* FORM CONTROL */
+select::-ms-expand {	
+	display: none; /*Removes default style and caret IE*/
+}
+select::-ms-value {
+	background: none; /* Removes default blue background on selections in IE http://stackoverflow.com/questions/13170137/how-to-modify-select-tags-default-highlight-behaviour-in-ie-and-opera*/
+	color: #205493; /* but IE default text is white so this is needed */
+}
+select {
+	border: 2px solid #e6e6e6;
+	border-radius: .25rem;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+}
+.form-control {
+  font-size: .92rem;
+  color: #205493; /* default is 555 */
+  font-weight:500;
+  background-image: none; 
+  border: none;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+			box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+.form-control:focus {
+	color: #205493;
+}
+.form-control-caret {
+/*   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMTYiIGhlaWdodD0iMjgiIHZpZXdCb3g9IjAgMCAxNiAyOCI+PHBhdGggZmlsbD0iIzE0NjBhYSIgZD0iTTE2IDExcTAgMC40MDYtMC4yOTcgMC43MDNsLTcgN3EtMC4yOTcgMC4yOTctMC43MDMgMC4yOTd0LTAuNzAzLTAuMjk3bC03LTdxLTAuMjk3LTAuMjk3LTAuMjk3LTAuNzAzdDAuMjk3LTAuNzAzIDAuNzAzLTAuMjk3aDE0cTAuNDA2IDAgMC43MDMgMC4yOTd0MC4yOTcgMC43MDN6Ij48L3BhdGg+PC9zdmc+'); */
+  background-image: url('data:image/svg+xml;base64,PCEtLSBHZW5lcmF0ZWQgYnkgSWNvTW9vbi5pbyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE4IiBoZWlnaHQ9IjMyIiB2aWV3Qm94PSIwIDAgMTggMzIiPgo8dGl0bGU+Y2FyZXQtZG93bjwvdGl0bGU+CjxwYXRoIGZpbGw9IiMyMDU0OTMiIGQ9Ik0xOC4yODYgMTIuNTcxYzAgMC4zMDQtMC4xMjUgMC41ODktMC4zMzkgMC44MDRsLTggOGMtMC4yMTQgMC4yMTQtMC41IDAuMzM5LTAuODA0IDAuMzM5cy0wLjU4OS0wLjEyNS0wLjgwNC0wLjMzOWwtOC04Yy0wLjIxNC0wLjIxNC0wLjMzOS0wLjUtMC4zMzktMC44MDQgMC0wLjYyNSAwLjUxOC0xLjE0MyAxLjE0My0xLjE0M2gxNmMwLjYyNSAwIDEuMTQzIDAuNTE4IDEuMTQzIDEuMTQzeiI+PC9wYXRoPgo8L3N2Zz4K');
+  background-size: .85rem;
+/*   padding-right: 25px; */
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.jumbotron{
+	/*background-color: #e9ecef85;*/
+	background-color: rgba(0,0,0,.5);
+	box-shadow: 0 0 0 8px rgba(255,255,255,.75);
+	color: white;	
+}
+hr {
+	border-top: 1px solid rgba(255,255,255,.75);
+}
+.display-2{
+	font-size:5rem;
+}

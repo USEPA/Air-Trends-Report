@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Annual Air Trends Report">
+    <meta name="author" content="U.S. EPA">
+	<meta name="keywords" content="environment,air,trends,naaqs,health,air quality,concentrations,emissions,air pollution,pollutants,EPA">
+    <title>Our Nation's Air</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+    <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="dist/css/etrends.css" /> 
+	<link rel="shortcut icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="https://www.epa.gov/sites/all/themes/epa/favicon.ico" type="image/x-icon">
+  </head>
+ <body id="page-top" >
+	
+	 <div id="fullpage">	
+		<section class="secFP">	
+			<div class="container-fluid">
+			   	<div class="row paddingfromtop">
+					<div class="col-md-8 col-md-offset-2">
+						<div id="naaqs-emissions-lead-chart-container" class="etrends-chart-container">
+							<span class="sr-only">Bar chart depicting national lead emissions and percentages by source category (stationary fuel combustion, industrial and other processes, highway vehicles and non-road mobile).</span>
+							<div id="naaqs-emissions-lead-chart-header" style="position:relative;">												
+								<div style="" id="naaqs-emissions-lead-chart-title" class="etrends-chart-title"><span></span></div>
+								<div class='etrends-chart-menu'></div>
+								<div id="naaqs-emissions-lead-chart-menu-tooltip" class="etrends-tooltip etrends-chart-menu-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>												
+								</div>
+							</div>
+							<div id="naaqs-emissions-lead-chart" class="etrends-chart" style="position:relative">
+								<div id="naaqs-emissions-lead-chart-tooltip" class="etrends-tooltip" style="display:none;white-space:nowrap">
+									<div class="content"></div>
+									<textarea style="display:none" class="template">
+										<table class="<<DefaultDisplayClass>>">
+											<tr><td class="etrends-tooltip-label">Pollutant:</td><td><<d.Year>></td></tr>
+											<<loop:series>>
+											<tr style="display:<<f.seriesDisplayHideMissing:<<l.name>>>>"><td class="etrends-tooltip-label etrends-chart-area-<<l.class>>"><<l.name>>:</td><td><<d.<<l.name>>:3>> <<units>></td></tr>
+											<</loop>>
+											<tr><td class="etrends-tooltip-label">Total:</td><td><<d.SumOfSeries:3>> <<units>></td></tr>
+										</table>
+										<table class="<<PercentDisplayClass>>">
+											<tr><td class="etrends-tooltip-label">Pollutant:</td><td><<d.Year>></td></tr>
+											<<loop:series>>
+											<tr style="display:<<f.seriesDisplayHideMissing:<<l.name>>>>"><td class="etrends-tooltip-label etrends-chart-area-<<l.class>>"><<l.name>>:</td><td><<f.showPercent:d.<<l.name>>,d.SumOfSeries:3>>%</td></tr>
+											<</loop>>
+										</table>           
+									</textarea>
+								</div>
+								<div class="etrends-chart-svg"></div>
+							</div>
+							<div id="naaqs-emissions-lead-chart-legend" class="etrends-chart-legend"></div>
+							<div class="attribution"><a href="https://www.epa.gov/air-emissions-inventories/air-pollutant-emissions-trends-data" target="_blank" title="Visit EPA Air Emissions Trends website">Source: U.S. EPA National Emissions Inventory 2014 ver. 1</a></div>
+						</div>
+					</div>								
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Export and Print Menu -->
+	<textarea style="display:none" class="etrends-chart-menu-tooltip-template-standard">
+		<ul class="export-list-style">
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.print('<<fileName>>',1500)" class="exportPrint"><i class="icon icon-print" aria-hidden="true"></i> Print</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportCSV('<<fileName>>.csv')" class="exportCSV"><i class="icon icon-export" aria-hidden="true"></i> Export Data</a></li>
+			<li><a style="cursor: pointer;" onclick="<<dd.self.host.namespace>>.export.exportPNG('<<fileName>>.png',1500)" class="exportPNG"><i class="icon icon-export" aria-hidden="true"></i> Export PNG</a></li>
+		</ul>
+		<span style="display:<<convertYdomainToPercentDisplay>>" class="checkbox">
+			<label style="line-height:20px;padding-left:5px;">
+				<<convertYdomainToPercentLabel>>
+				<input class="etrends-tooltip-showPercent" type="checkbox" <<convertYdomainToPercentChecked>> onclick="<<dd.self.host.namespace>>.toggleYdomainToPercent(<<dd.self.host.namespace>>.export.revertConvertYdomainToPercent ? !this.checked : this.checked);" />
+			</label>
+		</span>
+		<div class="customControls"></div>
+	</textarea>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+	<!--D3 libraries -->
+	<script src="dist/js/d3-libs.min.js"></script>
+	<!--D3 charts, plugins and custom code -->
+	<script src="src/js/EtrendsUtilities.js"></script>	
+	<script src="src/js/LineAreaChart.js"></script>
+	<script src="src/js/MapChartTooltip.js"></script>
+	<script src="src/js/MapChartResize.js"></script>
+	<script src="src/js/MapChartDebounce.js"></script>
+	<script src="src/js/MapChartLegend.js"></script>
+	<script src="src/js/MapChartTitle.js"></script>	
+	<script src="src/js/MapChartExportMenu.js"></script>	
+	<script src="src/js/naaqs-emissions-lead.js"></script>
+
+	<script>
+  d3_queue.queue([1])
+  //Have to bind the function to etrends.naaqs.emissions.lead so it will exeucte in that context ie. this=etrends.naaqs.emissions.lead
+    .defer(etrends.naaqs.emissions.lead.init.bind(etrends.naaqs.emissions.lead))    
+	//by default chart isn't visible in report until modal pops up
+	//For this test page make it visible after chart has loaded
+    .defer(function (callback) {
+	  etrends.naaqs.emissions.lead.chart.visible=true;
+      callback(null);
+    })
+    .await(function (error) {
+      if (error) console.error(error);
+      console.log("etrends.naaqs.emissions.lead  loaded")
+    });
+		
+	</script>
+
+ </body>	
+ </html>
