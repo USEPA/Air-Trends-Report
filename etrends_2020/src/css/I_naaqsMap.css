@@ -1,0 +1,201 @@
+.etrends-map-container {
+  background-color: #fff;
+	padding:.5em;
+	margin-bottom:20px;
+	border: none;
+	border-radius: .25rem;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+			box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+#naaqs-map-container{
+	margin-bottom:6px;
+}
+.etrends-map-container svg {
+  background-color: #ffffff;
+}
+.etrends-map-container .content a,
+.etrends-tooltip a.etrends-tooltip-close,
+.etrends-tooltip a.etrends-tooltip-maximize,
+.etrends-tooltip a.etrends-tooltip-minimize {
+    text-decoration: none;
+	border-bottom: 1px #0071bc dotted;
+	color: #0071bc;
+}
+.etrends-map-container .content a:hover,
+.etrends-tooltip a.etrends-tooltip-close:hover,
+.etrends-tooltip a.etrends-tooltip-maximize:hover,
+.etrends-tooltip a.etrends-tooltip-minimize:hover {
+    text-decoration: none;
+    color: #009900;
+	border-bottom: 1px #009900 dotted;
+}
+#naaqsMap{
+	padding:0px;
+	position:relative;
+	width:100%;
+	height:99%;
+	top:0;
+	left:0%;
+}
+/* #naaqs-map-title, #speciation-map-title, #visibility-map-title, #toxics-map-title {
+	margin-bottom: 4px; 
+} */
+.background {
+  fill: none;
+  pointer-events: all;
+}
+  
+.feature {
+  fill: #d9d9d9; /* USA map color */
+  cursor: zoom-in;
+}
+
+.feature.active {
+  fill: transparent;
+}
+
+.mesh {
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#states {
+  fill: #aaa;
+}
+
+#states .active {
+  display:none;
+}
+
+#state-borders {
+  fill: none;
+  stroke: #b3b3b3;
+  stroke-width: 1.5px;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  pointer-events: none;
+}
+
+.county-boundary { /* county fill color */
+  fill: #bfbfbf;
+  stroke: #999999;
+  stroke-width: .7px;
+}
+
+.state:hover {
+  fill: lightsteelblue;
+}
+
+g2 {  
+  fill: none;
+  stroke: #000; 
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: .5px;
+}
+
+.etrends-map-legend-disable {
+  position: relative;
+  bottom:0px;
+  z-index:2;
+  text-align: center;
+  background-color: #fff;
+}
+
+.etrends-map-legend {
+  padding-top:2px;
+  text-align: center;
+  white-space:nowrap;
+}
+#naaqs-map-container .etrends-map-legend {
+  padding-top:.5em;
+}
+
+
+.etrends-map-legend .legendCells .cell .label {
+  font-weight: normal;
+  /*font-size: 1em;*/
+}
+
+.naaqs-map-legendLinear { /* legend text */
+    background: none;
+	fill: #1a1a1a;
+}
+
+.etrends-map-points {
+	cursor:pointer;
+}
+
+/* general stroke on circles - best way to set stroke on svgs is inline, not here */
+.etrends-map-points circle.default {
+	stroke: #bfbfbf;
+	stroke-width:1px;
+}
+
+/* stroke set specifically for speciation */
+#speciation-map .etrends-map-points circle {
+	stroke: #f2f2f2;
+	stroke-width:1.7px;
+}
+
+.etrends-map-home{
+	position:absolute;
+	line-height:1;
+}
+.etrends-map-home:before {
+    z-index:2;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    /*color: #808080;
+	width: 2.143em;
+    height: 2.143em;
+    background-color: #666;*/
+    /* background-color: #eee;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+	border:solid 1px #e6e6e6;
+    background-position: center center;
+    background-repeat: no-repeat; */
+	content: "\f015"; 
+	font-family: 'icomoon';
+	font-size:1.5rem;
+	padding:0 4px;
+	vertical-align:middle;
+}  
+.naaqsYear {
+  padding: 0em;
+  text-align:center;
+}
+.etrends-map-legend .legendCells .cell .label 	{
+/* 	font-size: 9px;   */
+	font-size: .75rem;
+}
+.naaqsYear {
+	font-size: 1.714rem;
+}
+.etrends-map-select-zoomToState {
+	position:absolute;
+	left:0;
+	bottom:0;
+	padding-left:5px;
+	padding-right:5px;
+	font-size: .8rem;
+	background-color: white;
+}
+select.etrends-map-select-zoomToState  {
+	color: #205493;
+	font-weight:500;
+	border: none;
+	border-radius: .25rem;
+	-webkit-appearance: none;  /*Removes default chrome and safari style*/
+    -moz-appearance: none;  /*Removes default style Firefox*/
+	-webkit-box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.15);
+		box-shadow: 0 0 8px -1px rgba(0, 0, 0, 0.15);
+}

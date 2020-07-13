@@ -1,0 +1,643 @@
+/* .naaqs-chart-svg, .etrends-chart-svg {
+  font: 14px;
+  font-family: 'Montserrat','Lato',"Source Sans Pro", "Helvetica Neue", "Helvetica", 'Roboto',"Arial", sans-serif;  
+} */
+
+/* ACROSS MULTIPLE CHARTS */
+.etrends-chart-container {
+  padding:.5rem;
+  background-color: #ffffff;
+/*   border:solid 1px #e6e6e6; */
+  border-radius: .25rem;
+  margin-bottom:20px;
+	-webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+			box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+}
+.etrends-chart-container svg {
+  background-color: #ffffff;
+}
+#naaqs-concentrations-chart, .etrends-chart {
+	background-color: #fff;
+	position:relative;
+}
+.etrends-chart-axis path,
+.etrends-chart-axis line {
+  fill: none;
+  stroke: #e6e6e6; /*x and y gridlines*/
+  shape-rendering: crispEdges;
+}
+.etrends-chart-axis text {
+  fill: #1a1a1a; /*x and y labels */
+  font-weight:normal;
+}
+.etrends-chart-axis .tick line {
+  stroke: rgba(230, 230, 230, 0);  /*#e6e6e6 chart plot area gridlines; hiding to minimize clutter*/
+}
+.etrends-chart-area {
+  stroke-width: 1;
+}
+#naaqs-concentrations-averages-chart-header,
+#naaqs-emissions-totals-chart-header,
+#naaqs-emissions-categories-chart-header,
+#growth-chart-header {
+	position:relative;
+	margin-bottom:10px; /*needs to be margin instead of padding in order to have export icon move with the header changes */
+	margin-top: 8px;
+}
+#naaqs-concentrations-chart-header,
+#naaqs-emissions-chart-header,
+#naaqs-emissions-lead-chart-header,
+#naaqs-map-header,
+#speciation-map-header,
+#visibility-map-header,
+#toxics-map-header,
+#speciation-chart-header,
+#visibility-chart-header,
+#toxics-chart-header {
+	position:relative;
+	margin-bottom:4px;
+	margin-top: 4px;
+}
+.etrends-chart-tabs li.active:focus, #naaqs-emissionMenu li.active:focus,
+.etrends-chart-tabs li:focus,  #naaqs-emissionMenu li:focus,
+.etrends-chart-tabs li.active, #naaqs-emissionMenu li.active {
+	outline:none;
+}
+@media(min-width:610px) {
+	.etrends-chart-tabs li.active:focus, #naaqs-emissionMenu li.active:focus,
+	.etrends-chart-tabs li:focus,  #naaqs-emissionMenu li:focus,
+	.etrends-chart-tabs li.active, #naaqs-emissionMenu li.active {
+		transform: translateY(-3px);
+		transition: all 0.4s;
+	}
+}
+
+
+/* NAAQS CONCENTRATION CHARTS */
+/* Use this to set default chart line style */
+#naaqs-concentrations-chart-container {
+  margin-bottom:.5rem;
+}
+.etrends-chart-line-standard {
+  fill: none;
+  stroke: #808080;
+  stroke-width: 2;
+  stroke-dasharray:15,5;
+}
+/* Use this to set specific chart line style */
+#naaqs-concentrations-chart-container .etrends-chart-line-standard {
+  fill: none;
+  stroke: #808080;
+  stroke-width: 2;
+  stroke-dasharray:15,5;
+}
+/* Use this to set default chart text style */
+.etrends-chart-line-standard-label {
+	fill:#808080; /*most recent national std. text*/
+}
+/* Use this to set specific chart text style */
+#naaqs-concentrations-chart .etrends-chart-line-standard-label {
+	fill:#808080; /*most recent national std. text*/
+}
+
+
+/* SPECIATION, VIZ AND TOXICS */
+#speciation-map-tooltip .etrends-chart-container,
+#visibility-map-tooltip .etrends-chart-container,
+#toxics-map-tooltip .etrends-chart-container {
+	margin-bottom:.35rem;
+}
+
+
+/* NAAQS CONCENTRATION, VIZ, TOXICS */
+/* Use this to set default chart line style */
+.etrends-chart-area-percentile {
+  fill: rgba(42, 122, 42, 0.8); /* #2A7AB0 */
+}
+/* Use this to set specific chart line style */
+#toxics-chart-container .etrends-chart-area-percentile,
+#visibility-chart-container .etrends-chart-area-percentile,
+#naaqs-concentrations-chart-container .etrends-chart-area-percentile {
+  fill: rgba(42, 122, 176, 0.4); /* #2A7AB0 */
+}
+.etrends-chart-line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+}
+/* Use this to set default chart line style */
+.etrends-chart-line-average {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+}
+/* Use this to set specific chart line style */
+#toxics-chart-container .etrends-chart-line-average,
+#visibility-chart-container .etrends-chart-line-average,
+#naaqs-concentrations-chart-container .etrends-chart-line-average {
+  fill: none;
+  stroke: #000;
+  stroke-width: 3;
+}
+/* Use this to set default chart line style */
+.etrends-chart-line-selectedSite {
+  fill: none;
+  stroke: #7023b7;
+  stroke-width: 3;
+}
+/* This would explicity set for just stuff in tooltip .could also put above in general class def */
+.etrends-tooltip .etrends-chart-line-selectedSite {
+  color:#7023b7;
+}
+/* Use this to set specific chart line style */
+#toxics-chart-container .etrends-chart-line-selectedSite,
+#visibility-chart-container .etrends-chart-line-selectedSite,
+#naaqs-concentrations-chart-container .etrends-chart-line-selectedSite {
+  fill: none;
+  stroke: #7023b7;
+  stroke-width: 3;
+}
+#toxics-chart-container .etrends-tooltip .etrends-chart-line-selectedSite,
+#visibility-chart-container .etrends-tooltip .etrends-chart-line-selectedSite,
+#naaqs-concentrations-chart-container .etrends-tooltip .etrends-chart-line-selectedSite {
+  color:#7023b7; /*color of the actual text "Selected Site" within the tooltip */
+}
+/* Use this to set default chart line style */
+.etrends-chart-point-selectedSite .dot {
+  r:6px;
+  fill:#7023b7;  
+}
+/* Use this to set specific chart line style */
+#toxics-chart-container .etrends-chart-point-selectedSite .dot,
+#visibility-chart-container .etrends-chart-point-selectedSite .dot,
+#naaqs-concentrations-chart-container .etrends-chart-point-selectedSite .dot {
+  r:6px;
+  fill:#7023b7;  
+}
+
+
+/* LEGENDS */
+.etrends-chart-legend text {
+  fill: #1a1a1a;
+  cursor:pointer;
+}
+.etrends-chart-legend .etrends-chart-line, .etrends-chart-legend .etrends-chart-area {
+	cursor:pointer;
+}
+#naaqs-concentrations-averages-chart-legend, #naaqs-emissions-categories-chart-legend {
+	margin-top:5px;
+}	
+#naaqs-concentrations-chart-legend text {
+  cursor:auto;
+}
+#naaqs-concentrations-chart-legend .etrends-chart-line, #naaqs-concentrations-chart-legend text,
+#visibility-chart-legend .etrends-chart-line, #visibility-chart-legend text,
+#toxics-chart-legend .etrends-chart-line, #toxics-chart-legend text {
+	cursor: initial;
+}
+.etrends-chart-legend .disabled text, .etrends-chart-legend .disabled rect {
+/* Use !important here so that more specific  legend item styles are overwritten when disabled */
+  fill: grey !important;
+}
+.etrends-chart-legend .disabled path {
+	stroke: grey !important;
+}
+#growth-chart-legend {
+	display: none;
+}
+
+
+/* TOOLTIPS */
+.etrends-chart-crosshair-vertical {
+	stroke: rgba(242,242,242,.4); /* #fafafa equivalent */
+	stroke-width: 30;
+	/*z-index:10;*/
+}
+.etrends-chart-crosshair-horizontal {
+  display:none;
+}
+.etrends-tooltip {	
+    position: absolute;			
+    text-align: left;			
+    z-index:9997; /*9998 is the nav bar */
+    padding: 5px;				
+    /*font-size: .857em;		*/
+    background: rgba(250,250,250,.98);
+  	color: #1a1a1a;
+    border: solid 1px #831681;		
+    border-radius: 2px;			
+    opacity: 1;	
+/*Note if you want a tooltip to wrap such as legend percentile tooltip then set it individually to wrap */
+	/*white-space:nowrap;*/
+}
+.etrends-tooltip .hidden {
+  display:none;
+}
+
+#speciation-map .etrends-tooltip, #visibility-map .etrends-tooltip, #toxics-map .etrends-tooltip {	
+	z-index: 9999; /* when tooltip is maximized overlay the nav bar */
+}
+.etrends-chart-menu-tooltip {
+  z-index:4;
+}
+.etrends-tooltip td.etrends-tooltip-label {
+  text-align: right;
+  padding-right:.2rem;
+  white-space:nowrap;
+  font-weight:600;
+}
+.etrends-tooltip td {
+	padding-top:3px;
+}
+#naaqs-concentrations-averages-chart .etrends-tooltip td,
+#naaqs-emissions-totals-chart .etrends-tooltip td,
+#weather-chart .etrends-tooltip td {
+	vertical-align:bottom;
+}
+.etrends-tooltip-maximize,
+.etrends-tooltip-minimize {
+	position: absolute;
+	left:10px;
+	bottom:5px;	
+}
+.etrends-tooltip-close {
+	position: absolute;
+	right: 10px;
+	bottom:5px;
+}
+
+
+/* CHART TITLE, MENU AND TEXT POSITIONING */
+.etrends-chart-title {
+  /*font-size:1.5em;*/
+  text-align:center;
+  font-weight:normal;
+  white-space:nowrap;
+  color:#1a1a1a;
+  margin-left:1.5rem;
+  margin-right:1.5rem; 
+}
+.etrends-chart-title text {
+  fill:#1a1a1a;
+}
+.etrends-chart-menu{
+	position:absolute;
+    top:0;
+	right:0;
+	cursor: pointer;
+	line-height:1;
+}
+.etrends-chart-menu:before {
+    z-index:2;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	content: "\e915"; 
+	font-family: 'icomoon';
+	font-size:1.5rem;
+	padding:0 4px;
+	vertical-align:middle;
+}
+.export-list-style{
+	list-style-type:none;
+	padding:5px;
+	cursor: pointer;
+	margin-bottom:0;
+}
+.export-list-style li {
+	padding-bottom:4px;
+	color: #0071bc;	
+}
+.export-list-style li:hover{
+	color: #009900;
+}
+.etrends-tooltip-showPercent { /*margin and position bootstrap checkbox overrides are in H_ css */
+	cursor:pointer;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/* CHART TITLE, MENU AND TEXT FONT SIZES */
+/* .etrends-chart-menu:before {
+	font-size: .4rem;
+} */
+.etrends-chart-axis text, 
+.etrends-chart-legend text,
+.etrends-tooltip,
+.etrends-chart-line-standard-label {
+/* 	font-size: 9px; */
+	font-size: .7rem;
+}
+.etrends-chart-title {
+/* 	font-size: 15px; */
+	font-size: 1.25rem;
+ 	line-height:1; 
+}
+#speciation-chart-title.etrends-chart-title,
+#visibility-chart-title.etrends-chart-title,
+#toxics-chart-title.etrends-chart-title {
+	font-size:1.2rem;
+}
+.etrends-chart-title text.etrends-chart-title-subtitle  {
+/*   font-size: 11px;
+  padding-top: 8px; */
+	font-size: 1rem;
+	padding-top: .5rem;
+}
+.etrends-growth-babyLegend text {
+	fill: white;
+	font-weight: 600;
+}
+
+/* SOURCE ATTRIBUTION */
+.attribution {
+	text-align:center;
+	/*bottom:0;*/
+	position:relative;
+	margin-top: .25rem;
+}
+.attribution a {
+	font-size:.7rem;
+	color: #d9d9d9;
+	border-bottom: none;
+	outline: none;
+}
+
+@media(max-width:470px){
+	.adjust-attribution {
+		padding-bottom:22px;
+	}
+}
+
+
+/* INTRO SECTION */
+/* #naaqs-concentrations-averages-chart-container,#naaqs-emissions-totals-chart-container {
+	padding-bottom:20px;
+} */
+#naaqs-concentrations-averages-chart-container .secondary .etrends-chart-line-standard {
+  stroke: #e60000;
+}
+#naaqs-concentrations-averages-chart-container .secondary .etrends-chart-line-standard-label {
+	fill:#e60000; /*most recent national std. text*/
+}
+/* need to explicity set stroke to none for -point because it was inheriting -line in tooltip */
+.etrends-chart-line-Pb_3-month {
+  stroke: #e60000;
+  color: #e60000;
+}
+.etrends-chart-point-Pb_3-month {
+  fill: #e60000;
+  stroke: none;
+}
+#naaqs-concentrations-averages-chart .ySecondary.etrends-chart-axis text {
+  fill: #e60000;
+  /*font-weight: bold;*/
+}
+.etrends-chart-line-CO_8-hour {
+  stroke: #2a7ab0;
+  color: #2a7ab0;
+}
+.etrends-chart-point-CO_8-hour {
+  fill: #2a7ab0;
+  stroke: none;
+}
+#naaqs-emissions-totals-chart .ySecondary.etrends-chart-axis text {
+  fill: #2a7ab0;
+  /*font-weight: bold;*/
+}
+.etrends-chart-line-NO2_annual {
+  stroke: #831681;
+  color: #831681;
+}
+.etrends-chart-point-NO2_annual {
+  fill: #831681;
+  stroke: none;
+}
+.etrends-chart-line-NO2_1-hour {
+  stroke: #aa5d00;
+  color: #aa5d00;
+}
+.etrends-chart-point-NO2_1-hour {
+  fill: #aa5d00;
+  stroke: none;
+}
+.etrends-chart-line-O3_8-hour {
+  stroke: #55bf3b;
+  color: #55bf3b;
+}
+.etrends-chart-point-O3_8-hour {
+  fill: #55bf3b;
+  stroke: none;
+}
+.etrends-chart-line-PM2-5_annual {
+  stroke: #b500b5;
+  color: #b500b5;
+}
+.etrends-chart-point-PM2-5_annual {
+  fill: #b500b5;
+  stroke: none;
+}
+.etrends-chart-line-PM2-5_24-hour {
+  stroke: #008000;
+  color: #008000;
+}
+.etrends-chart-point-PM2-5_24-hour {
+  fill: #008000;
+  stroke: none;
+}
+.etrends-chart-line-PM10_24-hour {
+  stroke: #D43900;
+  color: #D43900;
+}
+.etrends-chart-point-PM10_24-hour {
+  fill: #D43900;
+  stroke: none;
+}
+.etrends-chart-line-SO2_1-hour {
+  stroke: #0000e0;
+  color: #0000e0;
+}
+.etrends-chart-point-SO2_1-hour {
+  fill: #0000e0;
+  stroke: none;
+}
+#naaqs-emissions-categories-chart .etrends-chart-axis path {
+	stroke:none;
+}
+
+
+/* GROWTH SECTION */
+.etrends-chart-line-GrossDomesticProduct {
+  stroke: #144a1a; 
+  color: #144a1a;
+}
+.etrends-growth-babyLegend rect {
+  cursor: pointer;
+}
+.etrends-growth-babyLegend .clickRect.disabled {
+/* Use !important here so that more specific  legend item styles are overwritten when disabled */
+  fill: grey;
+  opacity: .75;
+}
+.etrends-chart-point-GrossDomesticProduct, .etrends-growth-babyLegend g.GrossDomesticProduct {
+  fill: #144a1a;
+  stroke: none;
+}
+.etrends-chart-line-VehicleMilesTraveled {
+  stroke: #128a00;
+  color: #128a00;
+}
+.etrends-chart-point-VehicleMilesTraveled, .etrends-growth-babyLegend g.VehicleMilesTraveled {
+  fill: #128a00;
+  stroke: none;
+}
+.etrends-chart-line-Population {
+  stroke: #247cb7;
+  color: #247cb7;
+}
+.etrends-chart-point-Population, .etrends-growth-babyLegend g.Population {
+  fill: #247cb7;
+  stroke: none;
+}
+.etrends-chart-line-EnergyConsumption {
+  stroke: #0000e0;
+  color: #0000e0;
+}
+.etrends-chart-point-EnergyConsumption, .etrends-growth-babyLegend g.EnergyConsumption {
+  fill: #0000e0;
+  stroke: none;
+}
+.etrends-chart-line-CO2Emissions {
+  stroke: #7a1578;
+  color: #7a1578;
+}
+.etrends-chart-point-CO2Emissions, .etrends-growth-babyLegend g.CO2Emissions {
+  fill: #7a1578;
+  stroke: none;
+}
+.etrends-chart-line-AggregateEmissions {
+  stroke: #b200fd;
+  color: #b200fd;
+}
+.etrends-chart-point-AggregateEmissions, .etrends-growth-babyLegend g.AggregateEmissions {
+  fill: #b200fd;
+  stroke: none;
+}
+
+
+/* NAAQS SECTION */
+.naaqsform-group {
+	 margin-bottom:15px;/*needed because label line wrap on mobile devices (iphone4) will cause dropdown to bleed into chart */
+} 
+@media(min-width:767px) {
+	.naaqsform-group {
+		 height:5.9em; /* used to align top of conc. chart to top of map; the naaqsSlider height is set to 5.9 to match */
+		 margin-bottom:0;
+	} 
+}
+#naaqs-charts-container {
+  margin-bottom: 6px;
+}
+#naaqs-emissions-chart-container, #naaqs-emissions-lead-chart-container {
+  margin-bottom:0;
+}
+#naaqs-emissions-chart {
+	background-color: #fff;
+	fill:#E0E0E3;
+	position:relative;
+}
+#naaqs-emissions-chart-container .etrends-chart-area-stationary {
+  fill: rgba(0, 0, 224, 1); /* 0000e0 blue */
+}
+.etrends-chart-area-stationary {
+  fill: rgba(0, 0, 224, 1); /* 0000e0 blue */
+  color: rgba(0, 0, 224, 1); /* 0000e0 blue */
+}
+.etrends-chart-area-industrial {
+  fill: rgba(219, 58, 0, 1); /* #F73D1D orange changed to db3a00 */
+  color: rgba(219, 58, 0, 1); /* #F73D1D orange changed to db3a00 */
+}
+
+.etrends-chart-area-highway {
+  fill: rgba(0, 128, 0, 1); /* #008000 green */
+  color: rgba(0, 128, 0, 1); /* #008000 green */
+}
+.etrends-chart-area-nonroad {
+  fill: rgba(131, 22, 129, 1); /* #831681 purple */
+  color: rgba(131, 22, 129, 1); /* #831681 purple */
+}
+.naaqs-emissions-chart-line-total { /* emissions total / top line */
+  fill: none;
+  stroke: #000;
+  stroke-width: 2.5;
+}
+.etrends-chart-movingPoint {
+	r: 6px;
+	fill: #ffff00;
+	stroke:#000;
+	stroke-width:2.5;
+}
+
+/* TAB FORMAT */
+/* #naaqs-emissionMenu, .etrends-chart-tabs {
+    margin-top:0;
+} */
+#naaqs-emissionMenu ul, .etrends-chart-tabs ul {
+    padding: 0;
+    text-align:center;
+    margin-bottom:-1px; /*this allows the ul tab to flow into/overlap the chart border so it appears to have no bottom border*/
+}
+#naaqs-emissionMenu li, .etrends-chart-tabs li { /*non active tab */
+    display: block;
+    border-bottom: 1px solid white;
+	border-radius: 3px 3px 0 0;
+	font-size: 8.7px;  /*changed to get some consistency on ul height; */
+	-webkit-box-shadow: 0 5px 0 #fff, 0 -2px 7px -1px rgba(0, 0, 0, 0.15);
+		    box-shadow: 0 5px 0 #fff, 0 -2px 7px -1px rgba(0, 0, 0, 0.15);
+    color: #ffffff;
+    background-color: #6a797c;
+    padding: 3px 6px; /* changed to get some consistency on ul height */
+    margin: 0 0;
+    text-decoration: none;
+    cursor: pointer;			
+}
+@media(min-width:610px) {
+	#naaqs-emissionMenu li, .etrends-chart-tabs li { /* non active tab */
+	display: inline-block;
+	font-size:12px;	
+    padding: 3px 5px;
+    margin: 0 .1rem;	
+	}
+}
+#naaqs-emissionMenu li:hover, .etrends-chart-tabs li:hover {
+    background-color: #0071bc;
+	color: #fff;
+}
+#naaqs-emissionMenu li.active, .etrends-chart-tabs li.active {
+    background-color: #fff;
+    color: #205493;
+	font-weight:500;
+}
+
+
+/* SPECIATION */
+#speciation-chart-container .etrends-chart-area-Sea-salt {
+  fill: rgba(0, 0, 224, 1); /* 0000e0 blue */
+}
+#speciation-chart-container .etrends-chart-area-Crustal {
+  fill: rgba(77, 51, 25, 1); /* #4d3319 brown */
+}
+#speciation-chart-container .etrends-chart-area-OrganicCarbon {
+  fill: rgba(1, 133, 113, 1); /* #018571 teal */
+}
+#speciation-chart-container .etrends-chart-area-ElementalCarbon {
+  fill: rgba(0, 0, 0, 1); /* #00000 black */
+}
+#speciation-chart-container .etrends-chart-area-Nitrate {
+  fill: rgba(230, 0, 0, 1); /* red #e60000*/
+}
+#speciation-chart-container .etrends-chart-area-Sulfate {
+  fill: rgba(230, 230, 0, 1); /* #e6e600 yellow*/
+}
