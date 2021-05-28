@@ -1,0 +1,57 @@
+/*Video css */
+ /*from seron here http://stackoverflow.com/questions/10797632/simulate-background-sizecover-on-video-or-img & from youtube video https://www.youtube.com/watch?v=O_Bw1_0u1P8 */
+#video-container{ 
+	width:100%; 
+	height:100%;
+ 	position:absolute;  
+/* 	left:0; 
+	top:0;  */
+	bottom:-7px; /* because imagery legend is in bottom right corner, setting vid based on bottom instead of top */
+	right:0;
+	overflow:hidden;
+}
+/*from seron here http://stackoverflow.com/questions/10797632/simulate-background-sizecover-on-video-or-img */
+#video-viewport {
+	position: absolute;
+	overflow: hidden;
+	z-index: -1;  /* when positive, clicking any part of the viewport will start and stop video; setting to negative forces use of the video button */
+	bottom: 0; /* because imagery legend is in bottom right corner, setting vid based on bottom instead of top */
+	right:0;
+}
+#video-viewport video {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+    /*z-index: -2; same z-index as background images */
+}
+#video-viewport .bkrnd-overlay{
+	height: 100%;
+    width: 100%;
+    position: absolute;
+/*     top: -5px;
+    left: 0px; */
+    z-index: 1; 
+	background: -webkit-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+	background: -moz-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+	background: -o-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+	background: -ms-linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+	background: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1));
+	/*-webkit-filter: sepia(.5);
+    filter: sepia(.5);*/
+}
+/*for accessing the link by click */
+#nasa-text {   
+	z-index:1; 
+}
+.nasa-drop-shadow {
+	text-shadow: 2px 1px 4px #1a1a1a;
+	color:#ffffff;
+	font-size: .875rem;
+}
+.nasa-label {
+	color:#bbd9f7;
+	border-bottom-color: #bbd9f7;
+}
+.valign-middle{
+	vertical-align: middle;
+}
