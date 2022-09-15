@@ -96,13 +96,24 @@ function makeMapRisks(callback) {
 
   //GPO item for Full Nata 2017 Feature service
   //https://epa.maps.arcgis.com/home/item.html?id=2fc20a027f1d47678d25c6208d4edddc  
+  // Nata 2018 Steven Jetts
+  //https://epa.maps.arcgis.com/home/item.html?id=3aa281d59de6491cbc96b77d5ec28303
+  // Nata 2018 Doug Solos
+  //https://epa.maps.arcgis.com/home/item.html?id=9a342901087a4c78ac52040a2606a324
   var layerSetup = {
 //    custom:[zoomedOutLayer,zoomedInLayer,sourceLayer],
     custom:[zoomedOutLayer,zoomedInLayer],
     default:{
-      service: "NATA2017",
+//      service: "NATA2017",
+//  Steven Jetts
+      service: "NATA18AC_CRP_CRSG_HI",      
+//  Doug Solos
+//      service: "Tract_Changes_2018",       
       key: "FIPS",
       layerArgs: {
+//For Steven Jetts Have to use custom layerId here instead of just setting service name since we are using layer 1 instead of 0        
+//        url:"https://services.arcgis.com/cJ9YHowT8TU7DUyn/ArcGIS/rest/services/NATA18AC_CRP_CRSG_HI/FeatureServer/1",
+        layerId: 1
       },
       legendInfo: {
         title: "Cancer Risk (in a million)"
@@ -203,13 +214,19 @@ function makeMapRisks(callback) {
     if (caveat_text) {
       $caveat.show();
       var caveat_link_type;
+      /* In 2018 the caveat link doesn't depend on Risk Change
       if (args.attributes.Risk_Change==="E") {
         caveat_link_type = "2017-airtoxscreen-emissions-update-document";
       } else if (args.attributes.Risk_Change==="F"){
         caveat_link_type = "airtoxscreen-frequent-questions#fire2";
       }
-             
+      */
+
+      //In 2018 caveat_link is same for all caveats
+      caveat_link_type = "2018-airtoxscreen-emissions-update-document";
+
       var caveat_link = " <a href='https://www.epa.gov/AirToxScreen/" + caveat_link_type + "' target='_blank'>here</a>"
+
       $caveat.html(caveat_text + caveat_link);
     } else {
       $caveat.hide();
@@ -307,15 +324,27 @@ function makeMapHazard(callback) {
 }
   };
 
-  //GPO item for NATA Hazard Feature service
+  //GPO item for 2017 NATA Hazard Feature service
   //https://epa.maps.arcgis.com/home/item.html?id=a885b9bf7e3f498aad2f1870a80b279f  
+  //GPO item for 2018 NATA Hazard Feature service
+  //Stevens
+  //https://epa.maps.arcgis.com/home/item.html?id=e9b1cf127e3f40108a2b546156fb1b7d
+  //Dougs
+  //https://epa.maps.arcgis.com/home/item.html?id=3e19bca585fb4ced8b6e84dcab2e3c08      
+
   var layerSetup = {
     custom:[pointLayer,polygonLayer],
     default:{
-      service: "HI_2017_NATA_Hazard_Index_Above_1_View",
+//      service: "HI_2017_NATA_Hazard_Index_Above_1_View",
+      //Steven Jetts
+      service: "HI_2018_NATA_Hazard_Index_Above_1_View",
+      //Doug Solos
+      //service: "HI_Tract_Changes_2018_Hazard_Index_Above_1_View",
       key: "FIPS",
       defaultClass: null,
       layerArgs: {
+//For Steven Jetts Have to use custom layerId here instead of just setting service name since we are using layer 1 instead of 0
+        layerId: 1
       },
       legendInfo: {
         title: "Hazard Index"
@@ -342,14 +371,15 @@ function makeMapHazard(callback) {
     Reproductive: {gpoField:'Reproductive_HI',fullName:'Reproductive'},
 //    Kidney: {gpoField:'Kidney_HI',fullName:'Kidney'},
 //    Immunological : {gpoField:'Immunological_HI',fullName:'Immunological'},
-    WholeBody: {gpoField:'Whole_Body_HI',fullName:'Whole Body'},
+// Don't need WholeBody for the 2018 data (only 2017) since there are no Whole Body HI > 1 in 2018
+//    WholeBody: {gpoField:'Whole_Body_HI',fullName:'Whole Body'},
     Thyroid: {gpoField:'Thyroid_HI',fullName:'Thyroid'}
   };
   
   var mapInfo = {
     name: "hazard",
     types: types,    
-    outFields: ['FIPS'],
+    outFields: ['FIPS','County_Nam','State'],
     layerSetup: layerSetup,
     preSwitchType: preSwitchType
   };
@@ -381,9 +411,14 @@ function makeMapHazard(callback) {
       Object.keys(types).forEach(function (type) {
         var gpoField = types[type].gpoField;          
         var hazardIndex = graphic.attributes[gpoField];
+        //convert hazard index to only 1 sig digit
+        hazardIndex = etrends.library.utilities.round(hazardIndex,0);
+        //Keep just one significant digit
+        //hazardIndex = Number(hazardIndex.toPrecision(1));
+
         if (hazardIndex < 1) return;
         var row = "<td>" + type + "</td>";      
-        row += "<td>" + graphic.attributes[gpoField] + "</td>";
+        row += "<td>" + hazardIndex + "</td>";
         $tbody.append("<tr>" + row + "</tr>");
       }); 
       $table.show()
@@ -394,7 +429,11 @@ function makeMapHazard(callback) {
     }
   }
   
-  var url = "https://services.arcgis.com/cJ9YHowT8TU7DUyn/ArcGIS/rest/services/HI_2017_NATA_Hazard_Index_Above_1_View/FeatureServer/0/query?returnGeometry=false&returnCentroid=true&f=json";
+//  var url = "https://services.arcgis.com/cJ9YHowT8TU7DUyn/ArcGIS/rest/services/HI_2017_NATA_Hazard_Index_Above_1_View/FeatureServer/0/query?returnGeometry=false&returnCentroid=true&f=json";
+// Steven Jetts 2018 Hazard View
+  var url = "https://services.arcgis.com/cJ9YHowT8TU7DUyn/ArcGIS/rest/services/HI_2018_NATA_Hazard_Index_Above_1_View/FeatureServer/1/query?returnGeometry=false&returnCentroid=true&f=json";
+// Doug Solos 2018 Hazard View
+//  var url = "https://services.arcgis.com/cJ9YHowT8TU7DUyn/ArcGIS/rest/services/HI_Tract_Changes_2018_Hazard_Index_Above_1_View/FeatureServer/0/query?returnGeometry=false&returnCentroid=true&f=json";
   url += "&outFields=*";
   url += "&where=1=1";
   return loadFeatureToSource({
