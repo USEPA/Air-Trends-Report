@@ -1,7 +1,0 @@
-http: to https: changes are made to export-csv.js, exporting.js and highstock.js files
-
-sparklines
-
-htmlwidgets: https://cran.rstudio.com/web/packages/htmlwidgets/index.html
-plotly binding: https://cran.rstudio.com/web/packages/plotly/
-
