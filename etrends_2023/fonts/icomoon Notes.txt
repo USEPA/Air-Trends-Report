@@ -1,0 +1,6 @@
+In order to check which icomoon fonts are available and what their content codes are we need to import fonts/icomoon.svg file in icomoon.io/app website to bring in all the fonts and then we can select icon fonts and inspect their codes.
+
+There is an Import Icons button at top of screen. Just need to click generate Font and it will show you codes for each icon font.
+You don't need to actually download any fonts.
+
+If it turns you you wanted to add a font, then you would select that font also from another source and then generate and download and replace icomoon font files in font folder.
