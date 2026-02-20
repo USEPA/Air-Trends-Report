@@ -1,0 +1,111 @@
+
+#naaqsSlider{
+	height:5.9em;
+}
+
+.etrends-spotlight-map-chart-slider {
+	height:5.9em;
+}
+
+.d3-slider {
+    fill:#1a1a1a; /* slider font color */
+	position: relative;
+    font-family: 'Montserrat','Lato',"Source Sans Pro", "Helvetica Neue", "Helvetica", 'Roboto', "Arial",  sans-serif;
+    font-size: 1.1em;
+    border: 1px solid #e6e6e6; /* slider box / outline color */
+    /*z-index: 2;*/
+	-webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.12);
+		    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.12);
+}
+
+.d3-slider-horizontal {
+    height: .8em;
+}  
+
+.d3-slider-range {
+  background:#2980b9;
+  left:0px;
+  right:0px;
+  height: 0.8em;
+  position: absolute;
+}
+/*
+.d3-slider-range-vertical {
+  background:#2980b9;
+  left:0px;
+  right:0px;
+  position: absolute;
+  top:0;
+}
+
+.d3-slider-vertical {
+    width: .8em;
+    height: 100px;
+}      
+*/
+a.d3-slider-handle {
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+
+	outline: none;
+	border: 1px solid #bfbfbf; /* do not match this border color to chart borders */
+    border-radius: 3px;
+}
+
+.d3-slider-handle {
+    position: absolute;
+    width: 1.2em;
+    height: 1.2em;
+    background: #e6e6e6;
+    background: -ms-linear-gradient(#eeeeee,#d9d9d9, #eeeeee);
+	background: -o-linear-gradient(#eeeeee,#d9d9d9, #eeeeee);
+	background: -webkit-linear-gradient(#eeeeee,#d9d9d9, #eeeeee);
+	background: -moz-linear-gradient(#eeeeee,#d9d9d9, #eeeeee);
+	background: linear-gradient(#eeeeee,#d9d9d9, #eeeeee);
+    z-index: 3;
+}
+
+.d3-slider-handle:hover {
+    border: 1px solid #999999;
+	outline:none;
+}
+
+.d3-slider-horizontal .d3-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+}
+
+.d3-slider-axis {
+    position: relative;
+    /*z-index: 1;    */
+}
+
+.d3-slider-axis-bottom {
+    top: .8em;
+}
+/*
+.d3-slider-axis-right {
+    left: .8em;
+}*/
+
+.d3-slider-axis path {
+    stroke-width: 0;
+    fill: none;
+}
+
+.d3-slider-axis line {
+    fill: none;
+    stroke: #d9d9d9; /* tick marks */
+    shape-rendering: crispEdges;
+}
+
+.d3-slider-axis text {
+    font-size: .786em;
+}
+/*
+.d3-slider-vertical .d3-slider-handle {
+    left: -.25em;
+    margin-left: 0;
+    margin-bottom: -.6em;      
+}*/
